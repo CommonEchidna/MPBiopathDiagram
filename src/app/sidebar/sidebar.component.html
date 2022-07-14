@@ -1,0 +1,13 @@
+<div class="sidebar-container">
+
+  <div class="mb-5 text-center">
+    <h3>MP-BioPath</h3>
+  </div>
+
+
+  <ul class="justify-content-center" style="display: grid;">
+    <li style="margin-top: 10px; font-size: 25px;" *ngFor="let option of sidebarOptions" [routerLink]="[option.route]" routerLinkActive="is-active">
+      <a>{{option.label}}</a>
+    </li>
+  </ul>
+</div>

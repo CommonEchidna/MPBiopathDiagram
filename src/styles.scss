@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button:focus {
+  box-shadow: unset !important;
+  outline: unset !important;
+}
+
+.button-primary {
+  background: #0078BD !important;
+  color: #ffffff;
+  border: 1px solid;
+  border-color: #0078BD !important;
+  border-radius: 6px;
+  padding: 5px 20px;
+
+}
+
+.button-primary:enabled:hover {
+  background: #025b8f !important;
+  color: #ffffff;
+  border-color: #025b8f !important;
+}
+
+.graph-container svg {
+  width: 100%;
+}

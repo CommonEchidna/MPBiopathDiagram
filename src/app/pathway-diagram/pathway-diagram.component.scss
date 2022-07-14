@@ -1,0 +1,43 @@
+.pathway-diagram-container {
+  margin: auto;
+  padding: 95px 50px 20px 50px;
+}
+  .button-primary {
+    padding: 10px 40px;
+  }
+
+  .selected-button {
+    background-color: #025b8f !important;
+  }
+
+  .graph-container {
+    text-align: center;
+    max-height: 700px;
+    min-height: 300px;
+    overflow-x: auto;
+    width: 100%;
+    border: 1px solid lightb;
+    border-radius: 6px;
+    background-color: white;
+    > .graph {
+      width: 100%;
+
+
+    }
+  }
+
+  .upload-images-container {
+    width: 200px;
+    border-radius: 6px;
+    background: lightgray;
+    cursor: pointer;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+body {
+  background-color:mediumturquoise;
+}
