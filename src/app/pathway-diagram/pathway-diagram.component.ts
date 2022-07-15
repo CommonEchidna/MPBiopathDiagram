@@ -60,7 +60,6 @@ export class PathwayDiagramComponent implements OnInit, AfterViewInit {
       var dotLines = fileReader.result.toString().split("\n");
       var finaldot = ["digraph {"];
       for(let i=1;i<dotLines.length-1;i++){
-        console.log(dotLines[i]);
         var parts = dotLines[i].split("\t");
         if(parts[3]=="Reaction"){
           finaldot.push('    ' +  parts[0] + ' [label="' + parts[0] + '" shape="' + "diamond" + '"]');
@@ -71,7 +70,15 @@ export class PathwayDiagramComponent implements OnInit, AfterViewInit {
       }
       for(let i=1;i<dotLines.length-1;i++){
         var parts = dotLines[i].split("\t");
-        var line = String(parts[0]) + "->" + String(parts[4])+"  ";
+        var strpartz = String(parts[0]);
+        var strpartf = String(parts[4]);
+        if(strpartz.slice(-6,-1)==="outpu"){
+          strpartz = strpartz.slice(0,-6)+String("000000");
+        }
+        if(strpartf.slice(-6,-1)==="outpu"){
+          strpartf = strpartf.slice(0,-6)+String("000000");
+        }
+        var line = " "+strpartz + "->" + strpartf+"  ";
         finaldot.push(line);
       }
       finaldot.push("}");
@@ -84,6 +91,7 @@ export class PathwayDiagramComponent implements OnInit, AfterViewInit {
                 string+=finaldot[i][j];
             }
         }
+
         finaldotnosep.push(string);
 
       }
