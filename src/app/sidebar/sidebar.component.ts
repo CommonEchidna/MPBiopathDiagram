@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  sidebarOptions = [{label: 'Pathway List', route: '/dashboard'}, {label: 'Item1', route: '/'},
-  {label: 'Item2', route: '/'}, {label: 'Item3', route: '/'}]
+  sidebarOptions = [{label: '', route: '68875'}, {label: '69242', route: '/'},
+  {label: '69620', route: '/'}, {label: '195721', route: '/'}, {label: '453274', route: '/'},
+  {label: '453279', route: '/'}, {label: '1227986', route: '/'}, {label: '1257604', route: '/'},
+  {label: '3700989', route: '/'}, {label: '5673001', route: '/'}, {label: '5693567', route: '/'}]
 
   constructor() { }
 

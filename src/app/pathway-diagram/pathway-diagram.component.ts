@@ -1,57 +1,47 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
 import * as d3 from 'd3';
 import * as d3Graphviz from 'd3-graphviz'
-import DataFrame from "dataframe-js";
-
+import { observable, autorun } from 'mobx'
 @Component({
   selector: 'app-pathway-diagram',
   templateUrl: './pathway-diagram.component.html',
   styleUrls: ['./pathway-diagram.component.scss']
 })
-export class PathwayDiagramComponent implements OnInit, AfterViewInit {
+
+
+export class PathwayDiagramComponent implements OnInit {
 
   selectedButton = 1;
   _ = d3Graphviz.graphviz;
+  scale = 0.8; 
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  ngAfterViewInit() {
-    d3.select("#graph").graphviz().renderDot('digraph {a -> b -> c -> d -> e -> f}');
-  }
-
   attributer(datum, index, nodes) {
-    const scale = 0.8;
-      var selection = d3.select(this);
-      if (datum.tag == "svg") {
-          datum.attributes = {
-              ...datum.attributes,
-              width: '100%',
-              height: '100%',
-          };
-          // svg is constructed by hpcc-js/wasm, which uses pt instead of px, so need to convert
-          const px2pt = 3 / 4;
-  
-          // get graph dimensions in px. These can be grabbed from the viewBox of the svg
-          // that hpcc-js/wasm generates
-          const graphWidth = datum.attributes.viewBox.split(' ')[2] / px2pt;
-          const graphHeight = datum.attributes.viewBox.split(' ')[3] / px2pt;
-  
-          // new viewBox width and height
-          const w = graphWidth / scale;
-          const h = graphHeight / scale;
-  
-          // new viewBox origin to keep the graph centered
-          const x = -(w - graphWidth) / 2;
-          const y = -(h - graphHeight) / 2;
-  
-          const viewBox = `${x * px2pt} ${y * px2pt} ${w * px2pt} ${h * px2pt}`;
-          selection.attr('viewBox', viewBox);
-          datum.attributes.viewBox = viewBox;
-      }
-  }
+    var selection = d3.select(this);
+    if (datum.tag == "svg") {
+        datum.attributes = {
+            ...datum.attributes,
+            width: '100%',
+            height: '100%',
+        };
+        // svg is constructed by hpcc-js/wasm, which uses pt instead of px, so need to convert
+        const px2pt = 3 / 4;
+
+        // get graph dimensions in px. These can be grabbed from the viewBox of the svg
+        // that hpcc-js/wasm generates
+        const graphWidth = datum.attributes.viewBox.split(' ')[2] / px2pt;
+        const graphHeight = datum.attributes.viewBox.split(' ')[3] / px2pt;
+
+        const viewBox = `${0} ${0} ${graphWidth * px2pt} ${graphHeight * px2pt}`;
+        selection.attr('viewBox', viewBox);
+        datum.attributes.viewBox = viewBox;
+    }
+}
+
   onFileUpload(event): void {
     
 
@@ -61,11 +51,19 @@ export class PathwayDiagramComponent implements OnInit, AfterViewInit {
       var finaldot = ["digraph {"];
       for(let i=1;i<dotLines.length-1;i++){
         var parts = dotLines[i].split("\t");
+        var strpartz = String(parts[0]);
+        var strpartf = String(parts[4]);       
+        if(strpartz.slice(-6,-1)==="outpu"){
+          strpartz = strpartz.slice(0,-6)+String("000000");
+        }
+        if(strpartf.slice(-6,-1)==="outpu"){
+          strpartf = strpartf.slice(0,-6)+String("000000");
+        } 
         if(parts[3]=="Reaction"){
-          finaldot.push('    ' +  parts[0] + ' [label="' + parts[0] + '" shape="' + "diamond" + '"]');
+          finaldot.push('    ' +  strpartz + ' [label="' + strpartz + '" shape="' + "diamond" + '"]');
         }
         if(parts[7]=="Reaction"){
-          finaldot.push('    ' +  parts[4] + ' [label="' + parts[4] + '" shape="' + "diamond" + '"]');
+          finaldot.push('    ' +  strpartf + ' [label="' + strpartf + '" shape="' + "diamond" + '"]');
         }
       }
       for(let i=1;i<dotLines.length-1;i++){
@@ -78,6 +76,9 @@ export class PathwayDiagramComponent implements OnInit, AfterViewInit {
         if(strpartf.slice(-6,-1)==="outpu"){
           strpartf = strpartf.slice(0,-6)+String("000000");
         }
+        console.log(line);
+        console.log(i);
+        console.log("\n");
         var line = " "+strpartz + "->" + strpartf+"  ";
         finaldot.push(line);
       }
@@ -97,7 +98,6 @@ export class PathwayDiagramComponent implements OnInit, AfterViewInit {
       }
 
       var dot = finaldotnosep.join('');
-      console.log(dot);
       d3.select("#graph").graphviz().attributer(this.attributer).renderDot(dot);
 
       }
@@ -110,7 +110,7 @@ export class PathwayDiagramComponent implements OnInit, AfterViewInit {
     }
 
     this.selectedButton = number;
-    d3.select("#graph").graphviz().renderDot('digraph {}');
+    d3.select("#graph").graphviz().attributer(this.attributer).renderDot('digraph {}');
   }
 
 }
