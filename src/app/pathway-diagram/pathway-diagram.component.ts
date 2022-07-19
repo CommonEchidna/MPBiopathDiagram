@@ -1,7 +1,7 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
 import * as d3 from 'd3';
 import * as d3Graphviz from 'd3-graphviz'
-import { observable, autorun } from 'mobx'
+import { contactStore } from '../contact-store';
 @Component({
   selector: 'app-pathway-diagram',
   templateUrl: './pathway-diagram.component.html',
@@ -14,6 +14,8 @@ export class PathwayDiagramComponent implements OnInit {
   selectedButton = 1;
   _ = d3Graphviz.graphviz;
   scale = 0.8; 
+  store = contactStore;
+  selectedTab = 0;
 
   constructor() { }
 
@@ -97,20 +99,30 @@ export class PathwayDiagramComponent implements OnInit {
 
       }
 
-      var dot = finaldotnosep.join('');
-      d3.select("#graph").graphviz().attributer(this.attributer).renderDot(dot);
+      var dots = finaldotnosep.join('');
+      this.store.setDot(dots,this.selectedTab);
+      d3.select("#graph").graphviz().attributer(this.attributer).renderDot(this.store.dot[this.selectedTab]);
 
       }
     fileReader.readAsText(event.target.files[0]);
   }
 
-  resetGraph(number): void {
+  changeGraph(number): void {
     if (this.selectedButton === number) {
-      return;
+      return
     }
-
+    
     this.selectedButton = number;
-    d3.select("#graph").graphviz().attributer(this.attributer).renderDot('digraph {}');
-  }
+    this.selectedTab=number-1
+    console.log(this.store.dot[this.selectedTab]);
+    console.log("\n\n");
+    if(this.store.dot[this.selectedTab]!==""){
+      d3.select("#graph").graphviz().attributer(this.attributer).renderDot(this.store.dot[this.selectedTab]);
+      console.log("HAPPENES"); 
+    } else {
+      d3.select("#graph").graphviz().attributer(this.attributer).renderDot("digraph {}");
+
+    }
+     }
 
 }
