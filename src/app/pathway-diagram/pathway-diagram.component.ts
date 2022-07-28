@@ -2,6 +2,8 @@ import {AfterViewInit, Component, OnInit} from '@angular/core';
 import * as d3 from 'd3';
 import * as d3Graphviz from 'd3-graphviz'
 import { contactStore } from '../contact-store';
+import {tabstore} from '../tabstore'
+
 @Component({
   selector: 'app-pathway-diagram',
   templateUrl: './pathway-diagram.component.html',
@@ -19,7 +21,8 @@ export class PathwayDiagramComponent implements OnInit {
   _ = d3Graphviz.graphviz;
   scale = 0.8; 
   store = contactStore;
-  selectedTab = 0;
+  store2 = tabstore;
+  selectedTab = tabstore.tabnum;
 
   constructor() { }
 
@@ -47,23 +50,8 @@ export class PathwayDiagramComponent implements OnInit {
         datum.attributes.viewBox = viewBox;
     }
 }
- getText(){
-  // read text from URL location
-  var request = new XMLHttpRequest();
-  request.open('GET', 'link', true);
-  request.send(null);
-  request.onreadystatechange = function () {
-      if (request.readyState === 4 && request.status === 200) {
-          var type = request.getResponseHeader('Content-Type');
-          if (type.indexOf("text") !== 1) {
-              return request.responseText;
-          }
-      }
-  }
-}
   onFileUpload(event): void {
     
-
     const fileReader = new FileReader();
     fileReader.onload = (e) => {
       var dotLines = fileReader.result.toString().split("\n");
@@ -138,20 +126,40 @@ export class PathwayDiagramComponent implements OnInit {
       var dots = finaldotnosep.join('');
       this.store.setDot(dots,this.selectedTab);
       console.log(dots);
-      d3.select("#graph").graphviz().attributer(this.attributer).renderDot(this.store.dot[this.selectedTab]);
+      this.pathwayDiagramData[this.selectedTab].data = this.store.dot[this.selectedTab];
+
+      d3.select("#graph").graphviz().attributer(this.attributer).zoomScaleExtent([.0001,1000]).renderDot(this.store.dot[this.selectedTab]);
 
       }
     fileReader.readAsText(event.target.files[0]);
+  }
+  printhi(){
+    console.log("HI");
+  }
+
+  resetGraph(index): void {
+    if (this.selectedTab === index) {
+      return;
+    }
+
+    this.selectedTab = index;
+	if (this.pathwayDiagramData[this.selectedTab].data) {
+		d3.select("#graph").graphviz().renderDot(this.pathwayDiagramData[this.selectedTab].data);
+	} else {
+		d3.select("#graph").graphviz().renderDot('digraph {}');
+	}
   }
 
   changeGraph(number): void {
     if (this.selectedButton === number) {
       return
     }
-    
+
     this.selectedButton = number;
     this.selectedTab=number-1
+    this.store2.setTab(this.selectedTab);
     console.log(this.store.dot[this.selectedTab]);
+    console.log("HI");
     console.log("\n\n");
     if(this.store.dot[this.selectedTab]!==""){
       d3.select("#graph").graphviz().attributer(this.attributer).renderDot(this.store.dot[this.selectedTab]);
