@@ -10,7 +10,11 @@ import { contactStore } from '../contact-store';
 
 
 export class PathwayDiagramComponent implements OnInit {
-
+  pathwayDiagramData = [
+    {button: {label: 'Pathway 1'}, data: null},
+    {button: {label: 'Pathway 2'}, data: null},
+    {button: {label: 'Pathway 3'}, data: null},
+  ]
   selectedButton = 1;
   _ = d3Graphviz.graphviz;
   scale = 0.8; 
@@ -43,7 +47,20 @@ export class PathwayDiagramComponent implements OnInit {
         datum.attributes.viewBox = viewBox;
     }
 }
-
+ getText(){
+  // read text from URL location
+  var request = new XMLHttpRequest();
+  request.open('GET', 'link', true);
+  request.send(null);
+  request.onreadystatechange = function () {
+      if (request.readyState === 4 && request.status === 200) {
+          var type = request.getResponseHeader('Content-Type');
+          if (type.indexOf("text") !== 1) {
+              return request.responseText;
+          }
+      }
+  }
+}
   onFileUpload(event): void {
     
 
@@ -54,33 +71,52 @@ export class PathwayDiagramComponent implements OnInit {
       for(let i=1;i<dotLines.length-1;i++){
         var parts = dotLines[i].split("\t");
         var strpartz = String(parts[0]);
-        var strpartf = String(parts[4]);       
-        if(strpartz.slice(-6,-1)==="outpu"){
-          strpartz = strpartz.slice(0,-6)+String("000000");
+        var strpartf = String(parts[4]); 
+        if(strpartz.slice(-7,-1)=="_outpu"){
+          strpartz = strpartz.slice(0,-7)+"000000";
         }
-        if(strpartf.slice(-6,-1)==="outpu"){
-          strpartf = strpartf.slice(0,-6)+String("000000");
-        } 
+        if(strpartf.slice(-7,-1)=="_outpu"){
+          strpartf = strpartf.slice(0,-7)+"000000";
+        }
+        var tool1 = String(parts[2]);
+        var tool2 = String(parts[6]);
+        var string = "";
+        var regEx = /^[0-9a-zA-Z]+$/;
+
+        for(let j=0;j<tool1.length;j++){
+          if(tool1[j].match(regEx)||tool1[j]==" "){
+          string+=tool1[j];
+          }
+        }
+        tool1=string;
+        for(let j=0;j<tool2.length;j++){
+          if(tool2[j].match(regEx)||tool1[j]==" "){
+          string+=tool2[j];
+          }
+        }
+        tool2=string;
         if(parts[3]=="Reaction"){
-          finaldot.push('    ' +  strpartz + ' [label="' + strpartz + '" shape="' + "diamond" + '"]');
+          finaldot.push('    ' +  strpartz + ' [label="' + strpartz + '" tooltip="'+tool1+'" shape="' + "diamond" + '"]');
+        }
+        else{
+          finaldot.push('    ' +  strpartz + ' [label="' + strpartz + '" tooltip="'+tool1+ '"]');
+
         }
         if(parts[7]=="Reaction"){
-          finaldot.push('    ' +  strpartf + ' [label="' + strpartf + '" shape="' + "diamond" + '"]');
+          finaldot.push('    ' +  strpartf + ' [label="' + strpartf +  '" tooltip="'+tool1+ '"]');
         }
       }
       for(let i=1;i<dotLines.length-1;i++){
         var parts = dotLines[i].split("\t");
         var strpartz = String(parts[0]);
         var strpartf = String(parts[4]);
-        if(strpartz.slice(-6,-1)==="outpu"){
-          strpartz = strpartz.slice(0,-6)+String("000000");
+        if(strpartz.slice(-7,-1)=="_outpu"){
+          strpartz = strpartz.slice(0,-7)+"000000";
         }
-        if(strpartf.slice(-6,-1)==="outpu"){
-          strpartf = strpartf.slice(0,-6)+String("000000");
+        if(strpartf.slice(-7,-1)=="_outpu"){
+          strpartf = strpartf.slice(0,-7)+"000000";
         }
-        console.log(line);
-        console.log(i);
-        console.log("\n");
+
         var line = " "+strpartz + "->" + strpartf+"  ";
         finaldot.push(line);
       }
@@ -90,9 +126,9 @@ export class PathwayDiagramComponent implements OnInit {
       for(let i=0;i<finaldot.length;i++){
         var string = "";
         for(let j=0;j<finaldot[i].length;j++){
-            if(finaldot[i][j]!="_"){
-                string+=finaldot[i][j];
-            }
+          if(finaldot[i][j]!="_"){
+          string+=finaldot[i][j];
+          }
         }
 
         finaldotnosep.push(string);
@@ -101,6 +137,7 @@ export class PathwayDiagramComponent implements OnInit {
 
       var dots = finaldotnosep.join('');
       this.store.setDot(dots,this.selectedTab);
+      console.log(dots);
       d3.select("#graph").graphviz().attributer(this.attributer).renderDot(this.store.dot[this.selectedTab]);
 
       }
@@ -124,5 +161,20 @@ export class PathwayDiagramComponent implements OnInit {
 
     }
      }
+     deletePathway(index): void {
+      this.pathwayDiagramData.splice(index, 1);
+    d3.select("#graph").graphviz().renderDot('digraph {}');
+    }
+  
+    addPathway(): void {
+      const index = this.pathwayDiagramData.length + 1
+      this.pathwayDiagramData.push({
+        button: {
+          label: 'Pathway ' + index
+        },
+        data: null
+        }
+      )
+    }
 
 }
