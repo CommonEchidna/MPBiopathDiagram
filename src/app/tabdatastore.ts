@@ -1,9 +1,9 @@
 import { observable, action } from 'mobx-angular';
 
 class Tabstore {
-    @observable tabnum = 0;
+    @observable tabdata = [];
     @action setTab(pos) {
-        this.tabnum = pos;
+        this.tabdata = pos;
     }
 }
 

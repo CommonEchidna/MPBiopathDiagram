@@ -3,13 +3,17 @@
     <div class="col-lg-12 col-sm-12 d-flex flex-wrap justify-content-between mb-3">
       <ng-container *ngFor="let item of pathwayDiagramData; let index=index">
         <div class="button-container">
-          <button class="button-primary" [class.selected-button]="selectedButtonIndex === index" (click)="resetGraph(index)">{{item?.button?.label}}</button>
+          <button class="button-primary" [class.selected-button]="selectedButtonIndex === index" (click)="changeGraph(index)">{{item?.button?.label}}</button>
           <i class="bi-x-circle" (click)="deletePathway(index)"></i>
         </div>
       </ng-container>
       <button class="button-primary" style="margin-bottom: 20px" (click)="addPathway()">Add Pathway</button>
     </div>
   </div>
+
+
+  <input id="searchbar" type="search">  
+  <button (click)="interactiveSearch()" class="searchbutton">Search</button>
 
   <div class="row">
     <div class="col-lg-12 col-md-12 mb-3">
@@ -19,17 +23,8 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-lg-12 col-md-12">
-      <div class="upload-file-container">
-        <input type="file" #imageUploadInput hidden="true" (change)="onFileUpload($event); imageUploadInput.value = null">
-        <div class="upload-images-container" (click)="imageUploadInput.click()">
-          <i class="bi-upload"></i>
-          <p>Upload File</p>
-        </div>
-      </div>
-    </div>
-  </div>
+
+
 
 
 <div class="row">
@@ -40,4 +35,8 @@
     </div>
   </div>
 </div>
+<a id="snackbar"></a>
+
+
+
 </body>
