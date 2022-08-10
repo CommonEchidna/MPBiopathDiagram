@@ -8,6 +8,9 @@ import {RouterModule} from "@angular/router";
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { FormsModule } from '@angular/forms';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatFormFieldModule} from '@angular/material/form-field'
 
 @NgModule({
   declarations: [
@@ -20,7 +23,11 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    MatButtonToggleModule,
+    MatFormFieldModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,25 +1,28 @@
-import {AfterViewInit, Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {AfterViewInit, Component, EventEmitter, Injectable, Input, OnInit, Output} from '@angular/core';
 import * as d3 from 'd3';
 import * as d3Graphviz from 'd3-graphviz' 
 var mode="delete2";
 var dotSrcLines;
+
 @Component({
   selector: 'app-pathway-diagram',
   templateUrl: './pathway-diagram.component.html',
   styleUrls: ['./pathway-diagram.component.scss']
 })
 
-
+@Injectable()
 export class PathwayDiagramComponent implements OnInit {
   @Input() dotSrcLinesInput: string;
   @Output() dotSrcLinesOutput = new EventEmitter<string> ();
-  @Output() DiagramTabData = new EventEmitter<string[]> ();
-  @Input() DiagramTabDataInput;
+  @Output() DiagramTabData = new EventEmitter<Object[]> ();
+  @Input() DiagramTabDataInput: Object[];
+  @Output() titledbid = new EventEmitter<Object[]>();
+  @Input() titledbidInput=[];
+  titledbidLocal=[];
 
 
-  pathwayDiagramData = [
-    "","",""
-  ]
+
+  pathwayDiagramData:Object[] = [{label:"Untitled",src:""},{label:"Untitled",src:""}];
   selectedButton = 1;
   _ = d3Graphviz.graphviz;
   scale = 0.8; 
@@ -65,10 +68,10 @@ export class PathwayDiagramComponent implements OnInit {
     this.selectedTab=number;
 
     console.log("\n\n");
-
-    if(this.pathwayDiagramData[this.selectedTab]){
+    console.log(this.pathwayDiagramData[this.selectedTab]["src"])
+    if(this.pathwayDiagramData[this.selectedTab]["src"]){
       console.log("1");
-      d3.select("#graph").graphviz().attributer(attributer).renderDot(this.pathwayDiagramData[this.selectedTab]);
+      d3.select("#graph").graphviz().attributer(attributer).renderDot(this.pathwayDiagramData[this.selectedTab]["src"]);
     } else {
       console.log("2");
 
@@ -88,13 +91,16 @@ export class PathwayDiagramComponent implements OnInit {
     this.sendTabData();
 
     }
+    
   
     addPathway(): void {
-      this.pathwayDiagramData = this.DiagramTabDataInput;
+      console.log(this.pathwayDiagramData)
 
+      this.pathwayDiagramData = this.DiagramTabDataInput;
+      console.log(this.DiagramTabDataInput)
 
       const index = this.pathwayDiagramData.length + 1
-      this.pathwayDiagramData.push("");
+      this.pathwayDiagramData.push({label:"Untitled", src:""});
       this.sendTabData();
 
     }

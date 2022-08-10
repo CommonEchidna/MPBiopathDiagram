@@ -1,16 +1,21 @@
-import { Component, EventEmitter, Input, OnInit, Output, Renderer2 } from '@angular/core';
+import { Component, EventEmitter, Injectable, Input, OnInit, Output, AfterViewInit } from '@angular/core';
 import * as d3 from 'd3';
 import * as d3Graphviz from 'd3-graphviz'
 import { contactStore } from '../contact-store';
 import {tabstore} from '../tabstore'
 import {MatSnackBar} from '@angular/material/snack-bar';
+import {MatIconRegistry,MatIconModule} from '@angular/material/icon';
+import {DomSanitizer} from '@angular/platform-browser';
+import { MatOptionModule } from '@angular/material/core';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { MatButtonModule } from '@angular/material/button';
+import { FormsModule } from '@angular/forms'; 
 
-
+var titledbidLocal=[];
 var dot;
 var dotSrcLines;
 var mode="delete2";
 var snackbar:MatSnackBar;
-
 
 @Component({
   selector: 'app-sidebar',
@@ -18,64 +23,97 @@ var snackbar:MatSnackBar;
   styleUrls: ['./sidebar.component.scss']
 })
 
+
+@Injectable()
 export class SidebarComponent implements OnInit {
   @Input() dotSrcLinesInput: string;
   @Output() emitDotSrcLines = new EventEmitter<string> ();
   @Input() DiagramTabDataInput;
-  @Output() DiagramTabData = new EventEmitter<string[]> ();
+  @Output() DiagramTabData = new EventEmitter<Object[]> ();
+  @Output() titledbid = new EventEmitter<Object[]>();
+  @Input() titledbidInput=[];
+ titledbidLocal2=[];
+ titledbidLocalMaster=[];
+ selectedVal;
+ search;
+
 
   selectedTab=0;
-  pathwayDiagramData = [ "", "", ""
-  ]
+  pathwayDiagramData:Object[] = [{label:"Untitled",src:""},{label:"Untitled",src:""}];
 
 
 
   _ = d3Graphviz.graphviz;
   scale = 0.8; 
+  isChecked:boolean;
 
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-  setDiagramTabData(data){
-    this.pathwayDiagramData =data;
-
+  constructor() {
+    
+    makeRequest1("GET", 'https://s3.amazonaws.com/download.reactome.org/81/mpbiopath/pathway_list.tsv',0).then(function(response){ 
+    let splitted = String(response).split("\n");
+      console.log("INIT????");
+      for(let i=1;i<splitted.length-1;i++){
+        var split2 = splitted[i].split("\t");
+        titledbidLocal.push({ id: split2[0], name:  split2[1]});    
+   
+      }
+      console.log(titledbidLocal);
+    }
+    )
+    this.titledbidInput=titledbidLocal;
+    this.titledbidLocal2=titledbidLocal;
+    this.titledbidLocalMaster=titledbidLocal;
+    console.log("TWO");
+    console.log(this.titledbidInput);
   }
   
-  async getText(idx){
+
+  ngOnInit(): void {
+
+}
+ngAfterViewInit() {
 
 
-    // read text from URL location
-    var finaldotnosep = [];
+}
+  setDiagramTabData(data:Object[]){
+    this.pathwayDiagramData =data;
+    console.log("???");
 
-    var request = new XMLHttpRequest();
-    request.open('GET', 'https://s3.amazonaws.com/download.reactome.org/81/mpbiopath/pathway_list.tsv', true);
-    request.send(null);
-    request.onreadystatechange = function () {
-        if (request.readyState === 4 && request.status === 200) {
-            var type = request.getResponseHeader('Content-Type');
-            if (type.indexOf("text") !== 1) {
-              let splitted = String(request.responseText).split("\n");
+  }
+
+
+  async getText(item): Promise<any>{
+    var idx = item.id;
+    const myPromise = new Promise((resolve,reject) => {
+      var finaldotnosep = [];
+      console.log("1");
+      console.log(this.pathwayDiagramData)
+      makeRequest1("GET", 'https://s3.amazonaws.com/download.reactome.org/81/mpbiopath/pathway_list.tsv',idx).then(function(response){    
+              let splitted = String(response).split("\n");
+              
+              console.log("START");
+              console.log(splitted);
+              console.log("\n\n")
               var line = -1
               for(let i=1;i<splitted.length-1;i++){
+
                 var split2 = splitted[i].split("\t");
                 var pos = split2[0];
                 if(pos==idx){
                   line = i;
                 }
               }
-              var request2 = new XMLHttpRequest();
               var split2 = splitted[line].split("\t");
 
-              console.log(split2[3])
-            request2.open('GET', split2[3], true);
-            request2.send(null);
-            request2.onreadystatechange = function () {
-        if (request2.readyState === 4 && request2.status === 200) {
-            var type = request2.getResponseHeader('Content-Type');
-            if (type.indexOf("text") !== 1) {
-              let dotLines = String(request2.responseText).split("\n");
+              console.log(split2[3]);
+            makeRequest1('GET', split2[3], idx).then(function(response2){
+              console.log("RESPONSE")
+              console.log(response2);
+              console.log("\n\n")
+  
+            
+              let dotLines = String(response2).split("\n");
                 var finaldot = ["digraph {"];
                 for(let i=1;i<dotLines.length-1;i++){
                   var parts = dotLines[i].split("\t");
@@ -109,13 +147,13 @@ export class SidebarComponent implements OnInit {
                   }
                   strpartz = "\""+strpartz + "\"";
                   strpartf  = "\""+strpartf + "\"";
-
+  
                   
                 var tool1 = "\""+"name = "+String(parts[2])+ "\n reactome id = " + String(parts[0]) + "\n entity type = "+String(parts[3])+"\"";
                 var tool2 = "\""+"name = "+String(parts[6])+ "\n reactome id = " + String(parts[4]) + "\n entity type = "+String(parts[7])+"\"";
                 var tool1 = "\""+"name = "+String(parts[2])+ "? reactome id = " + String(parts[0]) + "? entity type = "+String(parts[3])+"\"";
                 var tool2 = "\""+"name = "+String(parts[6])+ "? reactome id = " + String(parts[4]) + "? entity type = "+String(parts[7])+"\"";
-
+  
                   var string = "";
                   if(parts[3]=="Reaction"){
                       finaldot.push('    ' +  strpartz + ' [label=' + strpartz + ' id='+tool1+ ' tooltip='+tool1+' color=\"black\" shape= diamond '+ ']');
@@ -125,7 +163,7 @@ export class SidebarComponent implements OnInit {
                   }
                   if(parts[7]=="Reaction"){
                       finaldot.push('    ' +  strpartf + ' [label=' + strpartf + ' id='+tool2+ ' tooltip='+tool2+' color=\"black\" shape= diamond ' + ']');
-
+  
                   } else {
                       finaldot.push('    ' +  strpartf + ' [label=' + strpartf + ' id='+tool2+ ' color=\"black\" tooltip='+tool2+ ']');
                   }
@@ -172,18 +210,18 @@ export class SidebarComponent implements OnInit {
                     strpartf = strpartf.slice(0,30)+"...";
                   }   
                   var tool= "\""+"Incoming = "+strpartz+ " Outgoing = " + strpartf + " "+String(parts[8])+ " "+String(parts[9])+"\"";
-
+  
                   strpartz = "\""+strpartz + "\"";
                   strpartf  = "\""+strpartf + "\"";
                   var line = " "+strpartz +"->" + strpartf+"  ";
-
+  
                   if(parts[8]=="NEG"){
                     line = line + "[arrowhead=tee tooltip="+tool+"]"
                   } 
                   else{
                     line = line + "[tooltip="+tool+"]";
                   }
-
+  
                   finaldot.push(line);
                 }
                 finaldot.push("}");
@@ -197,32 +235,84 @@ export class SidebarComponent implements OnInit {
                   }
           
                   finaldotnosep.push(string);
-
+  
                 }
                 dotSrcLines = finaldotnosep;
                 dot = dotSrcLines.join("");
                 console.log(dot);
-                console.log("WATIED?");
-
-
-              }             
-              }
+                console.log("DONE2");
+                resolve("DONE");
+              })
             }
-          }
+      )
+          })
+          myPromise.then((text)=>this.getText2(text));
         }
-        
-      }
-      await request.onreadystatechange;
-      console.log("STEP!");
-      console.log(this.pathwayDiagramData);
-      console.log(dot);
-      this.pathwayDiagramData[this.selectedTab]=dot;
-      this.DiagramTabData.emit(this.pathwayDiagramData);
-      this.emitDotSrcLines.emit(dotSrcLines);
 
+          getText2(text){
+            console.log(text);
+            console.log(this.pathwayDiagramData);
+            this.pathwayDiagramData[this.selectedTab]['label']="TEST4";
+            this.pathwayDiagramData[this.selectedTab]['src']=dot;
+            console.log(this.pathwayDiagramData);
+            console.log("INDICATOR");
+
+            this.DiagramTabData.emit(this.pathwayDiagramData);
+            this.emitDotSrcLines.emit(dotSrcLines);
+            this.titledbid.emit(titledbidLocal);
+          }
+
+  
+          interactiveSnackBar(val){
+
+
+            var x = document.getElementById("snackbar");
+            x.textContent = "dbid: "+String(val.id);
+            x.className = "show";
+  
+  
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 10000);
+  
+  }
+  onValChange(val: string) {
+    this.selectedVal = val;
+  }
+
+  interactiveSearch2(data){
+    console.log(this.search);
+    var searchterm2 = this.search;
+    var pathways = d3.selectAll('pathwaylist');
+    var options = document.getElementById("dbidchecked");
+    var newlist = []
+    if(this.selectedVal=="dbid"){
+      for(let i=0;i<this.titledbidLocalMaster.length;i++) {
+        
+        if(this.titledbidLocalMaster[i]["id"].indexOf(searchterm2)!=-1){
+          newlist.push(this.titledbidLocalMaster[i]);
+        }
+      }
     }
+    else if(this.selectedVal=="title"){
+      for(let i=0;i<this.titledbidLocalMaster.length;i++) {
+        if(this.titledbidLocalMaster[i]["name"].indexOf(searchterm2)!=-1){
+          newlist.push(this.titledbidLocalMaster[i]);
+        }
+      }
+    }
+    else {
+      console.log("??");
+    }
+    this.titledbidLocal2=newlist;
+
+  
+  
   
 
+
+}
+    
+
+  
 
   onFileUpload(event): void {
     
@@ -303,5 +393,28 @@ export class SidebarComponent implements OnInit {
   }
 
   
+}
 
+
+function makeRequest1(method, url,idx) {
+  return new Promise(function (resolve, reject) {
+    var finaldotnosep = [];
+    var request = new XMLHttpRequest();
+    request.open('GET', url, true);
+
+    request.onload = function(){
+      if(request.status>=200 && request.status<300){
+        console.log("WORKED");
+        resolve(request.response);
+      }
+    }
+      request.onerror=function(){
+        console.log(
+          "REJECTED"
+        );
+        reject(request);
+      };
+      request.send();
+
+  });
 }

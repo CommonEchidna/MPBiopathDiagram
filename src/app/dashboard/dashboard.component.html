@@ -1,8 +1,8 @@
 <div class="row" >
   <div class="col-lg-2 col-md-2">
-    <app-sidebar DiagramTabDataInput="{{DiagramTabData}}" (DiagramTabData)="setDiagramTabData($event)" dotSrcLinesInput="{{dotSrcLines}}"(emitDotSrcLines)="setDotSrcLines($event)"></app-sidebar>
+    <app-sidebar (titledbid) = "settitledbid($event)" [titledbidInput]="titledbid" [DiagramTabDataInput]="DiagramTabData" (DiagramTabData)="setDiagramTabData($event)" dotSrcLinesInput="{{dotSrcLines}}"(emitDotSrcLines)="setDotSrcLines($event)"></app-sidebar>
   </div>
   <div class="col-lg-10 col-md-10">
-    <app-pathway-diagram DiagramTabDataInput="{{DiagramTabData}}" (dotSrcLinesOutput)="setDotSrcLines($event)" dotSrcLinesInput="{{dotSrcLines}}" (DiagramTabData)="setDiagramTabData($event)"></app-pathway-diagram>
+    <app-pathway-diagram [DiagramTabDataInput]="DiagramTabData" [titledbidInput]="titledbid" (titledbid) = "settitledbid($event)" (dotSrcLinesOutput)="setDotSrcLines($event)" dotSrcLinesInput="{{dotSrcLines}}" (DiagramTabData)="setDiagramTabData($event)"></app-pathway-diagram>
   </div>
 </div>

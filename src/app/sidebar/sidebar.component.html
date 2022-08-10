@@ -1,28 +1,21 @@
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <div class="sidebar-container">
 
   <div class="mb-5 text-center">
-    <h3>MP-BioPath</h3>
     <img src="https://raw.githubusercontent.com/OICR/mp-biopath/main/mp-biopath-logo.png" height="50" width="200">
     <a href = "https://reactome.org"> <img src="https://reactome.org/templates/favourite/images/logo/logo.png" height="50" width="200"></a>
 
   </div>
 
 
-  <ul class="justify-content-center" style="display: grid;">
-    <li (click)="getText(68875)">68875</li>
-    <li (click)="getText(69242)">69242</li>
-    <li (click)="getText(69620)">69620</li>
-    <li (click)="getText(195721)">195721</li>
-    <li (click)="getText(453274)">453274</li>
-    <li (click)="getText(453279)">453279</li>
-    <li (click)="getText(1227986)">1227986</li>
-    <li (click)="getText(1257604)">1257604</li>
-    <li (click)="getText(3700989)">3700989</li>
-    <li (click)="getText(5673001)">5673001</li>
-    <li (click)="getText(5693567)">5693567</li>
-
+  <ul class="justify-content-center" style="display: grid;" >
+    <ng-container *ngFor="let item of titledbidLocal2 ">
+    <li ><span class="pathwaylist" (click)="getText(item)">{{item?.name}}</span> <span (click)="interactiveSnackBar(item)" class="material-symbols-outlined">
+      info
+      </span></li>
+  </ng-container>
   </ul>
+
 
 
   <div class="row">
@@ -36,6 +29,15 @@
       </div>
     </div>
   </div>
+  <mat-button-toggle-group #group="matButtonToggleGroup" [value]="selectedVal" (change)="onValChange(group.value)" id="searchdbidortitle" name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle id = "dbidchecked" value="dbid">dbid</mat-button-toggle>
+    <mat-button-toggle id = "titlechecked" value="title">title</mat-button-toggle>
+  </mat-button-toggle-group>
+  
+ 
+  <input id="searchbar2" type="search" placeholder="enter your text here" [(ngModel)]= "search">   
+  <button (click)="interactiveSearch2($event)" class="searchbutton">Search</button>
 </div>
+
 
 

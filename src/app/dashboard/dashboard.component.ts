@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, Injectable, OnInit, Output } from '@angular/core';
 import * as d3 from 'd3';
 import * as d3Graphviz from 'd3-graphviz'
 import { contactStore } from '../contact-store';
@@ -12,11 +12,10 @@ var dotSrcLines;
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
+@Injectable()
 export class DashboardComponent implements OnInit {
 
-  pathwayDiagramData: string[] = [
-    "","",""
-  ]
+  pathwayDiagramData: Object[] = [{label:"Untitled",src:""},{label:"Untitled",src:""}]
   dotSrcLines;
   selectedButton = 1;
   _ = d3Graphviz.graphviz;
@@ -24,7 +23,8 @@ export class DashboardComponent implements OnInit {
   store = contactStore;
   store2 = tabstore;
   selectedTab = tabstore.tabnum;
-  DiagramTabData: string[];
+  DiagramTabData: Object[]=[{label:"Untitled",src:""},{label:"BlaUntitlednk",src:""}]
+  titledbid:Object[];
 
   constructor() { }
 
@@ -34,25 +34,34 @@ export class DashboardComponent implements OnInit {
     var dot = dotSrc.join('');
     d3.select("#graph").graphviz().attributer(attributer).zoomScaleExtent([.0001,1000]).renderDot(dot).on("end", interactive);
     console.log(this.DiagramTabData);
-    this.pathwayDiagramData[this.selectedTab]=dotSrc;
-    this.DiagramTabData=this.pathwayDiagramData;
+    console.log("DAD");
+    console.log(this.pathwayDiagramData);
+    var dot =dotSrc.join("");
+    this.pathwayDiagramData[this.selectedTab]={label:"TEST4",src:dot};
+    this.DiagramTabData[this.selectedTab]={label:"TEST4",src:dot};
+    console.log(this.DiagramTabData)
+    console.log(this.pathwayDiagramData)
+  }
+
+  settitledbid(data){
+    this.titledbid = data;
   }
 
   setDotSrcLines(data){
     this.dotSrcLines = data;
     console.log(data);
-
     this.render(data);
   }
-  setDiagramTabData(data:string[]){
+  setDiagramTabData(data:Object[]){
     console.log(data);
     console.log("4");
-    this.pathwayDiagramData =data
+    this.pathwayDiagramData = data;
+    console.log(this.pathwayDiagramData);
     console.log("5");
 
     this.DiagramTabData = this.pathwayDiagramData;
     console.log("6");
-    console.log()
+    console.log(this.DiagramTabData)
 
 
   }

@@ -3,7 +3,7 @@
     <div class="col-lg-12 col-sm-12 d-flex flex-wrap justify-content-between mb-3">
       <ng-container *ngFor="let item of pathwayDiagramData; let index=index">
         <div class="button-container">
-          <button class="button-primary" [class.selected-button]="selectedButtonIndex === index" (click)="changeGraph(index)">{{item?.button?.label}}</button>
+          <button class="button-primary" [class.selected-button]="selectedButtonIndex === index" (click)="changeGraph(index)">{{item?.label}}</button>
           <i class="bi-x-circle" (click)="deletePathway(index)"></i>
         </div>
       </ng-container>
