@@ -230,8 +230,10 @@ ngAfterViewInit() {
 
 
                   var line = " "+  "\""+String(parts[0])+"\"" + "->" +  "\""+String(parts[4])+"\"" +"  ";
-  
+                  console.log(parts[8]);
+
                   if(parts[8]=="NEG"){
+                    console.log(line);
                     line = line + "[arrowhead=tee tooltip="+tool+"]"
                   } 
                   else{

@@ -12,7 +12,7 @@ var dotSrcLines;
 
 @Injectable()
 export class PathwayDiagramComponent implements OnInit {
-  @Input() dotSrcLinesInput: Object[];
+  @Input() dotSrcLinesInput: string[];
   @Output() dotSrcLinesOutput = new EventEmitter<Object[]> ();
   @Output() DiagramTabData = new EventEmitter<Object[]> ();
   @Input() pathwayDiagramData: Object[];
@@ -30,10 +30,10 @@ export class PathwayDiagramComponent implements OnInit {
   _ = d3Graphviz.graphviz;
   scale = 0.8; 
 
-  selectedTab;
+  selectedTab=0;
 
   constructor() {
-    this.pathwayDiagramData= [{label:"Untitled",src:[]},{label:"Untitled",src:[] }];
+    
 
    }
 
@@ -72,7 +72,7 @@ export class PathwayDiagramComponent implements OnInit {
     this.selectedTab=number;
 
     console.log("\n\n");
-    console.log(this.pathwayDiagramData[this.selectedTab]["src"].length>0)
+    console.log(this.pathwayDiagramData[this.selectedTab]["src"]>0)
     if(this.pathwayDiagramData[this.selectedTab]["src"].length>0){
       console.log("1");
       d3.select("#graph").graphviz().attributer(attributer).renderDot(this.pathwayDiagramData[this.selectedTab]["src"]);
@@ -110,26 +110,31 @@ export class PathwayDiagramComponent implements OnInit {
 
     }
     interactiveSearch(){
-      console.log(this.selectedTabInput)
+      console.log("FIRST");
+      console.log(this.selectedTab);
+      console.log(this.pathwayDiagramData[this.selectedTab])
+      this.dotSrcLinesInput = this.pathwayDiagramData[this.selectedTab]['src'];
       var searchterm = this.search;
       var nodes = d3.selectAll('.node,.edge');
       var dotSrcLines2 = [];
-      console.log(dotSrcLines);
-    
-      for (let i = 0; i < dotSrcLines.length;i++) {
-        if (dotSrcLines[i].indexOf(searchterm) >= 0) {
+      console.log(this.dotSrcLinesInput);
+      console.log("Starting");
+
+      for (let i = 0; i < this.dotSrcLinesInput.length;i++) {
+        if (this.dotSrcLinesInput[i].indexOf(searchterm) >= 0) {
           console.log(searchterm)
           console.log("{{");
-            var newLine = dotSrcLines[i].replace('color=\"black\"', 'color=\"red\"')
+            var newLine = this.dotSrcLinesInput[i].replace('color=\"black\"', 'color=\"red\"')
             dotSrcLines2.push(newLine)
         } else {
-            dotSrcLines2.push(dotSrcLines[i])
+            dotSrcLines2.push(this.dotSrcLinesInput[i])
           }
       }
       console.log(dotSrcLines2);
+      console.log("FINISHED");
      
-              
-      this.dotSrcLinesOutput.emit(dotSrcLines2);
+      this.pathwayDiagramData[this.selectedTab]['src']=  dotSrcLines2;
+      this.DiagramTabData.emit(this.pathwayDiagramData);
       console.log(this.selectedTab);
     
     
