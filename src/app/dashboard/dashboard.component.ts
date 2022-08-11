@@ -5,7 +5,7 @@ import { contactStore } from '../contact-store';
 import {tabstore} from '../tabstore'
 import {MatSnackBar} from '@angular/material/snack-bar';
 import { PathwayDiagramComponent } from '../pathway-diagram/pathway-diagram.component';
-var mode="delete2";
+var mode="snackbar";
 var dotSrcLines;
 @Component({
   selector: 'app-dashboard',
@@ -15,7 +15,7 @@ var dotSrcLines;
 @Injectable()
 export class DashboardComponent implements OnInit {
 
-  pathwayDiagramData: Object[] = [{label:"Untitled",src:""},{label:"Untitled",src:""}]
+  pathwayDiagramData: Object[] = [{label:"Untitled",src:[]},{label:"Untitled",src:[] }];
   dotSrcLines;
   selectedButton = 1;
   _ = d3Graphviz.graphviz;
@@ -23,34 +23,40 @@ export class DashboardComponent implements OnInit {
   store = contactStore;
   store2 = tabstore;
   selectedTab = tabstore.tabnum;
-  DiagramTabData: Object[]=[{label:"Untitled",src:""},{label:"BlaUntitlednk",src:""}]
+  DiagramTabData: Object[]=[{label:"Untitled",src:[]},{label:"Untitled",src:[] }];
   titledbid:Object[];
 
   constructor() { }
 
   ngOnInit(): void {
   }
-  render(dotSrc){
-    var dot = dotSrc.join('');
-    d3.select("#graph").graphviz().attributer(attributer).zoomScaleExtent([.0001,1000]).renderDot(dot).on("end", interactive);
-    console.log(this.DiagramTabData);
-    console.log("DAD");
-    console.log(this.pathwayDiagramData);
-    var dot =dotSrc.join("");
-    this.pathwayDiagramData[this.selectedTab]={label:"TEST4",src:dot};
-    this.DiagramTabData[this.selectedTab]={label:"TEST4",src:dot};
-    console.log(this.DiagramTabData)
-    console.log(this.pathwayDiagramData)
+  render(dotSrc,title){
+    console.log(this.selectedTab)
+      if(dotSrc.length>0){
+      console.log(dotSrc);
+      console.log("^^^^^");
+      var dot = dotSrc.join('');
+      d3.select("#graph").graphviz().attributer(attributer).zoomScaleExtent([.0001,1000]).renderDot(dot).on("end", interactive);
+
+      this.pathwayDiagramData[this.selectedTab]={label:title,src:dotSrc};
+      this.DiagramTabData[this.selectedTab]={label:title,src:dotSrc};
+    }
+
   }
 
   settitledbid(data){
     this.titledbid = data;
   }
 
+  setselectedTab(data){
+    console.log("SELECTEDTAB");
+    console.log(data);
+
+    this.selectedTab=data;
+  }
   setDotSrcLines(data){
     this.dotSrcLines = data;
-    console.log(data);
-    this.render(data);
+    console.log("RENDERED");
   }
   setDiagramTabData(data:Object[]){
     console.log(data);
@@ -61,7 +67,9 @@ export class DashboardComponent implements OnInit {
 
     this.DiagramTabData = this.pathwayDiagramData;
     console.log("6");
-    console.log(this.DiagramTabData)
+    console.log(this.pathwayDiagramData[this.selectedTab]['label'])
+    this.render(this.pathwayDiagramData[this.selectedTab]['src'],this.pathwayDiagramData[this.selectedTab]['label']);
+
 
 
   }

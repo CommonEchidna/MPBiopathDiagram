@@ -1,0 +1,12 @@
+db_id	pathway_name	file_name	s3_path
+1227986	Signaling by ERBB2	1227986_Signaling_by_ERBB2_.pi.tsv	https://s3.amazonaws.com/download.reactome.org/81/mpbiopath/pathways/1227986_Signaling_by_ERBB2_.pi.tsv
+1257604	PIP3 activates AKT signaling	1257604_PIP3_activates_AKT_signaling_.pi.tsv	https://s3.amazonaws.com/download.reactome.org/81/mpbiopath/pathways/1257604_PIP3_activates_AKT_signaling_.pi.tsv
+195721	Signaling by WNT	195721_Signaling_by_WNT_.pi.tsv	https://s3.amazonaws.com/download.reactome.org/81/mpbiopath/pathways/195721_Signaling_by_WNT_.pi.tsv
+3700989	Transcriptional Regulation by TP53	3700989_Transcriptional_Regulation_by_TP53_.pi.tsv	https://s3.amazonaws.com/download.reactome.org/81/mpbiopath/pathways/3700989_Transcriptional_Regulation_by_TP53_.pi.tsv
+453274	Mitotic G2-G2 M phases	453274_Mitotic_G2-G2_M_phases_.pi.tsv	https://s3.amazonaws.com/download.reactome.org/81/mpbiopath/pathways/453274_Mitotic_G2-G2_M_phases_.pi.tsv
+453279	Mitotic G1-G1 S phases	453279_Mitotic_G1-G1_S_phases_.pi.tsv	https://s3.amazonaws.com/download.reactome.org/81/mpbiopath/pathways/453279_Mitotic_G1-G1_S_phases_.pi.tsv
+5673001	RAF MAP kinase cascade	5673001_RAF_MAP_kinase_cascade_.pi.tsv	https://s3.amazonaws.com/download.reactome.org/81/mpbiopath/pathways/5673001_RAF_MAP_kinase_cascade_.pi.tsv
+5693567	HDR through Homologous Recombination HRR or Single Strand Annealing SSA	5693567_HDR_through_Homologous_Recombination_HRR_or_Single_Strand_Annealing_SSA__.pi.tsv	https://s3.amazonaws.com/download.reactome.org/81/mpbiopath/pathways/5693567_HDR_through_Homologous_Recombination_HRR_or_Single_Strand_Annealing_SSA__.pi.tsv
+68875	Mitotic Prophase	68875_Mitotic_Prophase_.pi.tsv	https://s3.amazonaws.com/download.reactome.org/81/mpbiopath/pathways/68875_Mitotic_Prophase_.pi.tsv
+69242	S Phase	69242_S_Phase_.pi.tsv	https://s3.amazonaws.com/download.reactome.org/81/mpbiopath/pathways/69242_S_Phase_.pi.tsv
+69620	Cell Cycle Checkpoints	69620_Cell_Cycle_Checkpoints_.pi.tsv	https://s3.amazonaws.com/download.reactome.org/81/mpbiopath/pathways/69620_Cell_Cycle_Checkpoints_.pi.tsv

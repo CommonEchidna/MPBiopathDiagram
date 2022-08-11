@@ -32,14 +32,17 @@ export class SidebarComponent implements OnInit {
   @Output() DiagramTabData = new EventEmitter<Object[]> ();
   @Output() titledbid = new EventEmitter<Object[]>();
   @Input() titledbidInput=[];
+  @Input() selectedTabInput1:number ;
+  @Output() selectedTabOutput1 = new EventEmitter<number>();
+
  titledbidLocal2=[];
  titledbidLocalMaster=[];
  selectedVal;
  search;
 
-
+  src1:String[];
   selectedTab=0;
-  pathwayDiagramData:Object[] = [{label:"Untitled",src:""},{label:"Untitled",src:""}];
+  pathwayDiagramData:Object[] = [{label:"Untitled",src:[]},{label:"Untitled",src:[] }];
 
 
 
@@ -85,6 +88,7 @@ ngAfterViewInit() {
 
   async getText(item): Promise<any>{
     var idx = item.id;
+    var title=item.name;
     const myPromise = new Promise((resolve,reject) => {
       var finaldotnosep = [];
       console.log("1");
@@ -120,7 +124,7 @@ ngAfterViewInit() {
                   var strpartz = String(parts[2]);
                   var temp = ""
                   for(let i=0;i<strpartz.length;i++){
-                    if(strpartz[i]=="\""){
+                    if(strpartz[i]=='"'){
                       temp+= "'";
                     }
                     else{
@@ -131,7 +135,7 @@ ngAfterViewInit() {
                   var strpartf = String(parts[6]); 
                   var temp = ""
                   for(let i=0;i<strpartf.length;i++){
-                    if(strpartf[i]=="\""){
+                    if(strpartf[i]=='"'){
                       temp+= "'";
                     }
                     else{
@@ -139,33 +143,42 @@ ngAfterViewInit() {
                     }
                   }
                   strpartf = temp;
+
+
                   if(strpartz.length>30){
                     strpartz = strpartz.slice(0,30)+"...";
                   }
                   if(strpartf.length>30){
                     strpartf = strpartf.slice(0,30)+"...";
                   }
+                  var tool1 = "\""+"name = "+strpartz+ "\n reactome id = " + String(parts[0]) + "\n entity type = "+String(parts[3])+"\"";
+                var tool2 = "\""+"name = "+strpartf+ "\n reactome id = " + String(parts[4]) + "\n entity type = "+String(parts[7])+"\"";
+                var tool1 = "\""+"name = "+strpartz+ "? reactome id = " + String(parts[0]) + "? entity type = "+String(parts[3])+"\"";
+                var tool2 = "\""+"name = "+strpartf+ "? reactome id = " + String(parts[4]) + "? entity type = "+String(parts[7])+"\"";
                   strpartz = "\""+strpartz + "\"";
                   strpartf  = "\""+strpartf + "\"";
   
                   
-                var tool1 = "\""+"name = "+String(parts[2])+ "\n reactome id = " + String(parts[0]) + "\n entity type = "+String(parts[3])+"\"";
-                var tool2 = "\""+"name = "+String(parts[6])+ "\n reactome id = " + String(parts[4]) + "\n entity type = "+String(parts[7])+"\"";
-                var tool1 = "\""+"name = "+String(parts[2])+ "? reactome id = " + String(parts[0]) + "? entity type = "+String(parts[3])+"\"";
-                var tool2 = "\""+"name = "+String(parts[6])+ "? reactome id = " + String(parts[4]) + "? entity type = "+String(parts[7])+"\"";
+                
   
                   var string = "";
                   if(parts[3]=="Reaction"){
-                      finaldot.push('    ' +  strpartz + ' [label=' + strpartz + ' id='+tool1+ ' tooltip='+tool1+' color=\"black\" shape= diamond '+ ']');
+                      finaldot.push('    ' +  "\""+String(parts[0])+"\"" + ' [label=' + strpartz + ' id='+tool1+ ' tooltip='+tool1+' color=\"black\" shape= diamond '+ ']');
                   }
                   else{
-                      finaldot.push('    ' +  strpartz + ' [label=' + strpartz + ' id='+tool1+ ' color=\"black\" tooltip='+tool1+ ']');
+                      finaldot.push('    ' +  "\""+String(parts[0])+"\"" + ' [label=' + strpartz + ' id='+tool1+ ' color=\"black\" tooltip='+tool1+ ']');
                   }
                   if(parts[7]=="Reaction"){
-                      finaldot.push('    ' +  strpartf + ' [label=' + strpartf + ' id='+tool2+ ' tooltip='+tool2+' color=\"black\" shape= diamond ' + ']');
+                      finaldot.push('    ' +  "\""+String(parts[4])+"\"" + ' [label=' + strpartf + ' id='+tool2+ ' tooltip='+tool2+' color=\"black\" shape= diamond ' + ']');
   
                   } else {
-                      finaldot.push('    ' +  strpartf + ' [label=' + strpartf + ' id='+tool2+ ' color=\"black\" tooltip='+tool2+ ']');
+                      finaldot.push('    ' +  "\""+String(parts[4])+"\"" + ' [label=' + strpartf + ' id='+tool2+ ' color=\"black\" tooltip='+tool2+ ']');
+                  }
+                  if(i==10){
+                    console.log("\n\n")
+                    console.log(finaldot[i]);
+                    console.log("\n\n")
+
                   }
                 }
             
@@ -213,7 +226,10 @@ ngAfterViewInit() {
   
                   strpartz = "\""+strpartz + "\"";
                   strpartf  = "\""+strpartf + "\"";
-                  var line = " "+strpartz +"->" + strpartf+"  ";
+
+
+
+                  var line = " "+  "\""+String(parts[0])+"\"" + "->" +  "\""+String(parts[4])+"\"" +"  ";
   
                   if(parts[8]=="NEG"){
                     line = line + "[arrowhead=tee tooltip="+tool+"]"
@@ -223,6 +239,12 @@ ngAfterViewInit() {
                   }
   
                   finaldot.push(line);
+                  if(i==10){
+                    console.log("\n\n")
+                    console.log(line);
+                    console.log("\n\n")
+
+                  }
                 }
                 finaldot.push("}");
           
@@ -246,20 +268,30 @@ ngAfterViewInit() {
             }
       )
           })
-          myPromise.then((text)=>this.getText2(text));
+          myPromise.then((text)=>this.getText2(text,title));
         }
 
-          getText2(text){
+          getText2(text,title){
             console.log(text);
             console.log(this.pathwayDiagramData);
-            this.pathwayDiagramData[this.selectedTab]['label']="TEST4";
-            this.pathwayDiagramData[this.selectedTab]['src']=dot;
+            console.log(dotSrcLines);
+            console.log(title);
+            console.log("^^");
+            this.selectedTab=this.selectedTabInput1;
+            this.pathwayDiagramData[this.selectedTab]['label']=title;
+            this.pathwayDiagramData[this.selectedTab]['src']=[];
+            for(let i=0;i<dotSrcLines.length;i++){
+              this.pathwayDiagramData[this.selectedTab]['src'].push(dotSrcLines[i]);
+            }
             console.log(this.pathwayDiagramData);
             console.log("INDICATOR");
 
             this.DiagramTabData.emit(this.pathwayDiagramData);
+            console.log(dotSrcLines)
             this.emitDotSrcLines.emit(dotSrcLines);
             this.titledbid.emit(titledbidLocal);
+            console.log(this.selectedTab)
+            this.selectedTabOutput1.emit(this.selectedTab);
           }
 
   

@@ -1,0 +1,1316 @@
+parent_id	parent_reactome_id	parent_name	parent_type	child_id	child_reactome_id	child_name	child_type	polarity	type
+5672954	5672954	p-S311,S406 KSR1:MARK3 binds YWHAB dimer	Reaction	5672954_5672696_5672957	5672696	p-S311,S406 KSR1:MARK3:YWHAB dimer [cytosol]	Complex	POS	AND
+5672954_5672696_5672957	5672696	p-S311,S406 KSR1:MARK3:YWHAB dimer [cytosol]	Complex	5672957	5672957	PP2A dephosphorylates KSR1	Reaction	POS	AND
+5672978	5672978	RAF phosphorylates MAP2K dimer	Reaction	5672978_5672723_9657606	5672723	activated RAF:scaffold:p-2S MAP2K:MAPK complex [plasma membrane]	Complex	POS	AND
+5672978_5672723_9657606	5672723	activated RAF:scaffold:p-2S MAP2K:MAPK complex [plasma membrane]	Complex	9657606	9657606	Single mechanism MAP2K inhibitors bind phosphorylated MAP2Ks	Reaction	POS	AND
+5672978	5672978	RAF phosphorylates MAP2K dimer	Reaction	5672978_5672723_9657603	5672723	activated RAF:scaffold:p-2S MAP2K:MAPK complex [plasma membrane]	Complex	POS	AND
+5672978_5672723_9657603	5672723	activated RAF:scaffold:p-2S MAP2K:MAPK complex [plasma membrane]	Complex	9657603	9657603	Dual mechanism MAPK inhibitors bind MAPKs	Reaction	POS	AND
+5672978	5672978	RAF phosphorylates MAP2K dimer	Reaction	5672978_5672723_5672973	5672723	activated RAF:scaffold:p-2S MAP2K:MAPK complex [plasma membrane]	Complex	POS	AND
+5672978_5672723_5672973	5672723	activated RAF:scaffold:p-2S MAP2K:MAPK complex [plasma membrane]	Complex	5672973	5672973	MAP2Ks phosphorylate MAPKs	Reaction	POS	AND
+5674366	5674366	IL17RD binds p-2S MAP2Ks and MAPKs	Reaction	5674366_5674360_5674373	5674360	IL17RD:p-2S MAP2Ks:MAPKs [Golgi membrane]	Complex	POS	AND
+5674366_5674360_5674373	5674360	IL17RD:p-2S MAP2Ks:MAPKs [Golgi membrane]	Complex	5674373	5674373	MAP2Ks phosphorylate MAPK at the Golgi membrane	Reaction	POS	AND
+5674018	5674018	BRAP binds RAS:GTP	Reaction	5674018_5674003_5674022	5674003	p21 RAS:GTP:BRAP [plasma membrane]	Complex	POS	AND
+5674018_5674003_5674022	5674003	p21 RAS:GTP:BRAP [plasma membrane]	Complex	5674022	5674022	BRAP autoubiquitinates	Reaction	POS	AND
+9635743	9635743	PTPN7 binds p-T,Y-MAPK	Reaction	9635743_9635740_9635739	9635740	PTPN7:p-T,Y-MAPK dimers [cytosol]	Complex	POS	AND
+9635743_9635740_9635739	9635740	PTPN7:p-T,Y-MAPK dimers [cytosol]	Complex	9635739	9635739	PTPN7 dephosphorylates p-T,Y-MAPKs	Reaction	POS	AND
+5672951	5672951	Inactive RAFs bind YWHAB	Reaction	5672951_5672707_5672961	5672707	inactive RAFs:YWHAB dimer [cytosol]	Complex	POS	AND
+5672951_5672707_5672961	5672707	inactive RAFs:YWHAB dimer [cytosol]	Complex	5672961	5672961	PP2A dephosphorylates inactive RAFs	Reaction	POS	AND
+5672951	5672951	Inactive RAFs bind YWHAB	Reaction	5672951_5672707_9658445	5672707	inactive RAFs:YWHAB dimer [cytosol]	Complex	POS	AND
+5672951_5672707_9658445	5672707	inactive RAFs:YWHAB dimer [cytosol]	Complex	9658445	9658445	MRAS:SHOC2:PPP1CC dephosphorylates inactive RAFs	Reaction	POS	AND
+5672950	5672950	"""Activator"" RAF:YWHAB dimer binds RAS:GTP"	Reaction	5672950_5672729_5672966	5672729	p21 RAS:GTP:'activator' RAF:YWHAB dimer [plasma membrane]	Complex	POS	AND
+5672950_5672729_5672966	5672729	p21 RAS:GTP:'activator' RAF:YWHAB dimer [plasma membrane]	Complex	5672966	5672966	RAS:GTP:'activator' RAF homo/heterodimerizes with other RAF monomers	Reaction	POS	AND
+5672972	5672972	MAP2Ks and MAPKs bind to the activated RAF complex	Reaction	5672972_5672720_5672978	5672720	activated RAF:scaffold:MAP2K:MAPK complex [plasma membrane]	Complex	POS	AND
+5672972_5672720_5672978	5672720	activated RAF:scaffold:MAP2K:MAPK complex [plasma membrane]	Complex	5672978	5672978	RAF phosphorylates MAP2K dimer	Reaction	POS	AND
+5672972	5672972	MAP2Ks and MAPKs bind to the activated RAF complex	Reaction	5672972_5672720_9657599	5672720	activated RAF:scaffold:MAP2K:MAPK complex [plasma membrane]	Complex	POS	AND
+5672972_5672720_9657599	5672720	activated RAF:scaffold:MAP2K:MAPK complex [plasma membrane]	Complex	9657599	9657599	Dual mechanism MAP2K inhibitors bind MAP2Ks	Reaction	POS	AND
+5658435	5658435	RAS GAPs bind RAS:GTP	Reaction	5658435_5658227_5658231	5658227	p21 RAS:GTP:RAS GAPs [plasma membrane]	Complex	POS	AND
+5658435_5658227_5658231	5658227	p21 RAS:GTP:RAS GAPs [plasma membrane]	Complex	5658231	5658231	RAS GAPs stimulate RAS GTPase activity	Reaction	POS	AND
+5672948	5672948	MARK3 phosphorylates KSR1	Reaction	5672948_5672695_5672954	5672695	p-S311,S406 KSR1:MARK3 [cytosol]	Complex	POS	AND
+5672948_5672695_5672954	5672695	p-S311,S406 KSR1:MARK3 [cytosol]	Complex	5672954	5672954	p-S311,S406 KSR1:MARK3 binds YWHAB dimer	Reaction	POS	AND
+9647999	9647999	RCE1 cleaves S-Farn proRAS proteins	Reaction	9647999_9647959_9647977	9647959	S-Farn-RAS [endoplasmic reticulum membrane]	DefinedSet	POS	AND
+9647999_9647959_9647977	9647959	S-Farn-RAS [endoplasmic reticulum membrane]	DefinedSet	9647977	9647977	ICMT methylates S-Farn RAS proteins	Reaction	POS	AND
+5672961	5672961	PP2A dephosphorylates inactive RAFs	Reaction	5672961_5672728_5672960	5672728	dephosphorylated inactive RAFS:YWHAB dimer [cytosol]	Complex	POS	AND
+5672961_5672728_5672960	5672728	dephosphorylated inactive RAFS:YWHAB dimer [cytosol]	Complex	5672960	5672960	YWHAB dimer dissociates from dephosphorylated RAF	Reaction	POS	AND
+9649735	9649735	Intrinsic nucleotide exchange on RAS	Reaction	9649735_109783_9649736	109783	p21 RAS:GTP [plasma membrane]	Complex	POS	AND
+9649735_109783_9649736	109783	p21 RAS:GTP [plasma membrane]	Complex	9649736	9649736	RAS intrinsic GTPase activity hydrolyzes GTP to GDP	Reaction	POS	AND
+5658438	5658438	SPRED dimer binds NF1	Reaction	5658438_5658232_5658424	5658232	SPRED dimer:NF1 [plasma membrane]	Complex	POS	AND
+5658438_5658232_5658424	5658232	SPRED dimer:NF1 [plasma membrane]	Complex	5658424	5658424	KBTBD7:CUL3:RBX1 ubiquitinates NF1	Reaction	POS	AND
+5672969	5672969	Phosphorylation of RAF	Reaction	5672969_5672718_5672972	5672718	p21 RAS:GTP:activated RAF homo/heterodimer complexes [plasma membrane]	Complex	POS	AND
+5672969_5672718_5672972	5672718	p21 RAS:GTP:activated RAF homo/heterodimer complexes [plasma membrane]	Complex	5672972	5672972	MAP2Ks and MAPKs bind to the activated RAF complex	Reaction	POS	AND
+5674385	5674385	p-T,Y MAPKs dimerize	Reaction	5674385_1268261_9635743	1268261	p-T,Y MAPK dimers [cytosol]	DefinedSet	POS	AND
+5674385_1268261_9635743	1268261	p-T,Y MAPK dimers [cytosol]	DefinedSet	9635743	9635743	PTPN7 binds p-T,Y-MAPK	Reaction	POS	AND
+5672980	5672980	Dissociation of RAS:RAF complex	Reaction	5672980_5672721_5674366	5672721	p-2S MAP2K homo/heterodimers [cytosol]	DefinedSet	POS	AND
+5672980_5672721_5674366	5672721	p-2S MAP2K homo/heterodimers [cytosol]	DefinedSet	5674366	5674366	IL17RD binds p-2S MAP2Ks and MAPKs	Reaction	POS	AND
+5672980	5672980	Dissociation of RAS:RAF complex	Reaction	5672980_169289_5674385	169289	p-T,Y MAPKs [cytosol]	DefinedSet	POS	AND
+5672980_169289_5674385	169289	p-T,Y MAPKs [cytosol]	DefinedSet	5674385	5674385	p-T,Y MAPKs dimerize	Reaction	POS	AND
+9654525	9654525	PDE6D binds S-Farn-Me KRAS4B:CALM:4 Ca2+	Reaction	9654525_9654515_9654523	9654515	S-Farn-Me KRAS4B:CALM1:4xCa2+:PDE6D [cytosol]	Complex	POS	AND
+9654525_9654515_9654523	9654515	S-Farn-Me KRAS4B:CALM1:4xCa2+:PDE6D [cytosol]	Complex	9654523	9654523	ARL2:GTP bind PDE6D on KRAS4B	Reaction	POS	AND
+5672965	5672965	RAS GEFs promote RAS nucleotide exchange	Reaction	5672965_109783_9658253	109783	p21 RAS:GTP [plasma membrane]	Complex	POS	AND
+5672965_109783_9658253	109783	p21 RAS:GTP [plasma membrane]	Complex	9658253	9658253	RAS:GTP binds PI3K	Reaction	POS	AND
+5672965	5672965	RAS GEFs promote RAS nucleotide exchange	Reaction	5672965_109783_5672950	109783	p21 RAS:GTP [plasma membrane]	Complex	POS	AND
+5672965_109783_5672950	109783	p21 RAS:GTP [plasma membrane]	Complex	5672950	5672950	"""Activator"" RAF:YWHAB dimer binds RAS:GTP"	Reaction	POS	AND
+5675433	5675433	PP5 dephosphorylates RAF1 S338	Reaction	5675433_5675430_5675431	5675430	p21RAS:GTP:dephosphorylated RAF1 homo/heterodimer [plasma membrane]	Complex	POS	AND
+5675433_5675430_5675431	5675430	p21RAS:GTP:dephosphorylated RAF1 homo/heterodimer [plasma membrane]	Complex	5675431	5675431	PP2A dephosphorylates RAF1	Reaction	POS	AND
+5672957	5672957	PP2A dephosphorylates KSR1	Reaction	5672957_5672692_5672958	5672692	p-S311 KSR1:MARK3:YWHAB dimer [plasma membrane]	Complex	POS	AND
+5672957_5672692_5672958	5672692	p-S311 KSR1:MARK3:YWHAB dimer [plasma membrane]	Complex	5672958	5672958	YWHAB dimer dissociates from KSR1:MARK3	Reaction	POS	AND
+9647978	9647978	pro-RAS proteins are farnesylated	Reaction	9647978_9647956_9647999	9647956	S-Farn-proRAS [endoplasmic reticulum membrane]	DefinedSet	POS	AND
+9647978_9647956_9647999	9647956	S-Farn-proRAS [endoplasmic reticulum membrane]	DefinedSet	9647999	9647999	RCE1 cleaves S-Farn proRAS proteins	Reaction	POS	AND
+8867654	8867654	PTPN3 binds p-T183,Y185 MAPK12	Reaction	8867654_8867651_8867658	8867651	PTPN3:p-T183,Y185-MAPK12 [cytosol]	Complex	POS	AND
+8867654_8867651_8867658	8867651	PTPN3:p-T183,Y185-MAPK12 [cytosol]	Complex	8867658	8867658	PTPN3 dephosphorylates MAPK12	Reaction	POS	AND
+5672973	5672973	MAP2Ks phosphorylate MAPKs	Reaction	5672973_5672724_9657608	5672724	activated RAF:scaffold:p-2S MAP2K:p-2T MAPK complex [plasma membrane]	Complex	POS	AND
+5672973_5672724_9657608	5672724	activated RAF:scaffold:p-2S MAP2K:p-2T MAPK complex [plasma membrane]	Complex	9657608	9657608	Single mechanism MAPK inhibitors bind phosphorylated MAPK	Reaction	POS	AND
+5672973	5672973	MAP2Ks phosphorylate MAPKs	Reaction	5672973_5672724_5672980	5672724	activated RAF:scaffold:p-2S MAP2K:p-2T MAPK complex [plasma membrane]	Complex	POS	AND
+5672973_5672724_5672980	5672724	activated RAF:scaffold:p-2S MAP2K:p-2T MAPK complex [plasma membrane]	Complex	5672980	5672980	Dissociation of RAS:RAF complex	Reaction	POS	AND
+9649733	9649733	mature p21 RAS binds GDP	Reaction	9649733_109796_9649735	109796	p21 RAS:GDP [plasma membrane]	Complex	POS	AND
+9649733_109796_9649735	109796	p21 RAS:GDP [plasma membrane]	Complex	9649735	9649735	Intrinsic nucleotide exchange on RAS	Reaction	POS	AND
+5672966	5672966	RAS:GTP:'activator' RAF homo/heterodimerizes with other RAF monomers	Reaction	5672966_5672733_9653108	5672733	p21 RAS:GTP:homo/heterodimerized RAF complex [plasma membrane]	Complex	POS	AND
+5672966_5672733_9653108	5672733	p21 RAS:GTP:homo/heterodimerized RAF complex [plasma membrane]	Complex	9653108	9653108	Raf dimer inhibitors bind RAF heterodimers	Reaction	POS	AND
+5672966	5672966	RAS:GTP:'activator' RAF homo/heterodimerizes with other RAF monomers	Reaction	5672966_5672733_5672969	5672733	p21 RAS:GTP:homo/heterodimerized RAF complex [plasma membrane]	Complex	POS	AND
+5672966_5672733_5672969	5672733	p21 RAS:GTP:homo/heterodimerized RAF complex [plasma membrane]	Complex	5672969	5672969	Phosphorylation of RAF	Reaction	POS	AND
+9649736	9649736	RAS intrinsic GTPase activity hydrolyzes GTP to GDP	Reaction	9649736_109796_9649735	109796	p21 RAS:GDP [plasma membrane]	Complex	POS	AND
+9649736_109796_9649735	109796	p21 RAS:GDP [plasma membrane]	Complex	9649735	9649735	Intrinsic nucleotide exchange on RAS	Reaction	POS	AND
+5672705	5672705	p-2S MAP2K1:p-2S MAPK2K2 heterodimer [cytosol]	Complex	5674496	5674496	Activated MAPKs phosphorylate MAP2K1	Reaction	POS	AND
+9657570	9657570	dual mechanism MAPK inhibitors [cytosol]	CandidateSet	9657603	9657603	Dual mechanism MAPK inhibitors bind MAPKs	Reaction	POS	AND
+109796	109796	p21 RAS:GDP [plasma membrane]	Complex	5672965	5672965	RAS GEFs promote RAS nucleotide exchange	Reaction	POS	AND
+5672731_5672966	5672731	"dephosphorylated ""receiver"" RAF/KSR1 [cytosol]"	DefinedSet	5672966	5672966	RAS:GTP:'activator' RAF homo/heterodimerizes with other RAF monomers	Reaction	POS	AND
+9657574	9657574	single mechanism MAP2K1/2 inhibitors [cytosol]	CandidateSet	9657606	9657606	Single mechanism MAP2K inhibitors bind phosphorylated MAP2Ks	Reaction	POS	AND
+9647780	9647780	PolyUb-RCE1 [endoplasmic reticulum membrane]	EntityWithAccessionedSequence	9653514	9653514	USP17L2 deubiquitinates RCE1	Reaction	POS	AND
+9657577	9657577	single mechanism MAPK inhibitors [cytosol]	CandidateSet	9657608	9657608	Single mechanism MAPK inhibitors bind phosphorylated MAPK	Reaction	POS	AND
+169291	169291	MAPKs [cytosol]	DefinedSet	5672972	5672972	MAP2Ks and MAPKs bind to the activated RAF complex	Reaction	POS	AND
+5672716	5672716	MAP2K homo/heterodimers [cytosol]	DefinedSet	5672972	5672972	MAP2Ks and MAPKs bind to the activated RAF complex	Reaction	POS	AND
+5672717	5672717	RAF/MAPK scaffolds [cytosol]	CandidateSet	5672972	5672972	MAP2Ks and MAPKs bind to the activated RAF complex	Reaction	POS	AND
+9660479	9660479	RAL GDS proteins [cytosol]	DefinedSet	9660557	9660557	RAS:GTP binds RAL GDS proteins	Reaction	POS	AND
+9660551	9660551	S-Farn-Me-2xPalmS HRAS:GTP [plasma membrane]	Complex	9660557	9660557	RAS:GTP binds RAL GDS proteins	Reaction	POS	AND
+74693	74693	PI3K [cytosol]	Complex	9658253	9658253	RAS:GTP binds PI3K	Reaction	POS	AND
+9647934	9647934	Palmostatin B [cytosol]	Drug	9647991	9647991	Palmostatin B binds RAS depalmitoylases	Reaction	POS	AND
+9647946	9647946	LYPLA1 dimer, ABHD17A,B,C [plasma membrane]	DefinedSet	9647991	9647991	Palmostatin B binds RAS depalmitoylases	Reaction	POS	AND
+5674136	5674136	activated RAF homo/heterodimer [cytosol]	Complex	5674132	5674132	WDR83:LAMTOR2:LAMTOR3 binds MAPK components	Reaction	POS	AND
+5672716	5672716	MAP2K homo/heterodimers [cytosol]	DefinedSet	5674132	5674132	WDR83:LAMTOR2:LAMTOR3 binds MAPK components	Reaction	POS	AND
+169291	169291	MAPKs [cytosol]	DefinedSet	5674132	5674132	WDR83:LAMTOR2:LAMTOR3 binds MAPK components	Reaction	POS	AND
+5674133	5674133	WDR83:LAMTOR2:LAMTOR3 [endosome membrane]	Complex	5674132	5674132	WDR83:LAMTOR2:LAMTOR3 binds MAPK components	Reaction	POS	AND
+8867651	8867651	PTPN3:p-T183,Y185-MAPK12 [cytosol]	Complex	8868118	8868118	MAPK12 phosphorylates PTPN3	Reaction	POS	AND
+61487	61487	PEBP1 [cytosol]	EntityWithAccessionedSequence	5675417	5675417	PEBP1 binds activated RAF1	Reaction	POS	AND
+5675414	5675414	p21RAS:GTP:activated RAF1 homo/heterodimer [plasma membrane]	Complex	5675417	5675417	PEBP1 binds activated RAF1	Reaction	POS	AND
+5672708	5672708	inactive RAFs [cytosol]	DefinedSet	5674140	5674140	PAQR3 binds inactive RAFs	Reaction	POS	AND
+5674103	5674103	PAQR3 [Golgi membrane]	EntityWithAccessionedSequence	5674140	5674140	PAQR3 binds inactive RAFs	Reaction	POS	AND
+9647962	9647962	S-Farn-Me-PalmS KRAS4A, HRAS, NRAS [plasma membrane]	DefinedSet	9647994	9647994	RAS proteins are depalmitoylated	Reaction	POS	AND
+9635737	9635737	PTPN7 [cytosol]	EntityWithAccessionedSequence	9635743	9635743	PTPN7 binds p-T,Y-MAPK	Reaction	POS	AND
+5672938	5672938	BRAP [cytosol]	EntityWithAccessionedSequence	5674018	5674018	BRAP binds RAS:GTP	Reaction	POS	AND
+109783	109783	p21 RAS:GTP [plasma membrane]	Complex	5674018	5674018	BRAP binds RAS:GTP	Reaction	POS	AND
+5672938	5672938	BRAP [cytosol]	EntityWithAccessionedSequence	5674019	5674019	BRAP binds KSR1:MARK3	Reaction	POS	AND
+5672689	5672689	KSR1:MARK3 [cytosol]	Complex	5674019	5674019	BRAP binds KSR1:MARK3	Reaction	POS	AND
+169291	169291	MAPKs [cytosol]	DefinedSet	5674366	5674366	IL17RD binds p-2S MAP2Ks and MAPKs	Reaction	POS	AND
+5674277	5674277	IL17RD [Golgi membrane]	EntityWithAccessionedSequence	5674366	5674366	IL17RD binds p-2S MAP2Ks and MAPKs	Reaction	POS	AND
+113595	113595	Ub [cytosol]	DefinedSet	5674022	5674022	BRAP autoubiquitinates	Reaction	POS	AND
+5675414	5675414	p21RAS:GTP:activated RAF1 homo/heterodimer [plasma membrane]	Complex	5675433	5675433	PP5 dephosphorylates RAF1 S338	Reaction	POS	AND
+113595	113595	Ub [cytosol]	DefinedSet	5658424	5658424	KBTBD7:CUL3:RBX1 ubiquitinates NF1	Reaction	POS	AND
+5672665	5672665	p-S338,Y341,T491,S494,S621 RAF1 [plasma membrane]	EntityWithAccessionedSequence	5675194	5675194	Activated MAPK phosphorylates RAF1	Reaction	POS	AND
+5672679	5672679	p-S445,T599,S602,S729 BRAF [plasma membrane]	EntityWithAccessionedSequence	5675198	5675198	Activated MAPKs phosphorylate BRAF	Reaction	POS	AND
+5658216	5658216	RAS GAPs [cytosol]	DefinedSet	5658435	5658435	RAS GAPs bind RAS:GTP	Reaction	POS	AND
+109783	109783	p21 RAS:GTP [plasma membrane]	Complex	5658435	5658435	RAS GAPs bind RAS:GTP	Reaction	POS	AND
+9649715	9649715	mature p21 RAS [plasma membrane]	DefinedSet	9649733	9649733	mature p21 RAS binds GDP	Reaction	POS	AND
+5658219	5658219	SPRED dimer [plasma membrane]	CandidateSet	5658438	5658438	SPRED dimer binds NF1	Reaction	POS	AND
+947770	947770	NF1(2-2839) [cytosol]	EntityWithAccessionedSequence	5658438	5658438	SPRED dimer binds NF1	Reaction	POS	AND
+6788652	6788652	ICMT:Zn2+ [endoplasmic reticulum membrane]	Complex	9656775	9656775	Cysmethynil binds ICMT:Zn2+	Reaction	POS	AND
+9656757	9656757	Cysmethynil [cytosol]	Drug	9656775	9656775	Cysmethynil binds ICMT:Zn2+	Reaction	POS	AND
+5674340_5675206	5674340	p-T,Y MAPK monomers and dimers [cytosol]	DefinedSet	5675206	5675206	PEA15 binds MAPK monomers and dimers	Reaction	POS	AND
+5675204	5675204	PEA15 [cytosol]	EntityWithAccessionedSequence	5675206	5675206	PEA15 binds MAPK monomers and dimers	Reaction	POS	AND
+171021	171021	p-T183,Y185-MAPK12 [cytosol]	EntityWithAccessionedSequence	8867654	8867654	PTPN3 binds p-T183,Y185 MAPK12	Reaction	POS	AND
+8867650	8867650	PTPN3 [cytosol]	EntityWithAccessionedSequence	8867654	8867654	PTPN3 binds p-T183,Y185 MAPK12	Reaction	POS	AND
+9656761	9656761	Deltarasin [cytosol]	Drug	9656781	9656781	Deltarasin binds PDE6D	Reaction	POS	AND
+2565921	2565921	PDE6D [cytosol]	EntityWithAccessionedSequence	9656781	9656781	Deltarasin binds PDE6D	Reaction	POS	AND
+74294	74294	CALM1:4xCa2+ [cytosol]	Complex	9653585	9653585	S-Farn-Me KRAS4B binds calmodulin	Reaction	POS	AND
+9647815	9647815	S-Farn-Me KRAS4B [plasma membrane]	EntityWithAccessionedSequence	9653585	9653585	S-Farn-Me KRAS4B binds calmodulin	Reaction	POS	AND
+2028645	2028645	YWHAB dimer [cytosol]	Complex	5672951	5672951	Inactive RAFs bind YWHAB	Reaction	POS	AND
+5672708	5672708	inactive RAFs [cytosol]	DefinedSet	5672951	5672951	Inactive RAFs bind YWHAB	Reaction	POS	AND
+114236	114236	BCL2L1 [mitochondrial outer membrane]	EntityWithAccessionedSequence	9653595	9653595	pS181-S-Farn-Me KRAS4B binds BCL2L1	Reaction	POS	AND
+9653578	9653578	pS181-S-Farn-Me KRAS4B [mitochondrial outer membrane]	EntityWithAccessionedSequence	9653595	9653595	pS181-S-Farn-Me KRAS4B binds BCL2L1	Reaction	POS	AND
+9647815	9647815	S-Farn-Me KRAS4B [plasma membrane]	EntityWithAccessionedSequence	9653503	9653503	KRAS4B is phosphorylated on serine 181	Reaction	POS	AND
+9657567	9657567	dual mechanism MAP2K1/2 inhibitors [cytosol]	CandidateSet	9657599	9657599	Dual mechanism MAP2K inhibitors bind MAP2Ks	Reaction	POS	AND
+9647953	9647953	pro-RAS [cytosol]	DefinedSet	9647978	9647978	pro-RAS proteins are farnesylated	Reaction	POS	AND
+5674341	5674341	p-T,Y MAPK monomers and dimers [nucleoplasm]	DefinedSet	5675373	5675373	Nuclear DUSPs dephosphorylate MAPKs	Reaction	POS	AND
+9647973	9647973	S-Farn Me KRAS4A, HRAS, NRAS [endoplasmic reticulum membrane]	DefinedSet	9647982	9647982	S-farn Me-HRAS, -NRAS and -KRAS4A are palmitoylated	Reaction	POS	AND
+5674340	5674340	p-T,Y MAPK monomers and dimers [cytosol]	DefinedSet	5675376	5675376	Cytosolic DUSPs dephosphorylate MAPKs	Reaction	POS	AND
+2530496	2530496	FNTA:FNTB [cytosol]	Complex	9647987	9647987	FNTB inhibitors bind FNTA:FNTB	Reaction	POS	AND
+9653479	9653479	FNTB inhibitors [cytosol]	DefinedSet	9647987	9647987	FNTB inhibitors bind FNTA:FNTB	Reaction	POS	AND
+9657579	9657579	RAF dimer inhibitors [cytosol]	DefinedSet	9653108	9653108	Raf dimer inhibitors bind RAF heterodimers	Reaction	POS	AND
+5672689	5672689	KSR1:MARK3 [cytosol]	Complex	5672948	5672948	MARK3 phosphorylates KSR1	Reaction	POS	AND
+5672710	5672710	'activator' RAF:YWHAB dimer [cytosol]	Complex	5672950	5672950	"""Activator"" RAF:YWHAB dimer binds RAS:GTP"	Reaction	POS	AND
+2565921	2565921	PDE6D [cytosol]	EntityWithAccessionedSequence	9654525	9654525	PDE6D binds S-Farn-Me KRAS4B:CALM:4 Ca2+	Reaction	POS	AND
+9654512	9654512	S-Farn-Me KRAS4B:CALM1:4xCa2+ [cytosol]	Complex	9654525	9654525	PDE6D binds S-Farn-Me KRAS4B:CALM:4 Ca2+	Reaction	POS	AND
+2028645	2028645	YWHAB dimer [cytosol]	Complex	5672954	5672954	p-S311,S406 KSR1:MARK3 binds YWHAB dimer	Reaction	POS	AND
+5250197	5250197	ARL2:GTP [cytosol]	Complex	9654523	9654523	ARL2:GTP bind PDE6D on KRAS4B	Reaction	POS	AND
+5672960	5672960	YWHAB dimer dissociates from dephosphorylated RAF	Reaction	2028645_output	2028645	YWHAB dimer [cytosol]	Complex	POS	AND
+5672960	5672960	YWHAB dimer dissociates from dephosphorylated RAF	Reaction	5672726_output	5672726	dephosphorylated inactive RAFs [cytosol]	DefinedSet	POS	AND
+5672961	5672961	PP2A dephosphorylates inactive RAFs	Reaction	5672728_output	5672728	dephosphorylated inactive RAFS:YWHAB dimer [cytosol]	Complex	POS	AND
+5674496	5674496	Activated MAPKs phosphorylate MAP2K1	Reaction	5674489_output	5674489	p-2S,T MAP2K1:p-2S MAPK2K2 heterodimer [cytosol]	Complex	POS	AND
+9657603	9657603	Dual mechanism MAPK inhibitors bind MAPKs	Reaction	9657603_9657590	9657590	activated RAF:scaffold:p-2S MAP2K:MAPK:dual mechanism MAPK inhibitors [plasma membrane]	Complex	POS	AND
+5672965	5672965	RAS GEFs promote RAS nucleotide exchange	Reaction	5672965_109783	109783	p21 RAS:GTP [plasma membrane]	Complex	POS	AND
+5672966	5672966	RAS:GTP:'activator' RAF homo/heterodimerizes with other RAF monomers	Reaction	5672733_output	5672733	p21 RAS:GTP:homo/heterodimerized RAF complex [plasma membrane]	Complex	POS	AND
+5674373	5674373	MAP2Ks phosphorylate MAPK at the Golgi membrane	Reaction	5674362_output	5674362	IL17RD:p-2S MAP2Ks:p-T,Y MAPKs [Golgi membrane]	Complex	POS	AND
+9657606	9657606	Single mechanism MAP2K inhibitors bind phosphorylated MAP2Ks	Reaction	9657606_9657587	9657587	activated RAF:scaffold:p-2S  MAP2K:MAPK:single mechanism MAP2K inhibitors [plasma membrane]	Complex	POS	AND
+5672969	5672969	Phosphorylation of RAF	Reaction	5672718_output	5672718	p21 RAS:GTP:activated RAF homo/heterodimer complexes [plasma membrane]	Complex	POS	AND
+9653514	9653514	USP17L2 deubiquitinates RCE1	Reaction	5689096_output	5689096	PolyUb [cytosol]	DefinedSet	POS	AND
+9653514	9653514	USP17L2 deubiquitinates RCE1	Reaction	9656592_output	9656592	RCE1 [endoplasmic reticulum membrane]	EntityWithAccessionedSequence	POS	AND
+9657608	9657608	Single mechanism MAPK inhibitors bind phosphorylated MAPK	Reaction	9657592_output	9657592	activated RAF:scaffold:p-2S MAP2K:p-2T MAPK:single mechanism MAPK inhibitors [plasma membrane]	Complex	POS	AND
+5672972	5672972	MAP2Ks and MAPKs bind to the activated RAF complex	Reaction	5672972_5672720	5672720	activated RAF:scaffold:MAP2K:MAPK complex [plasma membrane]	Complex	POS	AND
+9660557	9660557	RAS:GTP binds RAL GDS proteins	Reaction	9660554_output	9660554	S-Farn-Me_2xPalmS HRAS:GTP:RAL GDS proteins [plasma membrane]	Complex	POS	AND
+9658253	9658253	RAS:GTP binds PI3K	Reaction	9658249_output	9658249	p21 RAS:GTP:PI3K [plasma membrane]	Complex	POS	AND
+9647991	9647991	Palmostatin B binds RAS depalmitoylases	Reaction	9647991_9647947	9647947	Palmostatin B:LYPLA1 dimer, ABHD17A,B,C [cytosol]	Complex	POS	AND
+5672973	5672973	MAP2Ks phosphorylate MAPKs	Reaction	5672724_output	5672724	activated RAF:scaffold:p-2S MAP2K:p-2T MAPK complex [plasma membrane]	Complex	POS	AND
+5674385	5674385	p-T,Y MAPKs dimerize	Reaction	5674385_1268261	1268261	p-T,Y MAPK dimers [cytosol]	DefinedSet	POS	AND
+5672978	5672978	RAF phosphorylates MAP2K dimer	Reaction	5672978_5672723	5672723	activated RAF:scaffold:p-2S MAP2K:MAPK complex [plasma membrane]	Complex	POS	AND
+5672980	5672980	Dissociation of RAS:RAF complex	Reaction	5672712_output	5672712	p21RAS:GTP:activated RAF homo/heterodimers [plasma membrane]	Complex	POS	AND
+5672980	5672980	Dissociation of RAS:RAF complex	Reaction	5672717_output	5672717	RAF/MAPK scaffolds [cytosol]	CandidateSet	POS	AND
+5672980	5672980	Dissociation of RAS:RAF complex	Reaction	169289_output	169289	p-T,Y MAPKs [cytosol]	DefinedSet	POS	AND
+5672980	5672980	Dissociation of RAS:RAF complex	Reaction	5672721_output	5672721	p-2S MAP2K homo/heterodimers [cytosol]	DefinedSet	POS	AND
+5674132	5674132	WDR83:LAMTOR2:LAMTOR3 binds MAPK components	Reaction	5674138_output	5674138	WDR83:LAMTOR2:LAMTOR3:activated RAF:MAP2K:MAPK complex [endosome membrane]	Complex	POS	AND
+8868118	8868118	MAPK12 phosphorylates PTPN3	Reaction	8868113_output	8868113	p-S459 PTPN3:p-T183,Y185-MAPK12 [cytosol]	Complex	POS	AND
+5675417	5675417	PEBP1 binds activated RAF1	Reaction	5675417_5675413	5675413	p21 RAS:GTP:activated RAF1 homo/heterodimer:PEBP1 [plasma membrane]	Complex	POS	AND
+9635739	9635739	PTPN7 dephosphorylates p-T,Y-MAPKs	Reaction	9635774_output	9635774	PTPN7:p-T-MAPK dimers [cytosol]	Complex	POS	AND
+5674140	5674140	PAQR3 binds inactive RAFs	Reaction	5674139_output	5674139	PAQR3:inactive RAFs [Golgi membrane]	Complex	POS	AND
+9647994	9647994	RAS proteins are depalmitoylated	Reaction	9647970_output	9647970	S-Farn-Me KRAS4A, HRAS, NRAS [plasma membrane]	DefinedSet	POS	AND
+9635743	9635743	PTPN7 binds p-T,Y-MAPK	Reaction	9635743_9635740	9635740	PTPN7:p-T,Y-MAPK dimers [cytosol]	Complex	POS	AND
+5674018	5674018	BRAP binds RAS:GTP	Reaction	5674018_5674003	5674003	p21 RAS:GTP:BRAP [plasma membrane]	Complex	POS	AND
+5674019	5674019	BRAP binds KSR1:MARK3	Reaction	5674019_5674011	5674011	BRAP:KSR1:MARK3 [cytosol]	Complex	POS	AND
+5674366	5674366	IL17RD binds p-2S MAP2Ks and MAPKs	Reaction	5674366_5674360	5674360	IL17RD:p-2S MAP2Ks:MAPKs [Golgi membrane]	Complex	POS	AND
+5674022	5674022	BRAP autoubiquitinates	Reaction	5674005_output	5674005	p21 RAS:GTP:ub-BRAP [plasma membrane]	Complex	POS	AND
+5675431	5675431	PP2A dephosphorylates RAF1	Reaction	5675412_output	5675412	p21RAS:GTP:p-S621 RAF1 homo/heterodimer [plasma membrane]	Complex	POS	AND
+5675433	5675433	PP5 dephosphorylates RAF1 S338	Reaction	5675430_output	5675430	p21RAS:GTP:dephosphorylated RAF1 homo/heterodimer [plasma membrane]	Complex	POS	AND
+5658424	5658424	KBTBD7:CUL3:RBX1 ubiquitinates NF1	Reaction	5658420_output	5658420	SPRED dimer:ub-NF1 [plasma membrane]	Complex	POS	AND
+5675194	5675194	Activated MAPK phosphorylates RAF1	Reaction	5675194_5675193	5675193	hyperphosphorylated RAF1 [plasma membrane]	EntityWithAccessionedSequence	POS	AND
+5675198	5675198	Activated MAPKs phosphorylate BRAF	Reaction	5675199_output	5675199	hyperphosphorylated BRAF [plasma membrane]	EntityWithAccessionedSequence	POS	AND
+5658435	5658435	RAS GAPs bind RAS:GTP	Reaction	5658435_5658227	5658227	p21 RAS:GTP:RAS GAPs [plasma membrane]	Complex	POS	AND
+9649733	9649733	mature p21 RAS binds GDP	Reaction	109796_output	109796	p21 RAS:GDP [plasma membrane]	Complex	POS	AND
+5658438	5658438	SPRED dimer binds NF1	Reaction	5658232_output	5658232	SPRED dimer:NF1 [plasma membrane]	Complex	POS	AND
+9649735	9649735	Intrinsic nucleotide exchange on RAS	Reaction	9649735_109783	109783	p21 RAS:GTP [plasma membrane]	Complex	POS	AND
+9649736	9649736	RAS intrinsic GTPase activity hydrolyzes GTP to GDP	Reaction	109796_output	109796	p21 RAS:GDP [plasma membrane]	Complex	POS	AND
+9656775	9656775	Cysmethynil binds ICMT:Zn2+	Reaction	9656775_9656776	9656776	ICMT:Zn2+:Cysmethynil [endoplasmic reticulum membrane]	Complex	POS	AND
+5675206	5675206	PEA15 binds MAPK monomers and dimers	Reaction	5675205_output	5675205	p-T,Y MAPK monomers and dimers:PEA15 [cytosol]	Complex	POS	AND
+8867658	8867658	PTPN3 dephosphorylates MAPK12	Reaction	8867650_output	8867650	PTPN3 [cytosol]	EntityWithAccessionedSequence	POS	AND
+8867658	8867658	PTPN3 dephosphorylates MAPK12	Reaction	171025_output	171025	MAPK12 [cytosol]	EntityWithAccessionedSequence	POS	AND
+8867654	8867654	PTPN3 binds p-T183,Y185 MAPK12	Reaction	8867654_8867651	8867651	PTPN3:p-T183,Y185-MAPK12 [cytosol]	Complex	POS	AND
+9658445	9658445	MRAS:SHOC2:PPP1CC dephosphorylates inactive RAFs	Reaction	5672728_output	5672728	dephosphorylated inactive RAFS:YWHAB dimer [cytosol]	Complex	POS	AND
+9656781	9656781	Deltarasin binds PDE6D	Reaction	9656781_9656780	9656780	PDE6D:Deltarasin [cytosol]	Complex	POS	AND
+9653585	9653585	S-Farn-Me KRAS4B binds calmodulin	Reaction	9653583_output	9653583	S-Farn-Me KRAS4B:CALM1:4xCa2+ [plasma membrane]	Complex	POS	AND
+5672951	5672951	Inactive RAFs bind YWHAB	Reaction	5672707_output	5672707	inactive RAFs:YWHAB dimer [cytosol]	Complex	POS	AND
+9653595	9653595	pS181-S-Farn-Me KRAS4B binds BCL2L1	Reaction	9653576_output	9653576	p-S181-S-Farn-Me KRAS4B:BCL2L1 [mitochondrial outer membrane]	Complex	POS	AND
+9653503	9653503	KRAS4B is phosphorylated on serine 181	Reaction	9653503_9653482	9653482	pS181-S-Farn-Me KRAS4B [plasma membrane]	EntityWithAccessionedSequence	POS	AND
+9657599	9657599	Dual mechanism MAP2K inhibitors bind MAP2Ks	Reaction	9657599_9657583	9657583	activated RAF:scaffold:MAP2K:MAPK complex:dual mechanism MAP2K inhibitors [plasma membrane]	Complex	POS	AND
+9647977	9647977	ICMT methylates S-Farn RAS proteins	Reaction	9647965_output	9647965	S-Farn-Me RAS [endoplasmic reticulum membrane]	DefinedSet	POS	AND
+9647978	9647978	pro-RAS proteins are farnesylated	Reaction	9647956_output	9647956	S-Farn-proRAS [endoplasmic reticulum membrane]	DefinedSet	POS	AND
+5675373	5675373	Nuclear DUSPs dephosphorylate MAPKs	Reaction	5675363_output	5675363	MAPK monomers and dimers [nucleoplasm]	DefinedSet	POS	AND
+9647982	9647982	S-farn Me-HRAS, -NRAS and -KRAS4A are palmitoylated	Reaction	9647967_output	9647967	S-Farn-Me PalmS KRAS4A,HRAS, NRAS [Golgi membrane]	DefinedSet	POS	AND
+5675376	5675376	Cytosolic DUSPs dephosphorylate MAPKs	Reaction	5675361_output	5675361	MAPK monomers and dimers [cytosol]	DefinedSet	POS	AND
+9647987	9647987	FNTB inhibitors bind FNTA:FNTB	Reaction	9647987_9647944	9647944	FNTA:FNTB:FTase inhibitors [cytosol]	Complex	POS	AND
+9653108	9653108	Raf dimer inhibitors bind RAF heterodimers	Reaction	9653108_9653109	9653109	p21RAS:GTP:homo/heterodimerized RAF complex:RAF dimer inhibitors [plasma membrane]	Complex	POS	AND
+5672948	5672948	MARK3 phosphorylates KSR1	Reaction	5672695_output	5672695	p-S311,S406 KSR1:MARK3 [cytosol]	Complex	POS	AND
+5672950	5672950	"""Activator"" RAF:YWHAB dimer binds RAS:GTP"	Reaction	5672729_output	5672729	p21 RAS:GTP:'activator' RAF:YWHAB dimer [plasma membrane]	Complex	POS	AND
+5658231	5658231	RAS GAPs stimulate RAS GTPase activity	Reaction	5658216_output	5658216	RAS GAPs [cytosol]	DefinedSet	POS	AND
+5658231	5658231	RAS GAPs stimulate RAS GTPase activity	Reaction	109796_output	109796	p21 RAS:GDP [plasma membrane]	Complex	POS	AND
+9654525	9654525	PDE6D binds S-Farn-Me KRAS4B:CALM:4 Ca2+	Reaction	9654515_output	9654515	S-Farn-Me KRAS4B:CALM1:4xCa2+:PDE6D [cytosol]	Complex	POS	AND
+5672954	5672954	p-S311,S406 KSR1:MARK3 binds YWHAB dimer	Reaction	5672696_output	5672696	p-S311,S406 KSR1:MARK3:YWHAB dimer [cytosol]	Complex	POS	AND
+9654523	9654523	ARL2:GTP bind PDE6D on KRAS4B	Reaction	9654518_output	9654518	S-Farn-Me KRAS4B:CALM1:4xCa2+:PDE6D:ARL2:GTP [cytosol]	Complex	POS	AND
+5672957	5672957	PP2A dephosphorylates KSR1	Reaction	5672692_output	5672692	p-S311 KSR1:MARK3:YWHAB dimer [plasma membrane]	Complex	POS	AND
+5672958	5672958	YWHAB dimer dissociates from KSR1:MARK3	Reaction	2028645_output	2028645	YWHAB dimer [cytosol]	Complex	POS	AND
+5672958	5672958	YWHAB dimer dissociates from KSR1:MARK3	Reaction	5672958_5672691	5672691	p-S311 KSR1:MARK3 [cytosol]	Complex	POS	AND
+9647999	9647999	RCE1 cleaves S-Farn proRAS proteins	Reaction	9647959_output	9647959	S-Farn-RAS [endoplasmic reticulum membrane]	DefinedSet	POS	AND
+5672734	5672734	RAF activating kinases [plasma membrane]	CandidateSet	5672970	5672970	protein serine/threonine/tyrosine kinase activity of RAF activating kinases [plasma membrane]	CatalystActivity	POS	AND
+5672970	5672970	protein serine/threonine/tyrosine kinase activity of RAF activating kinases [plasma membrane]	CatalystActivity	5672969	5672969	Phosphorylation of RAF	Reaction	POS	AND
+9658447	9658447	S-GCC MRAS:GTP:SHOC2:PP1 [plasma membrane]	Complex	9658443	9658443	protein serine/threonine phosphatase activity of S-GCC MRAS:GTP:SHOC2:PP1 [plasma membrane]	CatalystActivity	POS	AND
+9658443	9658443	protein serine/threonine phosphatase activity of S-GCC MRAS:GTP:SHOC2:PP1 [plasma membrane]	CatalystActivity	9658445	9658445	MRAS:SHOC2:PPP1CC dephosphorylates inactive RAFs	Reaction	POS	AND
+196206	196206	PP2A [cytosol]	Complex	5672955	5672955	protein serine/threonine phosphatase activity of PP2A [cytosol]	CatalystActivity	POS	AND
+5672955	5672955	protein serine/threonine phosphatase activity of PP2A [cytosol]	CatalystActivity	5672957	5672957	PP2A dephosphorylates KSR1	Reaction	POS	AND
+5672955	5672955	protein serine/threonine phosphatase activity of PP2A [cytosol]	CatalystActivity	5672961	5672961	PP2A dephosphorylates inactive RAFs	Reaction	POS	AND
+5672955	5672955	protein serine/threonine phosphatase activity of PP2A [cytosol]	CatalystActivity	5675431	5675431	PP2A dephosphorylates RAF1	Reaction	POS	AND
+5672689	5672689	KSR1:MARK3 [cytosol]	Complex	5672946	5672946	protein serine/threonine kinase activity of KSR1:MARK3 [cytosol]	CatalystActivity	POS	AND
+5672946	5672946	protein serine/threonine kinase activity of KSR1:MARK3 [cytosol]	CatalystActivity	5672948	5672948	MARK3 phosphorylates KSR1	Reaction	POS	AND
+5658435_5658227_5658231	5658227	p21 RAS:GTP:RAS GAPs [plasma membrane]	Complex	5658230	5658230	GTPase activity of p21 RAS:GTP:RAS GAPs [plasma membrane]	CatalystActivity	POS	AND
+5658435_5658227	5658227	p21 RAS:GTP:RAS GAPs [plasma membrane]	Complex	5658230	5658230	GTPase activity of p21 RAS:GTP:RAS GAPs [plasma membrane]	CatalystActivity	POS	AND
+5658230	5658230	GTPase activity of p21 RAS:GTP:RAS GAPs [plasma membrane]	CatalystActivity	5658231	5658231	RAS GAPs stimulate RAS GTPase activity	Reaction	POS	AND
+5658416	5658416	KBTBD7:CUL3:RBX1 [cytosol]	Complex	5658421	5658421	ubiquitin protein ligase activity of KBTBD7:CUL3:RBX1 [cytosol]	CatalystActivity	POS	AND
+5658421	5658421	ubiquitin protein ligase activity of KBTBD7:CUL3:RBX1 [cytosol]	CatalystActivity	5658424	5658424	KBTBD7:CUL3:RBX1 ubiquitinates NF1	Reaction	POS	AND
+9649735_109783_9649736	109783	p21 RAS:GTP [plasma membrane]	Complex	9649728	9649728	GTPase activity of p21 RAS:GTP [plasma membrane]	CatalystActivity	POS	AND
+109783	109783	p21 RAS:GTP [plasma membrane]	Complex	9649728	9649728	GTPase activity of p21 RAS:GTP [plasma membrane]	CatalystActivity	POS	AND
+5672965_109783	109783	p21 RAS:GTP [plasma membrane]	Complex	9649728	9649728	GTPase activity of p21 RAS:GTP [plasma membrane]	CatalystActivity	POS	AND
+5672965_109783_5672950	109783	p21 RAS:GTP [plasma membrane]	Complex	9649728	9649728	GTPase activity of p21 RAS:GTP [plasma membrane]	CatalystActivity	POS	AND
+9649735_109783	109783	p21 RAS:GTP [plasma membrane]	Complex	9649728	9649728	GTPase activity of p21 RAS:GTP [plasma membrane]	CatalystActivity	POS	AND
+5672965_109783_9658253	109783	p21 RAS:GTP [plasma membrane]	Complex	9649728	9649728	GTPase activity of p21 RAS:GTP [plasma membrane]	CatalystActivity	POS	AND
+9649728	9649728	GTPase activity of p21 RAS:GTP [plasma membrane]	CatalystActivity	9649736	9649736	RAS intrinsic GTPase activity hydrolyzes GTP to GDP	Reaction	POS	AND
+5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	5672963	5672963	guanyl-nucleotide exchange factor activity of RAS GEFs [plasma membrane]	CatalystActivity	POS	AND
+5672963	5672963	guanyl-nucleotide exchange factor activity of RAS GEFs [plasma membrane]	CatalystActivity	5672965	5672965	RAS GEFs promote RAS nucleotide exchange	Reaction	POS	AND
+9647946	9647946	LYPLA1 dimer, ABHD17A,B,C [plasma membrane]	DefinedSet	9647993	9647993	palmitoyl-(protein) hydrolase activity of LYPLA1 dimer, ABHD17A,B,C [plasma membrane]	CatalystActivity	POS	AND
+9647993	9647993	palmitoyl-(protein) hydrolase activity of LYPLA1 dimer, ABHD17A,B,C [plasma membrane]	CatalystActivity	9647994	9647994	RAS proteins are depalmitoylated	Reaction	POS	AND
+9647780	9647780	PolyUb-RCE1 [endoplasmic reticulum membrane]	EntityWithAccessionedSequence	9648000	9648000	cysteine-type endopeptidase activity of PolyUb-RCE1 [endoplasmic reticulum membrane]	CatalystActivity	POS	AND
+9648000	9648000	cysteine-type endopeptidase activity of PolyUb-RCE1 [endoplasmic reticulum membrane]	CatalystActivity	9647999	9647999	RCE1 cleaves S-Farn proRAS proteins	Reaction	POS	AND
+9653487	9653487	PKCZ,PRKG2 [plasma membrane]	DefinedSet	9653502	9653502	protein serine/threonine kinase activity of PKCZ,PRKG2 [plasma membrane]	CatalystActivity	POS	AND
+9653502	9653502	protein serine/threonine kinase activity of PKCZ,PRKG2 [plasma membrane]	CatalystActivity	9653503	9653503	KRAS4B is phosphorylated on serine 181	Reaction	POS	AND
+2530496	2530496	FNTA:FNTB [cytosol]	Complex	2530466	2530466	protein farnesyltransferase activity of FNTA:FNTB [cytosol]	CatalystActivity	POS	AND
+2530466	2530466	protein farnesyltransferase activity of FNTA:FNTB [cytosol]	CatalystActivity	9647978	9647978	pro-RAS proteins are farnesylated	Reaction	POS	AND
+6782780	6782780	USP17L2 [cytosol]	EntityWithAccessionedSequence	9653515	9653515	thiol-dependent deubiquitinase activity of USP17L2 [cytosol]	CatalystActivity	POS	AND
+9653515	9653515	thiol-dependent deubiquitinase activity of USP17L2 [cytosol]	CatalystActivity	9653514	9653514	USP17L2 deubiquitinates RCE1	Reaction	POS	AND
+6788652	6788652	ICMT:Zn2+ [endoplasmic reticulum membrane]	Complex	6788648	6788648	protein C-terminal S-isoprenylcysteine carboxyl O-methyltransferase activity of ICMT:Zn2+ [endoplasmic reticulum membrane]	CatalystActivity	POS	AND
+6788648	6788648	protein C-terminal S-isoprenylcysteine carboxyl O-methyltransferase activity of ICMT:Zn2+ [endoplasmic reticulum membrane]	CatalystActivity	9647977	9647977	ICMT methylates S-Farn RAS proteins	Reaction	POS	AND
+9647941	9647941	ZDHHC9:GOLGA7 [Golgi membrane]	Complex	9647976	9647976	protein-cysteine S-palmitoyltransferase activity of ZDHHC9:GOLGA7 [Golgi membrane]	CatalystActivity	POS	AND
+9647976	9647976	protein-cysteine S-palmitoyltransferase activity of ZDHHC9:GOLGA7 [Golgi membrane]	CatalystActivity	9647982	9647982	S-farn Me-HRAS, -NRAS and -KRAS4A are palmitoylated	Reaction	POS	AND
+5675402	5675402	PPP5C [cytosol]	EntityWithAccessionedSequence	5675410	5675410	protein serine/threonine phosphatase activity of PPP5C [cytosol]	CatalystActivity	POS	AND
+5675410	5675410	protein serine/threonine phosphatase activity of PPP5C [cytosol]	CatalystActivity	5675433	5675433	PP5 dephosphorylates RAF1 S338	Reaction	POS	AND
+5675368	5675368	nuclear MAPK DUSPs [nucleoplasm]	CandidateSet	5675372	5675372	protein tyrosine/serine/threonine phosphatase activity of nuclear MAPK DUSPs [nucleoplasm]	CatalystActivity	POS	AND
+5675372	5675372	protein tyrosine/serine/threonine phosphatase activity of nuclear MAPK DUSPs [nucleoplasm]	CatalystActivity	5675373	5675373	Nuclear DUSPs dephosphorylate MAPKs	Reaction	POS	AND
+5674340_5675206	5674340	p-T,Y MAPK monomers and dimers [cytosol]	DefinedSet	5674493	5674493	protein serine/threonine kinase activity of p-T,Y MAPK monomers and dimers [cytosol]	CatalystActivity	POS	AND
+5674340	5674340	p-T,Y MAPK monomers and dimers [cytosol]	DefinedSet	5674493	5674493	protein serine/threonine kinase activity of p-T,Y MAPK monomers and dimers [cytosol]	CatalystActivity	POS	AND
+5674493	5674493	protein serine/threonine kinase activity of p-T,Y MAPK monomers and dimers [cytosol]	CatalystActivity	5674496	5674496	Activated MAPKs phosphorylate MAP2K1	Reaction	POS	AND
+5674493	5674493	protein serine/threonine kinase activity of p-T,Y MAPK monomers and dimers [cytosol]	CatalystActivity	5675198	5675198	Activated MAPKs phosphorylate BRAF	Reaction	POS	AND
+5674493	5674493	protein serine/threonine kinase activity of p-T,Y MAPK monomers and dimers [cytosol]	CatalystActivity	5675194	5675194	Activated MAPK phosphorylates RAF1	Reaction	POS	AND
+8867654_8867651	8867651	PTPN3:p-T183,Y185-MAPK12 [cytosol]	Complex	8868115	8868115	protein serine/threonine kinase activity of PTPN3:p-T183,Y185-MAPK12 [cytosol]	CatalystActivity	POS	AND
+8867654_8867651_8867658	8867651	PTPN3:p-T183,Y185-MAPK12 [cytosol]	Complex	8868115	8868115	protein serine/threonine kinase activity of PTPN3:p-T183,Y185-MAPK12 [cytosol]	CatalystActivity	POS	AND
+8867651	8867651	PTPN3:p-T183,Y185-MAPK12 [cytosol]	Complex	8868115	8868115	protein serine/threonine kinase activity of PTPN3:p-T183,Y185-MAPK12 [cytosol]	CatalystActivity	POS	AND
+8868115	8868115	protein serine/threonine kinase activity of PTPN3:p-T183,Y185-MAPK12 [cytosol]	CatalystActivity	8868118	8868118	MAPK12 phosphorylates PTPN3	Reaction	POS	AND
+5674018_5674003	5674003	p21 RAS:GTP:BRAP [plasma membrane]	Complex	5674008	5674008	ubiquitin protein ligase activity of p21 RAS:GTP:BRAP [plasma membrane]	CatalystActivity	POS	AND
+5674018_5674003_5674022	5674003	p21 RAS:GTP:BRAP [plasma membrane]	Complex	5674008	5674008	ubiquitin protein ligase activity of p21 RAS:GTP:BRAP [plasma membrane]	CatalystActivity	POS	AND
+5674008	5674008	ubiquitin protein ligase activity of p21 RAS:GTP:BRAP [plasma membrane]	CatalystActivity	5674022	5674022	BRAP autoubiquitinates	Reaction	POS	AND
+8867654_8867651	8867651	PTPN3:p-T183,Y185-MAPK12 [cytosol]	Complex	8867657	8867657	protein tyrosine phosphatase activity of PTPN3:p-T183,Y185-MAPK12 [cytosol]	CatalystActivity	POS	AND
+8867654_8867651_8867658	8867651	PTPN3:p-T183,Y185-MAPK12 [cytosol]	Complex	8867657	8867657	protein tyrosine phosphatase activity of PTPN3:p-T183,Y185-MAPK12 [cytosol]	CatalystActivity	POS	AND
+8867651	8867651	PTPN3:p-T183,Y185-MAPK12 [cytosol]	Complex	8867657	8867657	protein tyrosine phosphatase activity of PTPN3:p-T183,Y185-MAPK12 [cytosol]	CatalystActivity	POS	AND
+8867657	8867657	protein tyrosine phosphatase activity of PTPN3:p-T183,Y185-MAPK12 [cytosol]	CatalystActivity	8867658	8867658	PTPN3 dephosphorylates MAPK12	Reaction	POS	AND
+9635743_9635740_9635739	9635740	PTPN7:p-T,Y-MAPK dimers [cytosol]	Complex	9635771	9635771	non-membrane spanning protein tyrosine phosphatase activity of PTPN7:p-T,Y-MAPK dimers [cytosol]	CatalystActivity	POS	AND
+9635743_9635740	9635740	PTPN7:p-T,Y-MAPK dimers [cytosol]	Complex	9635771	9635771	non-membrane spanning protein tyrosine phosphatase activity of PTPN7:p-T,Y-MAPK dimers [cytosol]	CatalystActivity	POS	AND
+9635771	9635771	non-membrane spanning protein tyrosine phosphatase activity of PTPN7:p-T,Y-MAPK dimers [cytosol]	CatalystActivity	9635739	9635739	PTPN7 dephosphorylates p-T,Y-MAPKs	Reaction	POS	AND
+5675365	5675365	cytosolic MAPK DUSPs [cytosol]	CandidateSet	5675370	5675370	protein tyrosine/serine/threonine phosphatase activity of cytosolic MAPK DUSPs [cytosol]	CatalystActivity	POS	AND
+5675370	5675370	protein tyrosine/serine/threonine phosphatase activity of cytosolic MAPK DUSPs [cytosol]	CatalystActivity	5675376	5675376	Cytosolic DUSPs dephosphorylate MAPKs	Reaction	POS	AND
+5674366_5674360_5674373	5674360	IL17RD:p-2S MAP2Ks:MAPKs [Golgi membrane]	Complex	5674372	5674372	protein serine/threonine/tyrosine kinase activity of IL17RD:p-2S MAP2Ks:MAPKs [Golgi membrane]	CatalystActivity	POS	AND
+5674366_5674360	5674360	IL17RD:p-2S MAP2Ks:MAPKs [Golgi membrane]	Complex	5674372	5674372	protein serine/threonine/tyrosine kinase activity of IL17RD:p-2S MAP2Ks:MAPKs [Golgi membrane]	CatalystActivity	POS	AND
+5674372	5674372	protein serine/threonine/tyrosine kinase activity of IL17RD:p-2S MAP2Ks:MAPKs [Golgi membrane]	CatalystActivity	5674373	5674373	MAP2Ks phosphorylate MAPK at the Golgi membrane	Reaction	POS	AND
+5672972_5672720_9657599	5672720	activated RAF:scaffold:MAP2K:MAPK complex [plasma membrane]	Complex	5672976	5672976	protein serine/threonine kinase activity of activated RAF:scaffold:MAP2K:MAPK complex [plasma membrane]	CatalystActivity	POS	AND
+5672972_5672720	5672720	activated RAF:scaffold:MAP2K:MAPK complex [plasma membrane]	Complex	5672976	5672976	protein serine/threonine kinase activity of activated RAF:scaffold:MAP2K:MAPK complex [plasma membrane]	CatalystActivity	POS	AND
+5672972_5672720_5672978	5672720	activated RAF:scaffold:MAP2K:MAPK complex [plasma membrane]	Complex	5672976	5672976	protein serine/threonine kinase activity of activated RAF:scaffold:MAP2K:MAPK complex [plasma membrane]	CatalystActivity	POS	AND
+5672976	5672976	protein serine/threonine kinase activity of activated RAF:scaffold:MAP2K:MAPK complex [plasma membrane]	CatalystActivity	5672978	5672978	RAF phosphorylates MAP2K dimer	Reaction	POS	AND
+5672978_5672723_9657603	5672723	activated RAF:scaffold:p-2S MAP2K:MAPK complex [plasma membrane]	Complex	5672974	5672974	protein serine/threonine kinase activity of activated RAF:scaffold:p-2S MAP2K:MAPK complex [plasma membrane]	CatalystActivity	POS	AND
+5672978_5672723	5672723	activated RAF:scaffold:p-2S MAP2K:MAPK complex [plasma membrane]	Complex	5672974	5672974	protein serine/threonine kinase activity of activated RAF:scaffold:p-2S MAP2K:MAPK complex [plasma membrane]	CatalystActivity	POS	AND
+5672978_5672723_9657606	5672723	activated RAF:scaffold:p-2S MAP2K:MAPK complex [plasma membrane]	Complex	5672974	5672974	protein serine/threonine kinase activity of activated RAF:scaffold:p-2S MAP2K:MAPK complex [plasma membrane]	CatalystActivity	POS	AND
+5672978_5672723_5672973	5672723	activated RAF:scaffold:p-2S MAP2K:MAPK complex [plasma membrane]	Complex	5672974	5672974	protein serine/threonine kinase activity of activated RAF:scaffold:p-2S MAP2K:MAPK complex [plasma membrane]	CatalystActivity	POS	AND
+5672974	5672974	protein serine/threonine kinase activity of activated RAF:scaffold:p-2S MAP2K:MAPK complex [plasma membrane]	CatalystActivity	5672973	5672973	MAP2Ks phosphorylate MAPKs	Reaction	POS	AND
+5674019_5674011	5674011	BRAP:KSR1:MARK3 [cytosol]	Complex	5674028	5674028	Negative regulation by 'BRAP:KSR1:MARK3 [cytosol]'	Regulation	POS	AND
+5674028	5674028	Negative regulation by 'BRAP:KSR1:MARK3 [cytosol]'	Regulation	5672966	5672966	RAS:GTP:'activator' RAF homo/heterodimerizes with other RAF monomers	Reaction	NEG	AND
+449607	449607	MAP3K11 [cytosol]	EntityWithAccessionedSequence	5675439	5675439	Positive regulation by 'MAP3K11 [cytosol]'	Regulation	POS	AND
+5675439	5675439	Positive regulation by 'MAP3K11 [cytosol]'	Regulation	5672966	5672966	RAS:GTP:'activator' RAF homo/heterodimerizes with other RAF monomers	Reaction	POS	AND
+5672944	5672944	PHB [cytosol]	EntityWithAccessionedSequence	5674069	5674069	Positive regulation by 'PHB [cytosol]'	Regulation	POS	AND
+5674069	5674069	Positive regulation by 'PHB [cytosol]'	Regulation	5672950	5672950	"""Activator"" RAF:YWHAB dimer binds RAS:GTP"	Reaction	POS	AND
+9653503_9653482	9653482	pS181-S-Farn-Me KRAS4B [plasma membrane]	EntityWithAccessionedSequence	9653587	9653587	Negative regulation by 'pS181-S-Farn-Me KRAS4B [plasma membrane]'	Regulation	POS	AND
+9653587	9653587	Negative regulation by 'pS181-S-Farn-Me KRAS4B [plasma membrane]'	Regulation	9653585	9653585	S-Farn-Me KRAS4B binds calmodulin	Reaction	NEG	AND
+9647991_9647947	9647947	Palmostatin B:LYPLA1 dimer, ABHD17A,B,C [cytosol]	Complex	9647996	9647996	Negative regulation by 'Palmostatin B:LYPLA1 dimer, ABHD17A,B,C [cytosol]'	Regulation	POS	AND
+9647996	9647996	Negative regulation by 'Palmostatin B:LYPLA1 dimer, ABHD17A,B,C [cytosol]'	Regulation	9647994	9647994	RAS proteins are depalmitoylated	Reaction	NEG	AND
+9656781_9656780	9656780	PDE6D:Deltarasin [cytosol]	Complex	9656787	9656787	Negative regulation by 'PDE6D:Deltarasin [cytosol]'	Regulation	POS	AND
+9656787	9656787	Negative regulation by 'PDE6D:Deltarasin [cytosol]'	Regulation	9654525	9654525	PDE6D binds S-Farn-Me KRAS4B:CALM:4 Ca2+	Reaction	NEG	AND
+9647987_9647944	9647944	FNTA:FNTB:FTase inhibitors [cytosol]	Complex	9647979	9647979	Negative regulation by 'FNTA:FNTB:FTase inhibitors [cytosol]'	Regulation	POS	AND
+9647979	9647979	Negative regulation by 'FNTA:FNTB:FTase inhibitors [cytosol]'	Regulation	9647978	9647978	pro-RAS proteins are farnesylated	Reaction	NEG	AND
+9656775_9656776	9656776	ICMT:Zn2+:Cysmethynil [endoplasmic reticulum membrane]	Complex	9656786	9656786	Negative regulation by 'ICMT:Zn2+:Cysmethynil [endoplasmic reticulum membrane]'	Regulation	POS	AND
+9656786	9656786	Negative regulation by 'ICMT:Zn2+:Cysmethynil [endoplasmic reticulum membrane]'	Regulation	9647977	9647977	ICMT methylates S-Farn RAS proteins	Reaction	NEG	AND
+5675194_5675193	5675193	hyperphosphorylated RAF1 [plasma membrane]	EntityWithAccessionedSequence	5675437	5675437	Positive regulation by 'hyperphosphorylated RAF1 [plasma membrane]'	Regulation	POS	AND
+5675437	5675437	Positive regulation by 'hyperphosphorylated RAF1 [plasma membrane]'	Regulation	5675431	5675431	PP2A dephosphorylates RAF1	Reaction	POS	AND
+9657599_9657583	9657583	activated RAF:scaffold:MAP2K:MAPK complex:dual mechanism MAP2K inhibitors [plasma membrane]	Complex	9657612	9657612	Negative regulation by 'activated RAF:scaffold:MAP2K:MAPK complex:dual mechanism MAP2K inhibitors [plasma membrane]'	Regulation	POS	AND
+9657612	9657612	Negative regulation by 'activated RAF:scaffold:MAP2K:MAPK complex:dual mechanism MAP2K inhibitors [plasma membrane]'	Regulation	5672978	5672978	RAF phosphorylates MAP2K dimer	Reaction	NEG	AND
+9657612	9657612	Negative regulation by 'activated RAF:scaffold:MAP2K:MAPK complex:dual mechanism MAP2K inhibitors [plasma membrane]'	Regulation	5672973	5672973	MAP2Ks phosphorylate MAPKs	Reaction	NEG	AND
+9653108_9653109	9653109	p21RAS:GTP:homo/heterodimerized RAF complex:RAF dimer inhibitors [plasma membrane]	Complex	9653114	9653114	Negative regulation by 'p21RAS:GTP:homo/heterodimerized RAF complex:RAF dimer inhibitors [plasma membrane]'	Regulation	POS	AND
+9653114	9653114	Negative regulation by 'p21RAS:GTP:homo/heterodimerized RAF complex:RAF dimer inhibitors [plasma membrane]'	Regulation	5672978	5672978	RAF phosphorylates MAP2K dimer	Reaction	NEG	AND
+5675417_5675413	5675413	p21 RAS:GTP:activated RAF1 homo/heterodimer:PEBP1 [plasma membrane]	Complex	5675436	5675436	Negative regulation by 'p21 RAS:GTP:activated RAF1 homo/heterodimer:PEBP1 [plasma membrane]'	Regulation	POS	AND
+5675436	5675436	Negative regulation by 'p21 RAS:GTP:activated RAF1 homo/heterodimer:PEBP1 [plasma membrane]'	Regulation	5672972	5672972	MAP2Ks and MAPKs bind to the activated RAF complex	Reaction	NEG	AND
+9657606_9657587	9657587	activated RAF:scaffold:p-2S  MAP2K:MAPK:single mechanism MAP2K inhibitors [plasma membrane]	Complex	9657615	9657615	Negative regulation by 'activated RAF:scaffold:p-2S  MAP2K:MAPK:single mechanism MAP2K inhibitors [plasma membrane]'	Regulation	POS	AND
+9657615	9657615	Negative regulation by 'activated RAF:scaffold:p-2S  MAP2K:MAPK:single mechanism MAP2K inhibitors [plasma membrane]'	Regulation	5672973	5672973	MAP2Ks phosphorylate MAPKs	Reaction	NEG	AND
+9657603_9657590	9657590	activated RAF:scaffold:p-2S MAP2K:MAPK:dual mechanism MAPK inhibitors [plasma membrane]	Complex	9657617	9657617	Negative regulation by 'activated RAF:scaffold:p-2S MAP2K:MAPK:dual mechanism MAPK inhibitors [plasma membrane]'	Regulation	POS	AND
+9657617	9657617	Negative regulation by 'activated RAF:scaffold:p-2S MAP2K:MAPK:dual mechanism MAPK inhibitors [plasma membrane]'	Regulation	5672973	5672973	MAP2Ks phosphorylate MAPKs	Reaction	NEG	AND
+5672958_5672691	5672691	p-S311 KSR1:MARK3 [cytosol]	Complex	5672731_5672966	5672731	"dephosphorylated ""receiver"" RAF/KSR1 [cytosol]"	DefinedSet	POS	AND
+5674385_1268261	1268261	p-T,Y MAPK dimers [cytosol]	DefinedSet	5674340_5675206	5674340	p-T,Y MAPK monomers and dimers [cytosol]	DefinedSet	POS	AND
+109837	109837	p-S218,S222-MAP2K1 [cytosol]	EntityWithAccessionedSequence	5672705	5672705	p-2S MAP2K1:p-2S MAPK2K2 heterodimer [cytosol]	Complex	POS	AND
+169292	169292	p-S222,S226-MAP2K2 [cytosol]	EntityWithAccessionedSequence	5672705	5672705	p-2S MAP2K1:p-2S MAPK2K2 heterodimer [cytosol]	Complex	POS	AND
+5672639	5672639	p-S214,S576 ARAF [cytosol]	EntityWithAccessionedSequence	5672708	5672708	inactive RAFs [cytosol]	DefinedSet	POS	OR
+109786	109786	p-S259,S621-RAF1 [cytosol]	EntityWithAccessionedSequence	5672708	5672708	inactive RAFs [cytosol]	DefinedSet	POS	OR
+5672667	5672667	p-S365,S445,S729 BRAF [cytosol]	EntityWithAccessionedSequence	5672708	5672708	inactive RAFs [cytosol]	DefinedSet	POS	OR
+5672709	5672709	'activator' RAFs [cytosol]	CandidateSet	5672710	5672710	'activator' RAF:YWHAB dimer [cytosol]	Complex	POS	AND
+2028645	2028645	YWHAB dimer [cytosol]	Complex	5672710	5672710	'activator' RAF:YWHAB dimer [cytosol]	Complex	POS	AND
+5672686	5672686	MAP2K1:MAPK2K2 heterodimer [cytosol]	Complex	5672716	5672716	MAP2K homo/heterodimers [cytosol]	DefinedSet	POS	OR
+5672685	5672685	MAP2K2 dimer [cytosol]	Complex	5672716	5672716	MAP2K homo/heterodimers [cytosol]	DefinedSet	POS	OR
+5672683	5672683	MAP2K1 dimer [cytosol]	Complex	5672716	5672716	MAP2K homo/heterodimers [cytosol]	DefinedSet	POS	OR
+264470	264470	ARRB1 [cytosol]	EntityWithAccessionedSequence	5672717	5672717	RAF/MAPK scaffolds [cytosol]	CandidateSet	POS	OR
+5672629	5672629	CNKSR1 [cytosol]	EntityWithAccessionedSequence	5672717	5672717	RAF/MAPK scaffolds [cytosol]	CandidateSet	POS	OR
+5626371	5626371	IQGAP1 [cytosol]	EntityWithAccessionedSequence	5672717	5672717	RAF/MAPK scaffolds [cytosol]	CandidateSet	POS	OR
+416464	416464	ARRB2 [cytosol]	EntityWithAccessionedSequence	5672717	5672717	RAF/MAPK scaffolds [cytosol]	CandidateSet	POS	OR
+354079	354079	Focal Adhesion/Focal contacts [plasma membrane]	Complex	5672717	5672717	RAF/MAPK scaffolds [cytosol]	CandidateSet	POS	OR
+5672589	5672589	KSR2 [cytosol]	EntityWithAccessionedSequence	5672717	5672717	RAF/MAPK scaffolds [cytosol]	CandidateSet	POS	OR
+5672632	5672632	CNKSR2 [cytosol]	EntityWithAccessionedSequence	5672717	5672717	RAF/MAPK scaffolds [cytosol]	CandidateSet	POS	OR
+5672691	5672691	p-S311 KSR1:MARK3 [cytosol]	Complex	5672717	5672717	RAF/MAPK scaffolds [cytosol]	CandidateSet	POS	OR
+1810408	1810408	MyrG-p-Y419-SRC [plasma membrane]	EntityWithAccessionedSequence	5672734	5672734	RAF activating kinases [plasma membrane]	CandidateSet	POS	OR
+5672721	5672721	p-2S MAP2K homo/heterodimers [cytosol]	DefinedSet	5672734	5672734	RAF activating kinases [plasma membrane]	CandidateSet	POS	OR
+5672679	5672679	p-S445,T599,S602,S729 BRAF [plasma membrane]	EntityWithAccessionedSequence	5672734	5672734	RAF activating kinases [plasma membrane]	CandidateSet	POS	OR
+5672648	5672648	p-S299,S302,T452,T455,S576 ARAF [plasma membrane]	EntityWithAccessionedSequence	5672734	5672734	RAF activating kinases [plasma membrane]	CandidateSet	POS	OR
+5672665	5672665	p-S338,Y341,T491,S494,S621 RAF1 [plasma membrane]	EntityWithAccessionedSequence	5672734	5672734	RAF activating kinases [plasma membrane]	CandidateSet	POS	OR
+9617582	9617582	p-T286-CaMKII dodecamer:CALM1:4xCa2+ [cytosol]	Complex	5672734	5672734	RAF activating kinases [plasma membrane]	CandidateSet	POS	OR
+210620	210620	JAK2 [cytosol]	EntityWithAccessionedSequence	5672734	5672734	RAF activating kinases [plasma membrane]	CandidateSet	POS	OR
+6788651	6788651	ICMT [endoplasmic reticulum membrane]	EntityWithAccessionedSequence	6788652	6788652	ICMT:Zn2+ [endoplasmic reticulum membrane]	Complex	POS	AND
+180582	180582	RBX1 [cytosol]	EntityWithAccessionedSequence	5658416	5658416	KBTBD7:CUL3:RBX1 [cytosol]	Complex	POS	AND
+975979	975979	CUL3 [cytosol]	EntityWithAccessionedSequence	5658416	5658416	KBTBD7:CUL3:RBX1 [cytosol]	Complex	POS	AND
+5658415	5658415	KBTBD7 [cytosol]	EntityWithAccessionedSequence	5658416	5658416	KBTBD7:CUL3:RBX1 [cytosol]	Complex	POS	AND
+9647815	9647815	S-Farn-Me KRAS4B [plasma membrane]	EntityWithAccessionedSequence	9649715	9649715	mature p21 RAS [plasma membrane]	DefinedSet	POS	OR
+9647910	9647910	S-Farn-Me PalmS NRAS [plasma membrane]	EntityWithAccessionedSequence	9649715	9649715	mature p21 RAS [plasma membrane]	DefinedSet	POS	OR
+9647915	9647915	S-Farn-Me-PalmS KRAS4A [plasma membrane]	EntityWithAccessionedSequence	9649715	9649715	mature p21 RAS [plasma membrane]	DefinedSet	POS	OR
+9647912	9647912	S-Farn-Me-2xPalmS HRAS [plasma membrane]	EntityWithAccessionedSequence	9649715	9649715	mature p21 RAS [plasma membrane]	DefinedSet	POS	OR
+9016707	9016707	CALM1 [cytosol]	EntityWithAccessionedSequence	74294	74294	CALM1:4xCa2+ [cytosol]	Complex	POS	AND
+561160	561160	RGL1 [cytosol]	EntityWithAccessionedSequence	9660479	9660479	RAL GDS proteins [cytosol]	DefinedSet	POS	OR
+9660475	9660475	RGL3 [cytosol]	EntityWithAccessionedSequence	9660479	9660479	RAL GDS proteins [cytosol]	DefinedSet	POS	OR
+171001	171001	RALGDS [cytosol]	EntityWithAccessionedSequence	9660479	9660479	RAL GDS proteins [cytosol]	DefinedSet	POS	OR
+9660472	9660472	RGL2 [cytosol]	EntityWithAccessionedSequence	9660479	9660479	RAL GDS proteins [cytosol]	DefinedSet	POS	OR
+171021	171021	p-T183,Y185-MAPK12 [cytosol]	EntityWithAccessionedSequence	8867651	8867651	PTPN3:p-T183,Y185-MAPK12 [cytosol]	Complex	POS	AND
+8867650	8867650	PTPN3 [cytosol]	EntityWithAccessionedSequence	8867651	8867651	PTPN3:p-T183,Y185-MAPK12 [cytosol]	Complex	POS	AND
+9647931	9647931	ZDHHC9 [Golgi membrane]	EntityWithAccessionedSequence	9647941	9647941	ZDHHC9:GOLGA7 [Golgi membrane]	Complex	POS	AND
+9647777	9647777	GOLGA7 [Golgi membrane]	EntityWithAccessionedSequence	9647941	9647941	ZDHHC9:GOLGA7 [Golgi membrane]	Complex	POS	AND
+9647767	9647767	ABHD17A [plasma membrane]	EntityWithAccessionedSequence	9647946	9647946	LYPLA1 dimer, ABHD17A,B,C [plasma membrane]	DefinedSet	POS	OR
+203655	203655	LYPLA1 dimer [cytosol]	Complex	9647946	9647946	LYPLA1 dimer, ABHD17A,B,C [plasma membrane]	DefinedSet	POS	OR
+9647770	9647770	ABHD17B [plasma membrane]	EntityWithAccessionedSequence	9647946	9647946	LYPLA1 dimer, ABHD17A,B,C [plasma membrane]	DefinedSet	POS	OR
+9647774	9647774	ABHD17C [plasma membrane]	EntityWithAccessionedSequence	9647946	9647946	LYPLA1 dimer, ABHD17A,B,C [plasma membrane]	DefinedSet	POS	OR
+59282	59282	MAPK1 [cytosol]	EntityWithAccessionedSequence	169291	169291	MAPKs [cytosol]	DefinedSet	POS	OR
+59284	59284	MAPK3 [cytosol]	EntityWithAccessionedSequence	169291	169291	MAPKs [cytosol]	DefinedSet	POS	OR
+9660304	9660304	PPP1CB, PPP1CB [cytosol]	DefinedSet	9658447	9658447	S-GCC MRAS:GTP:SHOC2:PP1 [plasma membrane]	Complex	POS	AND
+9658448	9658448	S-GCC MRAS:GTP [plasma membrane]	Complex	9658447	9658447	S-GCC MRAS:GTP:SHOC2:PP1 [plasma membrane]	Complex	POS	AND
+9658444	9658444	SHOC2 [cytosol]	EntityWithAccessionedSequence	9658447	9658447	S-GCC MRAS:GTP:SHOC2:PP1 [plasma membrane]	Complex	POS	AND
+9649683	9649683	pro-KRAS4A [cytosol]	EntityWithAccessionedSequence	9647953	9647953	pro-RAS [cytosol]	DefinedSet	POS	OR
+9647762	9647762	proKRAS [cytosol]	EntityWithAccessionedSequence	9647953	9647953	pro-RAS [cytosol]	DefinedSet	POS	OR
+9649686	9649686	pro-KRAS4B [cytosol]	EntityWithAccessionedSequence	9647953	9647953	pro-RAS [cytosol]	DefinedSet	POS	OR
+9647765	9647765	proHRAS [cytosol]	EntityWithAccessionedSequence	9647953	9647953	pro-RAS [cytosol]	DefinedSet	POS	OR
+9647758	9647758	proNRAS [cytosol]	EntityWithAccessionedSequence	9647953	9647953	pro-RAS [cytosol]	DefinedSet	POS	OR
+9647910	9647910	S-Farn-Me PalmS NRAS [plasma membrane]	EntityWithAccessionedSequence	9647962	9647962	S-Farn-Me-PalmS KRAS4A, HRAS, NRAS [plasma membrane]	DefinedSet	POS	OR
+9647915	9647915	S-Farn-Me-PalmS KRAS4A [plasma membrane]	EntityWithAccessionedSequence	9647962	9647962	S-Farn-Me-PalmS KRAS4A, HRAS, NRAS [plasma membrane]	DefinedSet	POS	OR
+9647912	9647912	S-Farn-Me-2xPalmS HRAS [plasma membrane]	EntityWithAccessionedSequence	9647962	9647962	S-Farn-Me-PalmS KRAS4A, HRAS, NRAS [plasma membrane]	DefinedSet	POS	OR
+1268261	1268261	p-T,Y MAPK dimers [cytosol]	DefinedSet	5674340	5674340	p-T,Y MAPK monomers and dimers [cytosol]	DefinedSet	POS	OR
+169289	169289	p-T,Y MAPKs [cytosol]	DefinedSet	5674340	5674340	p-T,Y MAPK monomers and dimers [cytosol]	DefinedSet	POS	OR
+5674338	5674338	p-T,Y MAPKs [nucleoplasm]	DefinedSet	5674341	5674341	p-T,Y MAPK monomers and dimers [nucleoplasm]	DefinedSet	POS	OR
+198701	198701	p-T,Y MAPK dimers [nucleoplasm]	DefinedSet	5674341	5674341	p-T,Y MAPK monomers and dimers [nucleoplasm]	DefinedSet	POS	OR
+9647891	9647891	S-Farn-Me NRAS [endoplasmic reticulum membrane]	EntityWithAccessionedSequence	9647973	9647973	S-Farn Me KRAS4A, HRAS, NRAS [endoplasmic reticulum membrane]	DefinedSet	POS	OR
+9647796	9647796	S-Farn-Me HRAS [endoplasmic reticulum membrane]	EntityWithAccessionedSequence	9647973	9647973	S-Farn Me KRAS4A, HRAS, NRAS [endoplasmic reticulum membrane]	DefinedSet	POS	OR
+9647806	9647806	S-Farn-Me KRAS4A [endoplasmic reticulum membrane]	EntityWithAccessionedSequence	9647973	9647973	S-Farn Me KRAS4A, HRAS, NRAS [endoplasmic reticulum membrane]	DefinedSet	POS	OR
+5675334	5675334	DUSP10 [cytosol]	EntityWithAccessionedSequence	5675365	5675365	cytosolic MAPK DUSPs [cytosol]	CandidateSet	POS	OR
+5675348	5675348	DUSP8 [cytosol]	EntityWithAccessionedSequence	5675365	5675365	cytosolic MAPK DUSPs [cytosol]	CandidateSet	POS	OR
+5675336	5675336	DUSP16 [cytosol]	EntityWithAccessionedSequence	5675365	5675365	cytosolic MAPK DUSPs [cytosol]	CandidateSet	POS	OR
+5675351	5675351	DUSP9 [cytosol]	EntityWithAccessionedSequence	5675365	5675365	cytosolic MAPK DUSPs [cytosol]	CandidateSet	POS	OR
+5675346	5675346	DUSP7 [cytosol]	EntityWithAccessionedSequence	5675365	5675365	cytosolic MAPK DUSPs [cytosol]	CandidateSet	POS	OR
+5675343	5675343	DUSP6 [cytosol]	EntityWithAccessionedSequence	5675365	5675365	cytosolic MAPK DUSPs [cytosol]	CandidateSet	POS	OR
+203794	203794	DUSP4 [nucleoplasm]	EntityWithAccessionedSequence	5675368	5675368	nuclear MAPK DUSPs [nucleoplasm]	CandidateSet	POS	OR
+203793	203793	DUSP10 [nucleoplasm]	EntityWithAccessionedSequence	5675368	5675368	nuclear MAPK DUSPs [nucleoplasm]	CandidateSet	POS	OR
+5675349	5675349	DUSP8 [nucleoplasm]	EntityWithAccessionedSequence	5675368	5675368	nuclear MAPK DUSPs [nucleoplasm]	CandidateSet	POS	OR
+203796	203796	DUSP1 [nucleoplasm]	EntityWithAccessionedSequence	5675368	5675368	nuclear MAPK DUSPs [nucleoplasm]	CandidateSet	POS	OR
+5675340	5675340	DUSP2 [nucleoplasm]	EntityWithAccessionedSequence	5675368	5675368	nuclear MAPK DUSPs [nucleoplasm]	CandidateSet	POS	OR
+5675337	5675337	DUSP16 [nucleoplasm]	EntityWithAccessionedSequence	5675368	5675368	nuclear MAPK DUSPs [nucleoplasm]	CandidateSet	POS	OR
+5675342	5675342	DUSP5 [nucleoplasm]	EntityWithAccessionedSequence	5675368	5675368	nuclear MAPK DUSPs [nucleoplasm]	CandidateSet	POS	OR
+48888	48888	YWHAB [cytosol]	EntityWithAccessionedSequence	2028645	2028645	YWHAB dimer [cytosol]	Complex	POS	AND
+186833	186833	RASA1 [cytosol]	EntityWithAccessionedSequence	5658216	5658216	RAS GAPs [cytosol]	DefinedSet	POS	OR
+5658232	5658232	SPRED dimer:NF1 [plasma membrane]	Complex	5658216	5658216	RAS GAPs [cytosol]	DefinedSet	POS	OR
+5658228	5658228	RASA4 [cytosol]	EntityWithAccessionedSequence	5658216	5658216	RAS GAPs [cytosol]	DefinedSet	POS	OR
+5658226	5658226	RASAL3 [cytosol]	EntityWithAccessionedSequence	5658216	5658216	RAS GAPs [cytosol]	DefinedSet	POS	OR
+5658224	5658224	RASAL2 [cytosol]	EntityWithAccessionedSequence	5658216	5658216	RAS GAPs [cytosol]	DefinedSet	POS	OR
+5658238	5658238	DAB2IP [cytosol]	EntityWithAccessionedSequence	5658216	5658216	RAS GAPs [cytosol]	DefinedSet	POS	OR
+5658222	5658222	RASA3 [cytosol]	EntityWithAccessionedSequence	5658216	5658216	RAS GAPs [cytosol]	DefinedSet	POS	OR
+5658221	5658221	RASA2 [cytosol]	EntityWithAccessionedSequence	5658216	5658216	RAS GAPs [cytosol]	DefinedSet	POS	OR
+5658233	5658233	RASAL1 [cytosol]	EntityWithAccessionedSequence	5658216	5658216	RAS GAPs [cytosol]	DefinedSet	POS	OR
+5658217	5658217	SYNGAP1 [cytosol]	EntityWithAccessionedSequence	5658216	5658216	RAS GAPs [cytosol]	DefinedSet	POS	OR
+5658236	5658236	SPRED3 dimer [plasma membrane]	Complex	5658219	5658219	SPRED dimer [plasma membrane]	CandidateSet	POS	OR
+5658235	5658235	SPRED2 dimer [plasma membrane]	Complex	5658219	5658219	SPRED dimer [plasma membrane]	CandidateSet	POS	OR
+5658215	5658215	SPRED1 dimer [plasma membrane]	Complex	5658219	5658219	SPRED dimer [plasma membrane]	CandidateSet	POS	OR
+165990	165990	PP2A-subunit A [cytosol]	CandidateSet	196206	196206	PP2A [cytosol]	Complex	POS	AND
+196216	196216	PP2A regulatory subunit B56 [cytosol]	CandidateSet	196206	196206	PP2A [cytosol]	Complex	POS	AND
+165977	165977	PP2A-catalytic subunit C [cytosol]	CandidateSet	196206	196206	PP2A [cytosol]	Complex	POS	AND
+9647912	9647912	S-Farn-Me-2xPalmS HRAS [plasma membrane]	EntityWithAccessionedSequence	9660551	9660551	S-Farn-Me-2xPalmS HRAS:GTP [plasma membrane]	Complex	POS	AND
+5672942	5672942	WDR83 [endosome membrane]	EntityWithAccessionedSequence	5674133	5674133	WDR83:LAMTOR2:LAMTOR3 [endosome membrane]	Complex	POS	AND
+5693294	5693294	LAMTOR3 [endosome membrane]	EntityWithAccessionedSequence	5674133	5674133	WDR83:LAMTOR2:LAMTOR3 [endosome membrane]	Complex	POS	AND
+5693293	5693293	LAMTOR2 [endosome membrane]	EntityWithAccessionedSequence	5674133	5674133	WDR83:LAMTOR2:LAMTOR3 [endosome membrane]	Complex	POS	AND
+5216230	5216230	ARL2 [cytosol]	EntityWithAccessionedSequence	5250197	5250197	ARL2:GTP [cytosol]	Complex	POS	AND
+5672709	5672709	'activator' RAFs [cytosol]	CandidateSet	5675414	5675414	p21RAS:GTP:activated RAF1 homo/heterodimer [plasma membrane]	Complex	POS	AND
+109783	109783	p21 RAS:GTP [plasma membrane]	Complex	5675414	5675414	p21RAS:GTP:activated RAF1 homo/heterodimer [plasma membrane]	Complex	POS	AND
+2028645	2028645	YWHAB dimer [cytosol]	Complex	5675414	5675414	p21RAS:GTP:activated RAF1 homo/heterodimer [plasma membrane]	Complex	POS	AND
+5672665	5672665	p-S338,Y341,T491,S494,S621 RAF1 [plasma membrane]	EntityWithAccessionedSequence	5675414	5675414	p21RAS:GTP:activated RAF1 homo/heterodimer [plasma membrane]	Complex	POS	AND
+5674134	5674134	activated RAF monomer [cytosol]	CandidateSet	5674136	5674136	activated RAF homo/heterodimer [cytosol]	Complex	POS	AND
+5672598	5672598	RASGEF1A [cytosol]	EntityWithAccessionedSequence	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+5672599	5672599	RAPGEF2 [cytosol]	EntityWithAccessionedSequence	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+194944	194944	RASGRF2 [cytosol]	EntityWithAccessionedSequence	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+2685600	2685600	RASGRP4 [cytosol]	EntityWithAccessionedSequence	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+186827	186827	PDGF:Phospho-PDGF receptor dimer:Grb2:Sos1 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+921157	921157	Interleukin receptor complexes with activated SHC1:GRB2:SOS1 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+5654296	5654296	Activated FGFR2:pY-SHC1:GRB2:SOS1 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+1306947	1306947	NRGs/EGFLs:p-ERBB4:p-ERBB2:GRB2:SOS1 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+5654343	5654343	Activated FGFR4:pY-SHC1:GRB2:SOS1 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+205202	205202	GRB2:SOS1:p-KIT complex [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+8851860	8851860	HGF:p-4Y-MET dimer:RANBP9:SOS1 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+5654275	5654275	Activated FGFR1:p-SHC1:GRB2:SOS1 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+9607300	9607300	Active FLT3:GRB2:SOS1 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+8851807	8851807	HGF:p-4Y-MET dimer:GRB2-1:SOS1 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+5654287	5654287	Activated FGFR2:p-FRS:GRB2:SOS1 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+210970	210970	SOS-1 bound to Tie2:Grb2 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+1250505	1250505	EGF:p-EGFR:p-ERBB2:GRB2:SOS1 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+1250382	1250382	GRB2:SOS1:p-Y349,350-SHC1:p-ERBB4 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+1168369	1168369	p-RASGRP1,3:DAG [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+5654327	5654327	Activated FGFR4:p-FRS2:GRB2:SOS1 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+5685367	5685367	GRB2-1:SOS1:p-Y-SHC [cytosol]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+109798	109798	GRB2-1:SOS1:p-Y427-SHC1 [cytosol]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+392045	392045	Grb2:Sos:pFAK bound to NCAM1:pFyn [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+109800	109800	GRB2-1:SOS1:p-Y-IRS1,p-Y-IRS2 [cytosol]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+180331	180331	EGF-like ligands:p-6Y-EGFR:p-Y349,350-SHC1:GRB2:SOS1 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+442735	442735	Gly,D-Ser:L-Glu:GRIN1:GRIN2B NMDA receptor:RASGRF1 oligomer:CALM1:4xCa2+ [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+5654264	5654264	Activated FGFR1:p-FRS2:GRB2:SOS1 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+179820	179820	EGF-like ligands:p-6Y-EGFR:GRB2:SOS1 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+2424468	2424468	p-5Y-LAT:p-SHC1:GRB2:SOS1 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+2179409	2179409	GRB2:SOS1:HB-EGF:p-6Y-EGFR [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+8854903	8854903	2x p-5Y-RET:GDNF:GFRA complexes:GRB2-1:SOS1 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+5654308	5654308	Activated FGFR3:p-FRS:GRB2:SOS1 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+870270	870270	RASGRP1 [cytosol]	EntityWithAccessionedSequence	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+8854399	8854399	2x p-5Y-RET:GDNF:GFRA complexes:p-Y349,Y350,Y427-SHC1:GRB2-1:SOS1 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+5654316	5654316	Activated FGFR3:pY-SHC1:GRB2:SOS1 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+1250479	1250479	GRB2:SOS1:p-Y349,350-SHC1:Phosphorylated ERBB2 heterodimers [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+8851897	8851897	HGF:p-4Y-MET dimer:p-Y317-SHC1-2:GRB2:SOS1 [plasma membrane]	Complex	5672601	5672601	RAS GEFs [plasma membrane]	DefinedSet	POS	OR
+939214	939214	UBB(1-76) [cytosol]	EntityWithAccessionedSequence	113595	113595	Ub [cytosol]	DefinedSet	POS	OR
+939213	939213	UBB(77-152) [cytosol]	EntityWithAccessionedSequence	113595	113595	Ub [cytosol]	DefinedSet	POS	OR
+939239	939239	UBC(533-608) [cytosol]	EntityWithAccessionedSequence	113595	113595	Ub [cytosol]	DefinedSet	POS	OR
+939205	939205	RPS27A(1-76) [cytosol]	EntityWithAccessionedSequence	113595	113595	Ub [cytosol]	DefinedSet	POS	OR
+939203	939203	UBA52(1-76) [cytosol]	EntityWithAccessionedSequence	113595	113595	Ub [cytosol]	DefinedSet	POS	OR
+939232	939232	UBC(305-380) [cytosol]	EntityWithAccessionedSequence	113595	113595	Ub [cytosol]	DefinedSet	POS	OR
+939230	939230	UBB(153-228) [cytosol]	EntityWithAccessionedSequence	113595	113595	Ub [cytosol]	DefinedSet	POS	OR
+939164	939164	UBC(77-152) [cytosol]	EntityWithAccessionedSequence	113595	113595	Ub [cytosol]	DefinedSet	POS	OR
+939165	939165	UBC(609-684) [cytosol]	EntityWithAccessionedSequence	113595	113595	Ub [cytosol]	DefinedSet	POS	OR
+939258	939258	UBC(153-228) [cytosol]	EntityWithAccessionedSequence	113595	113595	Ub [cytosol]	DefinedSet	POS	OR
+939192	939192	UBC(229-304) [cytosol]	EntityWithAccessionedSequence	113595	113595	Ub [cytosol]	DefinedSet	POS	OR
+939191	939191	UBC(381-456) [cytosol]	EntityWithAccessionedSequence	113595	113595	Ub [cytosol]	DefinedSet	POS	OR
+939188	939188	UBC(1-76) [cytosol]	EntityWithAccessionedSequence	113595	113595	Ub [cytosol]	DefinedSet	POS	OR
+939184	939184	UBC(457-532) [cytosol]	EntityWithAccessionedSequence	113595	113595	Ub [cytosol]	DefinedSet	POS	OR
+2530516	2530516	FNTA(2-379) [cytosol]	EntityWithAccessionedSequence	2530496	2530496	FNTA:FNTB [cytosol]	Complex	POS	AND
+2530482	2530482	FNTB [cytosol]	EntityWithAccessionedSequence	2530496	2530496	FNTA:FNTB [cytosol]	Complex	POS	AND
+74689	74689	PI3K-catalytic subunit [cytosol]	DefinedSet	74693	74693	PI3K [cytosol]	Complex	POS	AND
+74688	74688	PI3K-regulatory subunit [cytosol]	DefinedSet	74693	74693	PI3K [cytosol]	Complex	POS	AND
+9649715	9649715	mature p21 RAS [plasma membrane]	DefinedSet	109783	109783	p21 RAS:GTP [plasma membrane]	Complex	POS	AND
+9657560	9657560	GDC-0623 [cytosol]	Drug	9657567	9657567	dual mechanism MAP2K1/2 inhibitors [cytosol]	CandidateSet	POS	OR
+9657549	9657549	RO 5126766 [cytosol]	Drug	9657567	9657567	dual mechanism MAP2K1/2 inhibitors [cytosol]	CandidateSet	POS	OR
+9653120	9653120	trametinib [cytosol]	Drug	9657567	9657567	dual mechanism MAP2K1/2 inhibitors [cytosol]	CandidateSet	POS	OR
+9657543	9657543	SCH772984 [cytosol]	Drug	9657570	9657570	dual mechanism MAPK inhibitors [cytosol]	CandidateSet	POS	OR
+9657557	9657557	MK-8353 [cytosol]	Drug	9657570	9657570	dual mechanism MAPK inhibitors [cytosol]	CandidateSet	POS	OR
+9649715	9649715	mature p21 RAS [plasma membrane]	DefinedSet	109796	109796	p21 RAS:GDP [plasma membrane]	Complex	POS	AND
+9657523	9657523	pimasertib [cytosol]	Drug	9657574	9657574	single mechanism MAP2K1/2 inhibitors [cytosol]	CandidateSet	POS	OR
+9657553	9657553	PD 0325901 [cytosol]	Drug	9657574	9657574	single mechanism MAP2K1/2 inhibitors [cytosol]	CandidateSet	POS	OR
+9657511	9657511	selumetinib [cytosol]	Drug	9657574	9657574	single mechanism MAP2K1/2 inhibitors [cytosol]	CandidateSet	POS	OR
+9657563	9657563	Cl-1040 [cytosol]	Drug	9657574	9657574	single mechanism MAP2K1/2 inhibitors [cytosol]	CandidateSet	POS	OR
+9657517	9657517	refametinib [cytosol]	Drug	9657574	9657574	single mechanism MAP2K1/2 inhibitors [cytosol]	CandidateSet	POS	OR
+9657527	9657527	cobimetinib [cytosol]	Drug	9657574	9657574	single mechanism MAP2K1/2 inhibitors [cytosol]	CandidateSet	POS	OR
+9657530	9657530	binimetinib [cytosol]	Drug	9657574	9657574	single mechanism MAP2K1/2 inhibitors [cytosol]	CandidateSet	POS	OR
+9653475	9653475	lonafarnib [cytosol]	Drug	9653479	9653479	FNTB inhibitors [cytosol]	DefinedSet	POS	OR
+9647938	9647938	tipifarnib [cytosol]	Drug	9653479	9653479	FNTB inhibitors [cytosol]	DefinedSet	POS	OR
+9656754	9656754	BMS-214662 [cytosol]	Drug	9653479	9653479	FNTB inhibitors [cytosol]	DefinedSet	POS	OR
+9656770	9656770	L-778123 [cytosol]	Drug	9653479	9653479	FNTB inhibitors [cytosol]	DefinedSet	POS	OR
+9656772	9656772	LB42908 [cytosol]	Drug	9653479	9653479	FNTB inhibitors [cytosol]	DefinedSet	POS	OR
+9656763	9656763	FTI 276 [cytosol]	Drug	9653479	9653479	FNTB inhibitors [cytosol]	DefinedSet	POS	OR
+9656767	9656767	L-739,750 [cytosol]	Drug	9653479	9653479	FNTB inhibitors [cytosol]	DefinedSet	POS	OR
+9657506	9657506	ulixertinib [cytosol]	Drug	9657577	9657577	single mechanism MAPK inhibitors [cytosol]	CandidateSet	POS	OR
+9657520	9657520	ravoxertinib [cytosol]	Drug	9657577	9657577	single mechanism MAPK inhibitors [cytosol]	CandidateSet	POS	OR
+9657533	9657533	VTX-11e [cytosol]	Drug	9657577	9657577	single mechanism MAPK inhibitors [cytosol]	CandidateSet	POS	OR
+9653105	9653105	LY3009120 [cytosol]	Drug	9657579	9657579	RAF dimer inhibitors [cytosol]	DefinedSet	POS	OR
+9657539	9657539	TAK-580 [cytosol]	Drug	9657579	9657579	RAF dimer inhibitors [cytosol]	DefinedSet	POS	OR
+9657536	9657536	TAK-632 [cytosol]	Drug	9657579	9657579	RAF dimer inhibitors [cytosol]	DefinedSet	POS	OR
+2685674	2685674	p-5Y-PKC-theta:DAG [plasma membrane]	Complex	9653487	9653487	PKCZ,PRKG2 [plasma membrane]	DefinedSet	POS	OR
+9653485	9653485	PRKG2 dimer:cGMP [cytosol]	Complex	9653487	9653487	PKCZ,PRKG2 [plasma membrane]	DefinedSet	POS	OR
+74294	74294	CALM1:4xCa2+ [cytosol]	Complex	9654512	9654512	S-Farn-Me KRAS4B:CALM1:4xCa2+ [cytosol]	Complex	POS	AND
+9654510	9654510	S-Farn-Me KRAS4B [cytosol]	EntityWithAccessionedSequence	9654512	9654512	S-Farn-Me KRAS4B:CALM1:4xCa2+ [cytosol]	Complex	POS	AND
+5672591	5672591	MARK3 [cytosol]	EntityWithAccessionedSequence	5672689	5672689	KSR1:MARK3 [cytosol]	Complex	POS	AND
+5672587	5672587	KSR1 [cytosol]	EntityWithAccessionedSequence	5672689	5672689	KSR1:MARK3 [cytosol]	Complex	POS	AND
+64847	64847	SOS1 [cytosol]	EntityWithAccessionedSequence	210970	210970	SOS-1 bound to Tie2:Grb2 [plasma membrane]	Complex	POS	AND
+204865	204865	Grb2 bound to Tie2 [plasma membrane]	Complex	210970	210970	SOS-1 bound to Tie2:Grb2 [plasma membrane]	Complex	POS	AND
+109844	109844	p-T202, Y204 MAPK3 dimer [cytosol]	Complex	1268261	1268261	p-T,Y MAPK dimers [cytosol]	DefinedSet	POS	OR
+109855	109855	p-T185,Y187 MAPK1 dimer [cytosol]	Complex	1268261	1268261	p-T,Y MAPK dimers [cytosol]	DefinedSet	POS	OR
+109856	109856	p-Y185,Y187 MAPK1 dimer [nucleoplasm]	Complex	198701	198701	p-T,Y MAPK dimers [nucleoplasm]	DefinedSet	POS	OR
+109845	109845	p-T202, Y204 MAPK3 dimer [nucleoplasm]	Complex	198701	198701	p-T,Y MAPK dimers [nucleoplasm]	DefinedSet	POS	OR
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	921157	921157	Interleukin receptor complexes with activated SHC1:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+912534	912534	Interleukin receptor complexes with activated SHC1 [plasma membrane]	DefinedSet	921157	921157	Interleukin receptor complexes with activated SHC1:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	1250382	1250382	GRB2:SOS1:p-Y349,350-SHC1:p-ERBB4 [plasma membrane]	Complex	POS	AND
+1250343	1250343	p-Y349,350-SHC1:p-ERBB4 [plasma membrane]	Complex	1250382	1250382	GRB2:SOS1:p-Y349,350-SHC1:p-ERBB4 [plasma membrane]	Complex	POS	AND
+9658449	9658449	S-GGC MRAS [plasma membrane]	EntityWithAccessionedSequence	9658448	9658448	S-GCC MRAS:GTP [plasma membrane]	Complex	POS	AND
+165971	165971	PPP2CA [cytosol]	EntityWithAccessionedSequence	165977	165977	PP2A-catalytic subunit C [cytosol]	CandidateSet	POS	OR
+165987	165987	PPP2CB [cytosol]	EntityWithAccessionedSequence	165977	165977	PP2A-catalytic subunit C [cytosol]	CandidateSet	POS	OR
+165982	165982	PPP2R1A [cytosol]	EntityWithAccessionedSequence	165990	165990	PP2A-subunit A [cytosol]	CandidateSet	POS	OR
+165980	165980	PPP2R1B [cytosol]	EntityWithAccessionedSequence	165990	165990	PP2A-subunit A [cytosol]	CandidateSet	POS	OR
+5658225	5658225	SPRED1 [plasma membrane]	EntityWithAccessionedSequence	5658215	5658215	SPRED1 dimer [plasma membrane]	Complex	POS	AND
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	180331	180331	EGF-like ligands:p-6Y-EGFR:p-Y349,350-SHC1:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+180337	180337	EGF-like ligands:p-6Y-EGFR:p-Y349,350-SHC1 [plasma membrane]	Complex	180331	180331	EGF-like ligands:p-6Y-EGFR:p-Y349,350-SHC1:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+9624425	9624425	EGF-like ligands:p-6Y EGFR dimer [plasma membrane]	Complex	179820	179820	EGF-like ligands:p-6Y-EGFR:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	179820	179820	EGF-like ligands:p-6Y-EGFR:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	5685367	5685367	GRB2-1:SOS1:p-Y-SHC [cytosol]	Complex	POS	AND
+167016	167016	p-Y-SHC [cytosol]	DefinedSet	5685367	5685367	GRB2-1:SOS1:p-Y-SHC [cytosol]	Complex	POS	AND
+947770	947770	NF1(2-2839) [cytosol]	EntityWithAccessionedSequence	5658232	5658232	SPRED dimer:NF1 [plasma membrane]	Complex	POS	AND
+5658219	5658219	SPRED dimer [plasma membrane]	CandidateSet	5658232	5658232	SPRED dimer:NF1 [plasma membrane]	Complex	POS	AND
+535469	535469	PPP2R5B [cytosol]	EntityWithAccessionedSequence	196216	196216	PP2A regulatory subunit B56 [cytosol]	CandidateSet	POS	OR
+3008954	3008954	PPP2R5C [cytosol]	EntityWithAccessionedSequence	196216	196216	PP2A regulatory subunit B56 [cytosol]	CandidateSet	POS	OR
+196235	196235	PPP2R5A [cytosol]	EntityWithAccessionedSequence	196216	196216	PP2A regulatory subunit B56 [cytosol]	CandidateSet	POS	OR
+3008950	3008950	PPP2R5D [cytosol]	EntityWithAccessionedSequence	196216	196216	PP2A regulatory subunit B56 [cytosol]	CandidateSet	POS	OR
+1638770	1638770	PPP2R5E [cytosol]	EntityWithAccessionedSequence	196216	196216	PP2A regulatory subunit B56 [cytosol]	CandidateSet	POS	OR
+5658229	5658229	SPRED2 [plasma membrane]	EntityWithAccessionedSequence	5658235	5658235	SPRED2 dimer [plasma membrane]	Complex	POS	AND
+5658223	5658223	SPRED3 [plasma membrane]	EntityWithAccessionedSequence	5658236	5658236	SPRED3 dimer [plasma membrane]	Complex	POS	AND
+9604756	9604756	Active FLT3: GRB2 [plasma membrane]	Complex	9607300	9607300	Active FLT3:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+64847	64847	SOS1 [cytosol]	EntityWithAccessionedSequence	9607300	9607300	Active FLT3:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+2685672	2685672	p-SHC1:GRB2:SOS [cytosol]	Complex	2424468	2424468	p-5Y-LAT:p-SHC1:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+2396597	2396597	p-5Y-LAT-2 [plasma membrane]	EntityWithAccessionedSequence	2424468	2424468	p-5Y-LAT:p-SHC1:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+5672646	5672646	p-S299,S302,T452,T455,S576 ARAF [cytosol]	EntityWithAccessionedSequence	5674134	5674134	activated RAF monomer [cytosol]	CandidateSet	POS	OR
+5672676	5672676	p-S445,T599,S602,S729 BRAF [cytosol]	EntityWithAccessionedSequence	5674134	5674134	activated RAF monomer [cytosol]	CandidateSet	POS	OR
+5672664	5672664	p-S338,Y341,T491,S494,S621 RAF1 [cytosol]	EntityWithAccessionedSequence	5674134	5674134	activated RAF monomer [cytosol]	CandidateSet	POS	OR
+9617584	9617584	p-T286-CaMKII dodecamer [cytosol]	Complex	9617582	9617582	p-T286-CaMKII dodecamer:CALM1:4xCa2+ [cytosol]	Complex	POS	AND
+74294	74294	CALM1:4xCa2+ [cytosol]	Complex	9617582	9617582	p-T286-CaMKII dodecamer:CALM1:4xCa2+ [cytosol]	Complex	POS	AND
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	1250479	1250479	GRB2:SOS1:p-Y349,350-SHC1:Phosphorylated ERBB2 heterodimers [plasma membrane]	Complex	POS	AND
+1250194	1250194	p-Y349,350-SHC1:Phosphorylated ERBB2 heterodimers [plasma membrane]	Complex	1250479	1250479	GRB2:SOS1:p-Y349,350-SHC1:Phosphorylated ERBB2 heterodimers [plasma membrane]	Complex	POS	AND
+1963587	1963587	Phosphorylated ERBB2:EGFR heterodimers [plasma membrane]	CandidateSet	1250505	1250505	EGF:p-EGFR:p-ERBB2:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	1250505	1250505	EGF:p-EGFR:p-ERBB2:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	109798	109798	GRB2-1:SOS1:p-Y427-SHC1 [cytosol]	Complex	POS	AND
+74684	74684	p-Y427-SHC1 [cytosol]	EntityWithAccessionedSequence	109798	109798	GRB2-1:SOS1:p-Y427-SHC1 [cytosol]	Complex	POS	AND
+112322	112322	p-Y-IRS1,p-Y-IRS2 [cytosol]	DefinedSet	109800	109800	GRB2-1:SOS1:p-Y-IRS1,p-Y-IRS2 [cytosol]	Complex	POS	AND
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	109800	109800	GRB2-1:SOS1:p-Y-IRS1,p-Y-IRS2 [cytosol]	Complex	POS	AND
+2685606	2685606	p-Y90,T219,T538,S676,S695-PRKCQ [plasma membrane]	EntityWithAccessionedSequence	2685674	2685674	p-5Y-PKC-theta:DAG [plasma membrane]	Complex	POS	AND
+59502	59502	MAP2K1 [cytosol]	EntityWithAccessionedSequence	5672683	5672683	MAP2K1 dimer [cytosol]	Complex	POS	AND
+4551445	4551445	PRKG2 dimer [cytosol]	Complex	9653485	9653485	PRKG2 dimer:cGMP [cytosol]	Complex	POS	AND
+59504	59504	MAP2K2 [cytosol]	EntityWithAccessionedSequence	5672685	5672685	MAP2K2 dimer [cytosol]	Complex	POS	AND
+59504	59504	MAP2K2 [cytosol]	EntityWithAccessionedSequence	5672686	5672686	MAP2K1:MAPK2K2 heterodimer [cytosol]	Complex	POS	AND
+59502	59502	MAP2K1 [cytosol]	EntityWithAccessionedSequence	5672686	5672686	MAP2K1:MAPK2K2 heterodimer [cytosol]	Complex	POS	AND
+5672591	5672591	MARK3 [cytosol]	EntityWithAccessionedSequence	5672691	5672691	p-S311 KSR1:MARK3 [cytosol]	Complex	POS	AND
+5672652	5672652	p-S311 KSR1 [cytosol]	EntityWithAccessionedSequence	5672691	5672691	p-S311 KSR1:MARK3 [cytosol]	Complex	POS	AND
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	5654264	5654264	Activated FGFR1:p-FRS2:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+5654262	5654262	Activated FGFR1:p-FRS [plasma membrane]	DefinedSet	5654264	5654264	Activated FGFR1:p-FRS2:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	5654275	5654275	Activated FGFR1:p-SHC1:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+5654273	5654273	Activated FGFR1:p-SHC1 [plasma membrane]	Complex	5654275	5654275	Activated FGFR1:p-SHC1:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+5672646	5672646	p-S299,S302,T452,T455,S576 ARAF [cytosol]	EntityWithAccessionedSequence	5672709	5672709	'activator' RAFs [cytosol]	CandidateSet	POS	OR
+5672676	5672676	p-S445,T599,S602,S729 BRAF [cytosol]	EntityWithAccessionedSequence	5672709	5672709	'activator' RAFs [cytosol]	CandidateSet	POS	OR
+5672656	5672656	p-S311,Y552 KSR1 [cytosol]	EntityWithAccessionedSequence	5672709	5672709	'activator' RAFs [cytosol]	CandidateSet	POS	OR
+5672664	5672664	p-S338,Y341,T491,S494,S621 RAF1 [cytosol]	EntityWithAccessionedSequence	5672709	5672709	'activator' RAFs [cytosol]	CandidateSet	POS	OR
+5672673	5672673	p-S445,S729-BRAF [cytosol]	EntityWithAccessionedSequence	5672709	5672709	'activator' RAFs [cytosol]	CandidateSet	POS	OR
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	5654287	5654287	Activated FGFR2:p-FRS:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+5654283	5654283	Activated FGFR2:p-FRS [plasma membrane]	DefinedSet	5654287	5654287	Activated FGFR2:p-FRS:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+5672705	5672705	p-2S MAP2K1:p-2S MAPK2K2 heterodimer [cytosol]	Complex	5672721	5672721	p-2S MAP2K homo/heterodimers [cytosol]	DefinedSet	POS	OR
+5672703	5672703	p-S218,S222 MAP2K1 dimer [cytosol]	Complex	5672721	5672721	p-2S MAP2K homo/heterodimers [cytosol]	DefinedSet	POS	OR
+5672701	5672701	p-S222,S226 MAP2K2 dimer [cytosol]	Complex	5672721	5672721	p-2S MAP2K homo/heterodimers [cytosol]	DefinedSet	POS	OR
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	5654296	5654296	Activated FGFR2:pY-SHC1:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+5654294	5654294	Activated FGFR2:pY-SHC1 [plasma membrane]	Complex	5654296	5654296	Activated FGFR2:pY-SHC1:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+354157	354157	Vinculin bound to alphaIIbbeta3 [plasma membrane]	Complex	354079	354079	Focal Adhesion/Focal contacts [plasma membrane]	Complex	POS	AND
+196015	196015	F-actin [plasma membrane]	Polymer	354079	354079	Focal Adhesion/Focal contacts [plasma membrane]	Complex	POS	AND
+5654305	5654305	Activated FGFR3:p-FRS [plasma membrane]	DefinedSet	5654308	5654308	Activated FGFR3:p-FRS:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	5654308	5654308	Activated FGFR3:p-FRS:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	5654316	5654316	Activated FGFR3:pY-SHC1:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+5654314	5654314	Activated FGFR3:pY-SHC1 [plasma membrane]	Complex	5654316	5654316	Activated FGFR3:pY-SHC1:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	5654327	5654327	Activated FGFR4:p-FRS2:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+5654324	5654324	Activated FGFR4:p-FRS [plasma membrane]	DefinedSet	5654327	5654327	Activated FGFR4:p-FRS2:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	1306947	1306947	NRGs/EGFLs:p-ERBB4:p-ERBB2:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+1963592	1963592	Phosphorylated ERBB2:ERBB4 heterodimers [plasma membrane]	DefinedSet	1306947	1306947	NRGs/EGFLs:p-ERBB4:p-ERBB2:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	5654343	5654343	Activated FGFR4:pY-SHC1:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+5654340	5654340	Activated FGFR4:pY-SHC1 [plasma membrane]	Complex	5654343	5654343	Activated FGFR4:pY-SHC1:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+109842	109842	p-T202,Y204-MAPK3 [cytosol]	EntityWithAccessionedSequence	169289	169289	p-T,Y MAPKs [cytosol]	DefinedSet	POS	OR
+109853	109853	p-T185,Y187-MAPK1 [cytosol]	EntityWithAccessionedSequence	169289	169289	p-T,Y MAPKs [cytosol]	DefinedSet	POS	OR
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	2179409	2179409	GRB2:SOS1:HB-EGF:p-6Y-EGFR [plasma membrane]	Complex	POS	AND
+2179410	2179410	HB-EGF:p-6Y-EGFR dimer [plasma membrane]	Complex	2179409	2179409	GRB2:SOS1:HB-EGF:p-6Y-EGFR [plasma membrane]	Complex	POS	AND
+6806977	6806977	HGF:p-Y1234,Y1235,Y1349,Y1356-MET dimer [plasma membrane]	Complex	8851807	8851807	HGF:p-4Y-MET dimer:GRB2-1:SOS1 [plasma membrane]	Complex	POS	AND
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	8851807	8851807	HGF:p-4Y-MET dimer:GRB2-1:SOS1 [plasma membrane]	Complex	POS	AND
+112354	112354	p-T185,Y187-MAPK1 [nucleoplasm]	EntityWithAccessionedSequence	5674338	5674338	p-T,Y MAPKs [nucleoplasm]	DefinedSet	POS	OR
+112359	112359	p-T202,Y204-MAPK3 [nucleoplasm]	EntityWithAccessionedSequence	5674338	5674338	p-T,Y MAPKs [nucleoplasm]	DefinedSet	POS	OR
+391842	391842	NCAM1 complexed with pFyn-Y420 [plasma membrane]	Complex	392045	392045	Grb2:Sos:pFAK bound to NCAM1:pFyn [plasma membrane]	Complex	POS	AND
+392044	392044	pFAK:Grb2:Sos [cytosol]	Complex	392045	392045	Grb2:Sos:pFAK bound to NCAM1:pFyn [plasma membrane]	Complex	POS	AND
+74294	74294	CALM1:4xCa2+ [cytosol]	Complex	442735	442735	Gly,D-Ser:L-Glu:GRIN1:GRIN2B NMDA receptor:RASGRF1 oligomer:CALM1:4xCa2+ [plasma membrane]	Complex	POS	AND
+9617302	9617302	RASGRF1 oligomer [plasma membrane]	DefinedSet	442735	442735	Gly,D-Ser:L-Glu:GRIN1:GRIN2B NMDA receptor:RASGRF1 oligomer:CALM1:4xCa2+ [plasma membrane]	Complex	POS	AND
+9617306	9617306	Gly,D-Ser:L-Glu:GRIN1:GRIN2B NMDA receptors [plasma membrane]	Complex	442735	442735	Gly,D-Ser:L-Glu:GRIN1:GRIN2B NMDA receptor:RASGRF1 oligomer:CALM1:4xCa2+ [plasma membrane]	Complex	POS	AND
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	8854903	8854903	2x p-5Y-RET:GDNF:GFRA complexes:GRB2-1:SOS1 [plasma membrane]	Complex	POS	AND
+8854160	8854160	2x p-5Y-RET:GDNF:GFRA complexes [plasma membrane]	Complex	8854903	8854903	2x p-5Y-RET:GDNF:GFRA complexes:GRB2-1:SOS1 [plasma membrane]	Complex	POS	AND
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	8854399	8854399	2x p-5Y-RET:GDNF:GFRA complexes:p-Y349,Y350,Y427-SHC1:GRB2-1:SOS1 [plasma membrane]	Complex	POS	AND
+8854980	8854980	2x p-5Y-RET:GDNF:GFRA complexes:p-Y349,Y350,Y427-SHC1 [plasma membrane]	Complex	8854399	8854399	2x p-5Y-RET:GDNF:GFRA complexes:p-Y349,Y350,Y427-SHC1:GRB2-1:SOS1 [plasma membrane]	Complex	POS	AND
+203713	203713	LYPLA1 [cytosol]	EntityWithAccessionedSequence	203655	203655	LYPLA1 dimer [cytosol]	Complex	POS	AND
+163443	163443	PPP1CC [cytosol]	EntityWithAccessionedSequence	9660304	9660304	PPP1CB, PPP1CB [cytosol]	DefinedSet	POS	OR
+163405	163405	PPP1CB [cytosol]	EntityWithAccessionedSequence	9660304	9660304	PPP1CB, PPP1CB [cytosol]	DefinedSet	POS	OR
+205310	205310	p-7Y-KIT:sSCF dimer:p-7Y-KIT [plasma membrane]	Complex	205202	205202	GRB2:SOS1:p-KIT complex [plasma membrane]	Complex	POS	AND
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	205202	205202	GRB2:SOS1:p-KIT complex [plasma membrane]	Complex	POS	AND
+6806977	6806977	HGF:p-Y1234,Y1235,Y1349,Y1356-MET dimer [plasma membrane]	Complex	8851860	8851860	HGF:p-4Y-MET dimer:RANBP9:SOS1 [plasma membrane]	Complex	POS	AND
+64847	64847	SOS1 [cytosol]	EntityWithAccessionedSequence	8851860	8851860	HGF:p-4Y-MET dimer:RANBP9:SOS1 [plasma membrane]	Complex	POS	AND
+374586	374586	RANBP9 [cytosol]	EntityWithAccessionedSequence	8851860	8851860	HGF:p-4Y-MET dimer:RANBP9:SOS1 [plasma membrane]	Complex	POS	AND
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	8851897	8851897	HGF:p-4Y-MET dimer:p-Y317-SHC1-2:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+8851891	8851891	HGF:p-4Y-MET dimer:p-Y317-SHC1-2 [plasma membrane]	Complex	8851897	8851897	HGF:p-4Y-MET dimer:p-Y317-SHC1-2:GRB2:SOS1 [plasma membrane]	Complex	POS	AND
+74789	74789	PIK3R1 [cytosol]	EntityWithAccessionedSequence	74688	74688	PI3K-regulatory subunit [cytosol]	DefinedSet	POS	OR
+74791	74791	PIK3R2 [cytosol]	EntityWithAccessionedSequence	74688	74688	PI3K-regulatory subunit [cytosol]	DefinedSet	POS	OR
+74787	74787	PIK3CA [cytosol]	EntityWithAccessionedSequence	74689	74689	PI3K-catalytic subunit [cytosol]	DefinedSet	POS	OR
+74788	74788	PIK3CB [cytosol]	EntityWithAccessionedSequence	74689	74689	PI3K-catalytic subunit [cytosol]	DefinedSet	POS	OR
+186811	186811	PDGF:Phospho-PDGF receptor dimer [plasma membrane]	Complex	186827	186827	PDGF:Phospho-PDGF receptor dimer:Grb2:Sos1 [plasma membrane]	Complex	POS	AND
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	186827	186827	PDGF:Phospho-PDGF receptor dimer:Grb2:Sos1 [plasma membrane]	Complex	POS	AND
+1169483	1169483	p-RASGRP1,3 [plasma membrane]	DefinedSet	1168369	1168369	p-RASGRP1,3:DAG [plasma membrane]	Complex	POS	AND
+1250341	1250341	p-ERBB4 homodimers [plasma membrane]	DefinedSet	1250343	1250343	p-Y349,350-SHC1:p-ERBB4 [plasma membrane]	Complex	POS	AND
+180276	180276	p-Y349,Y350-SHC1 [cytosol]	EntityWithAccessionedSequence	1250343	1250343	p-Y349,350-SHC1:p-ERBB4 [plasma membrane]	Complex	POS	AND
+74686	74686	GRB2-1 [cytosol]	EntityWithAccessionedSequence	204865	204865	Grb2 bound to Tie2 [plasma membrane]	Complex	POS	AND
+204783	204783	ANGPT1:p-5Y,S119-TEK [plasma membrane]	Complex	204865	204865	Grb2 bound to Tie2 [plasma membrane]	Complex	POS	AND
+1248703	1248703	EGF:p-6Y-EGFR:p-7Y,Y1112-ERBB2 [plasma membrane]	Complex	1963587	1963587	Phosphorylated ERBB2:EGFR heterodimers [plasma membrane]	CandidateSet	POS	OR
+1963593	1963593	EGF:p-6Y-EGFR:p-6Y,Y1112-ERBB2 [plasma membrane]	Complex	1963587	1963587	Phosphorylated ERBB2:EGFR heterodimers [plasma membrane]	CandidateSet	POS	OR
+1963568	1963568	Phosphorylated ERBB2:ERBB4cyt1 heterodimers [plasma membrane]	CandidateSet	1963592	1963592	Phosphorylated ERBB2:ERBB4 heterodimers [plasma membrane]	DefinedSet	POS	OR
+1963591	1963591	Phosphorylated ERBB2:ERBB4cyt2 heterodimers [plasma membrane]	CandidateSet	1963592	1963592	Phosphorylated ERBB2:ERBB4 heterodimers [plasma membrane]	DefinedSet	POS	OR
+1169559	1169559	p-T184-RASGRP1 [plasma membrane]	EntityWithAccessionedSequence	1169483	1169483	p-RASGRP1,3 [plasma membrane]	DefinedSet	POS	OR
+1168362	1168362	p-T133-RASGRP3 [plasma membrane]	EntityWithAccessionedSequence	1169483	1169483	p-RASGRP1,3 [plasma membrane]	DefinedSet	POS	OR
+162568	162568	p-Y-SHC1 [cytosol]	EntityWithAccessionedSequence	167016	167016	p-Y-SHC [cytosol]	DefinedSet	POS	OR
+167051	167051	p-Y-SHC2 [cytosol]	EntityWithAccessionedSequence	167016	167016	p-Y-SHC [cytosol]	DefinedSet	POS	OR
+3009043	3009043	p-Y-SHC3 [cytosol]	EntityWithAccessionedSequence	167016	167016	p-Y-SHC [cytosol]	DefinedSet	POS	OR
+9624425	9624425	EGF-like ligands:p-6Y EGFR dimer [plasma membrane]	Complex	180337	180337	EGF-like ligands:p-6Y-EGFR:p-Y349,350-SHC1 [plasma membrane]	Complex	POS	AND
+180276	180276	p-Y349,Y350-SHC1 [cytosol]	EntityWithAccessionedSequence	180337	180337	EGF-like ligands:p-6Y-EGFR:p-Y349,350-SHC1 [plasma membrane]	Complex	POS	AND
+8855746	8855746	p-5Y-RET:GFRA:GDNF complexes [plasma membrane]	DefinedSet	8854160	8854160	2x p-5Y-RET:GDNF:GFRA complexes [plasma membrane]	Complex	POS	AND
+74686	74686	GRB2-1 [cytosol]	EntityWithAccessionedSequence	9604756	9604756	Active FLT3: GRB2 [plasma membrane]	Complex	POS	AND
+9604751	9604751	Active FLT3 [plasma membrane]	Complex	9604756	9604756	Active FLT3: GRB2 [plasma membrane]	Complex	POS	AND
+913439	913439	High affinity binding complex dimers of cytokine receptors using Bc, inactive JAK2, p-(Y593,628)-Bc:p(427,349,350)-SHC1 [plasma membrane]	DefinedSet	912534	912534	Interleukin receptor complexes with activated SHC1 [plasma membrane]	DefinedSet	POS	OR
+453099	453099	IL2:IL2R trimer p-(Y338,392,510)-beta subunit:p-JAK1:JAK3:p-SHC [plasma membrane]	Complex	912534	912534	Interleukin receptor complexes with activated SHC1 [plasma membrane]	DefinedSet	POS	OR
+388755	388755	PTPRA [plasma membrane]	EntityWithAccessionedSequence	391842	391842	NCAM1 complexed with pFyn-Y420 [plasma membrane]	Complex	POS	AND
+391843	391843	NCAM:pFyn-Y420 [plasma membrane]	Complex	391842	391842	NCAM1 complexed with pFyn-Y420 [plasma membrane]	Complex	POS	AND
+391839	391839	SPTA:SPTB [cytosol]	Complex	391842	391842	NCAM1 complexed with pFyn-Y420 [plasma membrane]	Complex	POS	AND
+9611354	9611354	p-T286-CAMK2A,p-T287-CAMK2B,(p-T287-CAMK2D,p-T287-CAMK2G) [cytosol]	DefinedSet	9617584	9617584	p-T286-CaMKII dodecamer [cytosol]	Complex	POS	AND
+74772	74772	p-Y-IRS1 [cytosol]	EntityWithAccessionedSequence	112322	112322	p-Y-IRS1,p-Y-IRS2 [cytosol]	DefinedSet	POS	OR
+74774	74774	p-Y-IRS2 [cytosol]	EntityWithAccessionedSequence	112322	112322	p-Y-IRS1,p-Y-IRS2 [cytosol]	DefinedSet	POS	OR
+74686	74686	GRB2-1 [cytosol]	EntityWithAccessionedSequence	109797	109797	GRB2-1:SOS1 [cytosol]	Complex	POS	AND
+64847	64847	SOS1 [cytosol]	EntityWithAccessionedSequence	109797	109797	GRB2-1:SOS1 [cytosol]	Complex	POS	AND
+109797	109797	GRB2-1:SOS1 [cytosol]	Complex	2685672	2685672	p-SHC1:GRB2:SOS [cytosol]	Complex	POS	AND
+1433505	1433505	p-Y239,Y240,Y317-SHC1-2 [cytosol]	EntityWithAccessionedSequence	2685672	2685672	p-SHC1:GRB2:SOS [cytosol]	Complex	POS	AND
+5654200	5654200	Activated FGFR1:p-FRS2 [plasma membrane]	Complex	5654262	5654262	Activated FGFR1:p-FRS [plasma membrane]	DefinedSet	POS	OR
+5654261	5654261	Activated FGFR1:p-FRS3 [plasma membrane]	Complex	5654262	5654262	Activated FGFR1:p-FRS [plasma membrane]	DefinedSet	POS	OR
+169292	169292	p-S222,S226-MAP2K2 [cytosol]	EntityWithAccessionedSequence	5672701	5672701	p-S222,S226 MAP2K2 dimer [cytosol]	Complex	POS	AND
+109837	109837	p-S218,S222-MAP2K1 [cytosol]	EntityWithAccessionedSequence	5672703	5672703	p-S218,S222 MAP2K1 dimer [cytosol]	Complex	POS	AND
+5654170	5654170	Activated FGFR1 [plasma membrane]	DefinedSet	5654273	5654273	Activated FGFR1:p-SHC1 [plasma membrane]	Complex	POS	AND
+1169534	1169534	p-SHC1 p46,p52 [plasma membrane]	DefinedSet	5654273	5654273	Activated FGFR1:p-SHC1 [plasma membrane]	Complex	POS	AND
+5654201	5654201	Activated FGFR2:p-FRS2 [plasma membrane]	Complex	5654283	5654283	Activated FGFR2:p-FRS [plasma membrane]	DefinedSet	POS	OR
+5654284	5654284	Activated FGFR2:p-FRS3 [plasma membrane]	Complex	5654283	5654283	Activated FGFR2:p-FRS [plasma membrane]	DefinedSet	POS	OR
+109842	109842	p-T202,Y204-MAPK3 [cytosol]	EntityWithAccessionedSequence	109844	109844	p-T202, Y204 MAPK3 dimer [cytosol]	Complex	POS	AND
+418377	418377	PRKG2 [cytosol]	EntityWithAccessionedSequence	4551445	4551445	PRKG2 dimer [cytosol]	Complex	POS	AND
+112359	112359	p-T202,Y204-MAPK3 [nucleoplasm]	EntityWithAccessionedSequence	109845	109845	p-T202, Y204 MAPK3 dimer [nucleoplasm]	Complex	POS	AND
+5654152	5654152	Activated FGFR2 [plasma membrane]	DefinedSet	5654294	5654294	Activated FGFR2:pY-SHC1 [plasma membrane]	Complex	POS	AND
+1169534	1169534	p-SHC1 p46,p52 [plasma membrane]	DefinedSet	5654294	5654294	Activated FGFR2:pY-SHC1 [plasma membrane]	Complex	POS	AND
+109853	109853	p-T185,Y187-MAPK1 [cytosol]	EntityWithAccessionedSequence	109855	109855	p-T185,Y187 MAPK1 dimer [cytosol]	Complex	POS	AND
+112354	112354	p-T185,Y187-MAPK1 [nucleoplasm]	EntityWithAccessionedSequence	109856	109856	p-Y185,Y187 MAPK1 dimer [nucleoplasm]	Complex	POS	AND
+5654196	5654196	Activated FGFR3:p-FRS2 [plasma membrane]	Complex	5654305	5654305	Activated FGFR3:p-FRS [plasma membrane]	DefinedSet	POS	OR
+5654303	5654303	Activated FGFR3:p-FRS3 [plasma membrane]	Complex	5654305	5654305	Activated FGFR3:p-FRS [plasma membrane]	DefinedSet	POS	OR
+5654146	5654146	Activated FGFR3 [plasma membrane]	DefinedSet	5654314	5654314	Activated FGFR3:pY-SHC1 [plasma membrane]	Complex	POS	AND
+1169534	1169534	p-SHC1 p46,p52 [plasma membrane]	DefinedSet	5654314	5654314	Activated FGFR3:pY-SHC1 [plasma membrane]	Complex	POS	AND
+5654193	5654193	Activated FGFR4:p-FRS2 [plasma membrane]	Complex	5654324	5654324	Activated FGFR4:p-FRS [plasma membrane]	DefinedSet	POS	OR
+5654326	5654326	Activated FGFR4:p-FRS3 [plasma membrane]	Complex	5654324	5654324	Activated FGFR4:p-FRS [plasma membrane]	DefinedSet	POS	OR
+5654158	5654158	Activated FGFR4 [plasma membrane]	DefinedSet	5654340	5654340	Activated FGFR4:pY-SHC1 [plasma membrane]	Complex	POS	AND
+1169534	1169534	p-SHC1 p46,p52 [plasma membrane]	DefinedSet	5654340	5654340	Activated FGFR4:pY-SHC1 [plasma membrane]	Complex	POS	AND
+2179388	2179388	HB-EGF:p-6Y-EGFR [plasma membrane]	Complex	2179410	2179410	HB-EGF:p-6Y-EGFR dimer [plasma membrane]	Complex	POS	AND
+179803	179803	p-6Y-EGFR [plasma membrane]	EntityWithAccessionedSequence	9624425	9624425	EGF-like ligands:p-6Y EGFR dimer [plasma membrane]	Complex	POS	AND
+9624194	9624194	EGF-like ligands [extracellular region]	DefinedSet	9624425	9624425	EGF-like ligands:p-6Y EGFR dimer [plasma membrane]	Complex	POS	AND
+74686	74686	GRB2-1 [cytosol]	EntityWithAccessionedSequence	392044	392044	pFAK:Grb2:Sos [cytosol]	Complex	POS	AND
+64847	64847	SOS1 [cytosol]	EntityWithAccessionedSequence	392044	392044	pFAK:Grb2:Sos [cytosol]	Complex	POS	AND
+354128	354128	p-6Y-PTK2 [cytosol]	EntityWithAccessionedSequence	392044	392044	pFAK:Grb2:Sos [cytosol]	Complex	POS	AND
+354132	354132	Vinculin bound to PIP2 [plasma membrane]	Complex	354157	354157	Vinculin bound to alphaIIbbeta3 [plasma membrane]	Complex	POS	AND
+354137	354137	Focal complex [plasma membrane]	Complex	354157	354157	Vinculin bound to alphaIIbbeta3 [plasma membrane]	Complex	POS	AND
+180276	180276	p-Y349,Y350-SHC1 [cytosol]	EntityWithAccessionedSequence	1250194	1250194	p-Y349,350-SHC1:Phosphorylated ERBB2 heterodimers [plasma membrane]	Complex	POS	AND
+1963588	1963588	p-ERBB2 heterodimers [plasma membrane]	CandidateSet	1250194	1250194	p-Y349,350-SHC1:Phosphorylated ERBB2 heterodimers [plasma membrane]	Complex	POS	AND
+442734	442734	RASGRF1:RASGRF2 heterooligomer [plasma membrane]	Complex	9617302	9617302	RASGRF1 oligomer [plasma membrane]	DefinedSet	POS	OR
+9617307	9617307	RASGRF1 homooligomer [plasma membrane]	Complex	9617302	9617302	RASGRF1 oligomer [plasma membrane]	DefinedSet	POS	OR
+9617305	9617305	GRIN1:GRIN2B NMDA receptors:PSD proteins [plasma membrane]	Complex	9617306	9617306	Gly,D-Ser:L-Glu:GRIN1:GRIN2B NMDA receptors [plasma membrane]	Complex	POS	AND
+9627662	9627662	Gly,D-Ser [extracellular region]	DefinedSet	9617306	9617306	Gly,D-Ser:L-Glu:GRIN1:GRIN2B NMDA receptors [plasma membrane]	Complex	POS	AND
+6806977	6806977	HGF:p-Y1234,Y1235,Y1349,Y1356-MET dimer [plasma membrane]	Complex	8851891	8851891	HGF:p-4Y-MET dimer:p-Y317-SHC1-2 [plasma membrane]	Complex	POS	AND
+8851895	8851895	p-Y317-SHC1-2 [cytosol]	EntityWithAccessionedSequence	8851891	8851891	HGF:p-4Y-MET dimer:p-Y317-SHC1-2 [plasma membrane]	Complex	POS	AND
+186821	186821	Phospho- PDGF receptor dimer [plasma membrane]	DefinedSet	186811	186811	PDGF:Phospho-PDGF receptor dimer [plasma membrane]	Complex	POS	AND
+380760	380760	Active PDGF dimers (AA, AB, BB) [extracellular region]	DefinedSet	186811	186811	PDGF:Phospho-PDGF receptor dimer [plasma membrane]	Complex	POS	AND
+6806975	6806975	HGF dimer:p-Y1234,Y1235,Y1349,Y1356-MET [plasma membrane]	Complex	6806977	6806977	HGF:p-Y1234,Y1235,Y1349,Y1356-MET dimer [plasma membrane]	Complex	POS	AND
+912321	912321	p-Y349,Y350,Y427-SHC1 [cytosol]	EntityWithAccessionedSequence	8854980	8854980	2x p-5Y-RET:GDNF:GFRA complexes:p-Y349,Y350,Y427-SHC1 [plasma membrane]	Complex	POS	AND
+8854160	8854160	2x p-5Y-RET:GDNF:GFRA complexes [plasma membrane]	Complex	8854980	8854980	2x p-5Y-RET:GDNF:GFRA complexes:p-Y349,Y350,Y427-SHC1 [plasma membrane]	Complex	POS	AND
+205207	205207	p-7Y-KIT [plasma membrane]	EntityWithAccessionedSequence	205310	205310	p-7Y-KIT:sSCF dimer:p-7Y-KIT [plasma membrane]	Complex	POS	AND
+1433307	1433307	sSCF dimer [extracellular region]	Complex	205310	205310	p-7Y-KIT:sSCF dimer:p-7Y-KIT [plasma membrane]	Complex	POS	AND
+179863	179863	EGF [extracellular region]	EntityWithAccessionedSequence	9624194	9624194	EGF-like ligands [extracellular region]	DefinedSet	POS	OR
+1233234	1233234	HBEGF(63-148) [extracellular region]	EntityWithAccessionedSequence	9624194	9624194	EGF-like ligands [extracellular region]	DefinedSet	POS	OR
+1233233	1233233	EREG(60-108) [extracellular region]	EntityWithAccessionedSequence	9624194	9624194	EGF-like ligands [extracellular region]	DefinedSet	POS	OR
+1233224	1233224	BTC(32-111) [extracellular region]	EntityWithAccessionedSequence	9624194	9624194	EGF-like ligands [extracellular region]	DefinedSet	POS	OR
+9624183	9624183	TGFA(24-98) [extracellular region]	EntityWithAccessionedSequence	9624194	9624194	EGF-like ligands [extracellular region]	DefinedSet	POS	OR
+9624187	9624187	EPGN(23-154) [extracellular region]	EntityWithAccessionedSequence	9624194	9624194	EGF-like ligands [extracellular region]	DefinedSet	POS	OR
+9624190	9624190	AREG(101-187) [extracellular region]	EntityWithAccessionedSequence	9624194	9624194	EGF-like ligands [extracellular region]	DefinedSet	POS	OR
+190389	190389	Activated FGFR3c homodimer  [plasma membrane]	Complex	5654146	5654146	Activated FGFR3 [plasma membrane]	DefinedSet	POS	OR
+190380	190380	Activated FGFR3b homodimer [plasma membrane]	Complex	5654146	5654146	Activated FGFR3 [plasma membrane]	DefinedSet	POS	OR
+192616	192616	Activated FGFR2c homodimer bound to FGF [plasma membrane]	DefinedSet	5654152	5654152	Activated FGFR2 [plasma membrane]	DefinedSet	POS	OR
+192606	192606	Activated FGFR2b homodimer bound to FGF [plasma membrane]	DefinedSet	5654152	5654152	Activated FGFR2 [plasma membrane]	DefinedSet	POS	OR
+5654152	5654152	Activated FGFR2 [plasma membrane]	DefinedSet	5654284	5654284	Activated FGFR2:p-FRS3 [plasma membrane]	Complex	POS	AND
+191475	191475	p-5Y-FRS3 [plasma membrane]	EntityWithAccessionedSequence	5654284	5654284	Activated FGFR2:p-FRS3 [plasma membrane]	Complex	POS	AND
+8854740	8854740	FLT3LG dimer [extracellular region]	Complex	9604751	9604751	Active FLT3 [plasma membrane]	Complex	POS	AND
+9604780	9604780	Autophosphorylated FLT3 [plasma membrane]	EntityWithAccessionedSequence	9604751	9604751	Active FLT3 [plasma membrane]	Complex	POS	AND
+1307958	1307958	Activated FGFR4 bound to FGF19:BetaKlotho [plasma membrane]	Complex	5654158	5654158	Activated FGFR4 [plasma membrane]	DefinedSet	POS	OR
+190328	190328	Activated FGFR4 homodimer [plasma membrane]	Complex	5654158	5654158	Activated FGFR4 [plasma membrane]	DefinedSet	POS	OR
+9611351	9611351	LRRC7 [cytosol]	EntityWithAccessionedSequence	9617305	9617305	GRIN1:GRIN2B NMDA receptors:PSD proteins [plasma membrane]	Complex	POS	AND
+9611355	9611355	CaMKII dodecamer [cytosol]	Complex	9617305	9617305	GRIN1:GRIN2B NMDA receptors:PSD proteins [plasma membrane]	Complex	POS	AND
+9617309	9617309	GRIN1:GRIN2B NMDA receptors:DLG4:DLG1,DLG2,DLG3,DLG4:NEFL:ACTN2 [plasma membrane]	Complex	9617305	9617305	GRIN1:GRIN2B NMDA receptors:PSD proteins [plasma membrane]	Complex	POS	AND
+500333	500333	Activated FGFR1c bound to FGF23:Klotho [plasma membrane]	Complex	5654170	5654170	Activated FGFR1 [plasma membrane]	DefinedSet	POS	OR
+190425	190425	Activated FGFR1c homodimer  [plasma membrane]	Complex	5654170	5654170	Activated FGFR1 [plasma membrane]	DefinedSet	POS	OR
+190430	190430	Activated FGFR1b homodimer [plasma membrane]	Complex	5654170	5654170	Activated FGFR1 [plasma membrane]	DefinedSet	POS	OR
+442723	442723	RASGRF1 [plasma membrane]	EntityWithAccessionedSequence	9617307	9617307	RASGRF1 homooligomer [plasma membrane]	Complex	POS	AND
+913412	913412	IL3:IL3R active complex, inactive JAK2, phosphorylated Bc:p(Y427,349,350)-SHC1 [plasma membrane]	Complex	913439	913439	High affinity binding complex dimers of cytokine receptors using Bc, inactive JAK2, p-(Y593,628)-Bc:p(427,349,350)-SHC1 [plasma membrane]	DefinedSet	POS	OR
+913428	913428	High affinity GM-CSF receptor complex dimer, inactive JAK2, phosphorylated Bc:p(Y427,349,350)-SHC1 [plasma membrane]	Complex	913439	913439	High affinity binding complex dimers of cytokine receptors using Bc, inactive JAK2, p-(Y593,628)-Bc:p(427,349,350)-SHC1 [plasma membrane]	DefinedSet	POS	OR
+913366	913366	High affinity IL-5 receptor complex dimer, inactive JAK2, phosphorylated Bc:p(Y427,349,350)-SHC1 [plasma membrane]	Complex	913439	913439	High affinity binding complex dimers of cytokine receptors using Bc, inactive JAK2, p-(Y593,628)-Bc:p(427,349,350)-SHC1 [plasma membrane]	DefinedSet	POS	OR
+420050	420050	Spectrin beta chain [cytosol]	DefinedSet	391839	391839	SPTA:SPTB [cytosol]	Complex	POS	AND
+420046	420046	Spectrin alpha chain [cytosol]	DefinedSet	391839	391839	SPTA:SPTB [cytosol]	Complex	POS	AND
+5654146	5654146	Activated FGFR3 [plasma membrane]	DefinedSet	5654303	5654303	Activated FGFR3:p-FRS3 [plasma membrane]	Complex	POS	AND
+191475	191475	p-5Y-FRS3 [plasma membrane]	EntityWithAccessionedSequence	5654303	5654303	Activated FGFR3:p-FRS3 [plasma membrane]	Complex	POS	AND
+391821	391821	p-Y420-FYN [cytosol]	EntityWithAccessionedSequence	391843	391843	NCAM:pFyn-Y420 [plasma membrane]	Complex	POS	AND
+375103	375103	NCAM1:NCAM1 trans-homotetramer [plasma membrane]	Complex	391843	391843	NCAM:pFyn-Y420 [plasma membrane]	Complex	POS	AND
+1250351	1250351	p-ERBB4cyt1 homodimers [plasma membrane]	DefinedSet	1250341	1250341	p-ERBB4 homodimers [plasma membrane]	DefinedSet	POS	OR
+1250293	1250293	p-ERBB4jmAcyt2 homodimer [plasma membrane]	Complex	1250341	1250341	p-ERBB4 homodimers [plasma membrane]	DefinedSet	POS	OR
+1963579	1963579	NRGs/EGFLs:p-ERBB4cyt1:p-7Y-ERBB2 [plasma membrane]	Complex	1963568	1963568	Phosphorylated ERBB2:ERBB4cyt1 heterodimers [plasma membrane]	CandidateSet	POS	OR
+1250316	1250316	NRGs/EGFLs:p-ERBB4cyt1:p-6Y-ERBB2 [plasma membrane]	Complex	1963568	1963568	Phosphorylated ERBB2:ERBB4cyt1 heterodimers [plasma membrane]	CandidateSet	POS	OR
+170959	170959	p-6Y-FRS2 [plasma membrane]	EntityWithAccessionedSequence	5654193	5654193	Activated FGFR4:p-FRS2 [plasma membrane]	Complex	POS	AND
+5654158	5654158	Activated FGFR4 [plasma membrane]	DefinedSet	5654193	5654193	Activated FGFR4:p-FRS2 [plasma membrane]	Complex	POS	AND
+5654146	5654146	Activated FGFR3 [plasma membrane]	DefinedSet	5654196	5654196	Activated FGFR3:p-FRS2 [plasma membrane]	Complex	POS	AND
+170959	170959	p-6Y-FRS2 [plasma membrane]	EntityWithAccessionedSequence	5654196	5654196	Activated FGFR3:p-FRS2 [plasma membrane]	Complex	POS	AND
+5654158	5654158	Activated FGFR4 [plasma membrane]	DefinedSet	5654326	5654326	Activated FGFR4:p-FRS3 [plasma membrane]	Complex	POS	AND
+191475	191475	p-5Y-FRS3 [plasma membrane]	EntityWithAccessionedSequence	5654326	5654326	Activated FGFR4:p-FRS3 [plasma membrane]	Complex	POS	AND
+170959	170959	p-6Y-FRS2 [plasma membrane]	EntityWithAccessionedSequence	5654200	5654200	Activated FGFR1:p-FRS2 [plasma membrane]	Complex	POS	AND
+5654170	5654170	Activated FGFR1 [plasma membrane]	DefinedSet	5654200	5654200	Activated FGFR1:p-FRS2 [plasma membrane]	Complex	POS	AND
+170959	170959	p-6Y-FRS2 [plasma membrane]	EntityWithAccessionedSequence	5654201	5654201	Activated FGFR2:p-FRS2 [plasma membrane]	Complex	POS	AND
+5654152	5654152	Activated FGFR2 [plasma membrane]	DefinedSet	5654201	5654201	Activated FGFR2:p-FRS2 [plasma membrane]	Complex	POS	AND
+179803	179803	p-6Y-EGFR [plasma membrane]	EntityWithAccessionedSequence	2179388	2179388	HB-EGF:p-6Y-EGFR [plasma membrane]	Complex	POS	AND
+1233234	1233234	HBEGF(63-148) [extracellular region]	EntityWithAccessionedSequence	2179388	2179388	HB-EGF:p-6Y-EGFR [plasma membrane]	Complex	POS	AND
+8864079	8864079	p-7Y,Y1112-ERBB2 [plasma membrane]	EntityWithAccessionedSequence	1248703	1248703	EGF:p-6Y-EGFR:p-7Y,Y1112-ERBB2 [plasma membrane]	Complex	POS	AND
+1248702	1248702	EGF:p-6Y-EGFR [plasma membrane]	Complex	1248703	1248703	EGF:p-6Y-EGFR:p-7Y,Y1112-ERBB2 [plasma membrane]	Complex	POS	AND
+141763	141763	HGF dimer [extracellular region]	Complex	6806975	6806975	HGF dimer:p-Y1234,Y1235,Y1349,Y1356-MET [plasma membrane]	Complex	POS	AND
+6806973	6806973	p-Y1234,Y1235,Y1349,Y1356-MET [plasma membrane]	EntityWithAccessionedSequence	6806975	6806975	HGF dimer:p-Y1234,Y1235,Y1349,Y1356-MET [plasma membrane]	Complex	POS	AND
+8855729	8855729	p-5Y-RET:GFRA4:PSPN [plasma membrane]	Complex	8855746	8855746	p-5Y-RET:GFRA:GDNF complexes [plasma membrane]	DefinedSet	POS	OR
+8855757	8855757	p-5Y-RET:GFRA1,GFRA2:GDNF,NRTN [plasma membrane]	Complex	8855746	8855746	p-5Y-RET:GFRA:GDNF complexes [plasma membrane]	DefinedSet	POS	OR
+8855755	8855755	p-5Y-RET:GFRA1,GFRA3:ARTN [plasma membrane]	Complex	8855746	8855746	p-5Y-RET:GFRA:GDNF complexes [plasma membrane]	DefinedSet	POS	OR
+1963580	1963580	Autophosphorylated p-Y877-ERBB2 heterodimers [plasma membrane]	DefinedSet	1963588	1963588	p-ERBB2 heterodimers [plasma membrane]	CandidateSet	POS	OR
+1963585	1963585	p-6Y-ERBB2 heterodimers [plasma membrane]	DefinedSet	1963588	1963588	p-ERBB2 heterodimers [plasma membrane]	CandidateSet	POS	OR
+186816	186816	Phospho-alpha receptor homodimer [plasma membrane]	Complex	186821	186821	Phospho- PDGF receptor dimer [plasma membrane]	DefinedSet	POS	OR
+186769	186769	Phospho-alpha-Phospho-beta receptor heterodimer [plasma membrane]	Complex	186821	186821	Phospho- PDGF receptor dimer [plasma membrane]	DefinedSet	POS	OR
+186805	186805	Phospho-beta receptor homodimer [plasma membrane]	Complex	186821	186821	Phospho- PDGF receptor dimer [plasma membrane]	DefinedSet	POS	OR
+1963567	1963567	NRGs/EGFLs:p-ERBB4cyt2:p-7Y-ERBB2 [plasma membrane]	Complex	1963591	1963591	Phosphorylated ERBB2:ERBB4cyt2 heterodimers [plasma membrane]	CandidateSet	POS	OR
+1250329	1250329	NRGs/EGFLs:p-ERBB4cyt2:p-6Y-ERBB2 [plasma membrane]	Complex	1963591	1963591	Phosphorylated ERBB2:ERBB4cyt2 heterodimers [plasma membrane]	CandidateSet	POS	OR
+1248702	1248702	EGF:p-6Y-EGFR [plasma membrane]	Complex	1963593	1963593	EGF:p-6Y-EGFR:p-6Y,Y1112-ERBB2 [plasma membrane]	Complex	POS	AND
+8864081	8864081	p-6Y,Y1112-ERBB2 [plasma membrane]	EntityWithAccessionedSequence	1963593	1963593	EGF:p-6Y-EGFR:p-6Y,Y1112-ERBB2 [plasma membrane]	Complex	POS	AND
+350753	350753	VCL [cytosol]	EntityWithAccessionedSequence	354132	354132	Vinculin bound to PIP2 [plasma membrane]	Complex	POS	AND
+380759	380759	PDGF A/B heterodimer [extracellular region]	Complex	380760	380760	Active PDGF dimers (AA, AB, BB) [extracellular region]	DefinedSet	POS	OR
+380761	380761	active PDGF-AA dimer [extracellular region]	Complex	380760	380760	Active PDGF dimers (AA, AB, BB) [extracellular region]	DefinedSet	POS	OR
+184206	184206	active PDGF-BB dimer [extracellular region]	Complex	380760	380760	Active PDGF dimers (AA, AB, BB) [extracellular region]	DefinedSet	POS	OR
+377604	377604	Integrin binding divalent cations [extracellular region]	CandidateSet	354137	354137	Focal complex [plasma membrane]	Complex	POS	AND
+377603	377603	Integrin alphaIIb beta3 ECM ligands [extracellular region]	DefinedSet	354137	354137	Focal complex [plasma membrane]	Complex	POS	AND
+354130	354130	Integrin alphaIIb beta3:p-Y530-SRC:CSK:Talin:RIAM complex [plasma membrane]	Complex	354137	354137	Focal complex [plasma membrane]	Complex	POS	AND
+445370	445370	p-T287-CAMK2D [cytosol]	EntityWithAccessionedSequence	9611354	9611354	p-T286-CAMK2A,p-T287-CAMK2B,(p-T287-CAMK2D,p-T287-CAMK2G) [cytosol]	DefinedSet	POS	OR
+445371	445371	p-T287-CAMK2B [cytosol]	EntityWithAccessionedSequence	9611354	9611354	p-T286-CAMK2A,p-T287-CAMK2B,(p-T287-CAMK2D,p-T287-CAMK2G) [cytosol]	DefinedSet	POS	OR
+445368	445368	p-T286-CAMK2A [cytosol]	EntityWithAccessionedSequence	9611354	9611354	p-T286-CAMK2A,p-T287-CAMK2B,(p-T287-CAMK2D,p-T287-CAMK2G) [cytosol]	DefinedSet	POS	OR
+445369	445369	p-T287-CAMK2G [cytosol]	EntityWithAccessionedSequence	9611354	9611354	p-T286-CAMK2A,p-T287-CAMK2B,(p-T287-CAMK2D,p-T287-CAMK2G) [cytosol]	DefinedSet	POS	OR
+708330	708330	KITLG-1(26-190) [extracellular region]	EntityWithAccessionedSequence	1433307	1433307	sSCF dimer [extracellular region]	Complex	POS	AND
+162568	162568	p-Y-SHC1 [cytosol]	EntityWithAccessionedSequence	453099	453099	IL2:IL2R trimer p-(Y338,392,510)-beta subunit:p-JAK1:JAK3:p-SHC [plasma membrane]	Complex	POS	AND
+452104	452104	IL2:IL2R trimer p-(Y338,392,510) beta subunit:p-JAK1:JAK3 [plasma membrane]	Complex	453099	453099	IL2:IL2R trimer p-(Y338,392,510)-beta subunit:p-JAK1:JAK3:p-SHC [plasma membrane]	Complex	POS	AND
+442723	442723	RASGRF1 [plasma membrane]	EntityWithAccessionedSequence	442734	442734	RASGRF1:RASGRF2 heterooligomer [plasma membrane]	Complex	POS	AND
+442744	442744	RASGRF2 [plasma membrane]	EntityWithAccessionedSequence	442734	442734	RASGRF1:RASGRF2 heterooligomer [plasma membrane]	Complex	POS	AND
+204854	204854	ANGPT1 [extracellular region]	EntityWithAccessionedSequence	204783	204783	ANGPT1:p-5Y,S119-TEK [plasma membrane]	Complex	POS	AND
+204772	204772	p-5Y,S1119-TEK [plasma membrane]	EntityWithAccessionedSequence	204783	204783	ANGPT1:p-5Y,S119-TEK [plasma membrane]	Complex	POS	AND
+5654170	5654170	Activated FGFR1 [plasma membrane]	DefinedSet	5654261	5654261	Activated FGFR1:p-FRS3 [plasma membrane]	Complex	POS	AND
+191475	191475	p-5Y-FRS3 [plasma membrane]	EntityWithAccessionedSequence	5654261	5654261	Activated FGFR1:p-FRS3 [plasma membrane]	Complex	POS	AND
+1169507	1169507	p-Y239,Y240,Y317-SHC1-2 [plasma membrane]	EntityWithAccessionedSequence	1169534	1169534	p-SHC1 p46,p52 [plasma membrane]	DefinedSet	POS	OR
+1169439	1169439	p-Y194,Y195,Y272-SHC1-3 [plasma membrane]	EntityWithAccessionedSequence	1169534	1169534	p-SHC1 p46,p52 [plasma membrane]	DefinedSet	POS	OR
+54851	54851	FN1(32-2386) [extracellular region]	EntityWithAccessionedSequence	377603	377603	Integrin alphaIIb beta3 ECM ligands [extracellular region]	DefinedSet	POS	OR
+67271	67271	VWF(23-763) [extracellular region]	EntityWithAccessionedSequence	377603	377603	Integrin alphaIIb beta3 ECM ligands [extracellular region]	DefinedSet	POS	OR
+140586	140586	fibrin monomer [extracellular region]	Complex	377603	377603	Integrin alphaIIb beta3 ECM ligands [extracellular region]	DefinedSet	POS	OR
+912317	912317	IL3:IL3R active complex, JAK2:p-Y593,Y629-IL3RB [plasma membrane]	Complex	913412	913412	IL3:IL3R active complex, inactive JAK2, phosphorylated Bc:p(Y427,349,350)-SHC1 [plasma membrane]	Complex	POS	AND
+912321	912321	p-Y349,Y350,Y427-SHC1 [cytosol]	EntityWithAccessionedSequence	913412	913412	IL3:IL3R active complex, inactive JAK2, phosphorylated Bc:p(Y427,349,350)-SHC1 [plasma membrane]	Complex	POS	AND
+451911	451911	IL2RG:JAK3 [plasma membrane]	Complex	452104	452104	IL2:IL2R trimer p-(Y338,392,510) beta subunit:p-JAK1:JAK3 [plasma membrane]	Complex	POS	AND
+451921	451921	p-Y-JAK1 [cytosol]	EntityWithAccessionedSequence	452104	452104	IL2:IL2R trimer p-(Y338,392,510) beta subunit:p-JAK1:JAK3 [plasma membrane]	Complex	POS	AND
+450046	450046	IL2RA [plasma membrane]	EntityWithAccessionedSequence	452104	452104	IL2:IL2R trimer p-(Y338,392,510) beta subunit:p-JAK1:JAK3 [plasma membrane]	Complex	POS	AND
+452093	452093	p-Y364,Y418,Y536-IL2RB [plasma membrane]	EntityWithAccessionedSequence	452104	452104	IL2:IL2R trimer p-(Y338,392,510) beta subunit:p-JAK1:JAK3 [plasma membrane]	Complex	POS	AND
+447099	447099	IL2 [extracellular region]	EntityWithAccessionedSequence	452104	452104	IL2:IL2R trimer p-(Y338,392,510) beta subunit:p-JAK1:JAK3 [plasma membrane]	Complex	POS	AND
+1250305	1250305	NRGs/EGF-like ligands:p-ERBB4cyt1 [plasma membrane]	Complex	1250316	1250316	NRGs/EGFLs:p-ERBB4cyt1:p-6Y-ERBB2 [plasma membrane]	Complex	POS	AND
+1963569	1963569	p-6Y-ERBB2 [plasma membrane]	EntityWithAccessionedSequence	1250316	1250316	NRGs/EGFLs:p-ERBB4cyt1:p-6Y-ERBB2 [plasma membrane]	Complex	POS	AND
+381935	381935	Processed PDGF-B [extracellular region]	DefinedSet	184206	184206	active PDGF-BB dimer [extracellular region]	Complex	POS	AND
+186806	186806	p-11Y-PDGFRA [plasma membrane]	EntityWithAccessionedSequence	186769	186769	Phospho-alpha-Phospho-beta receptor heterodimer [plasma membrane]	Complex	POS	AND
+186803	186803	p-12Y-PDGFRB [plasma membrane]	EntityWithAccessionedSequence	186769	186769	Phospho-alpha-Phospho-beta receptor heterodimer [plasma membrane]	Complex	POS	AND
+912321	912321	p-Y349,Y350,Y427-SHC1 [cytosol]	EntityWithAccessionedSequence	913428	913428	High affinity GM-CSF receptor complex dimer, inactive JAK2, phosphorylated Bc:p(Y427,349,350)-SHC1 [plasma membrane]	Complex	POS	AND
+913384	913384	High affinity GM-CSF receptor complex dimer, inactive JAK2, p(Y593, 628)- Bc [plasma membrane]	Complex	913428	913428	High affinity GM-CSF receptor complex dimer, inactive JAK2, phosphorylated Bc:p(Y427,349,350)-SHC1 [plasma membrane]	Complex	POS	AND
+190330	190330	p-5Y-FGFR4 [plasma membrane]	EntityWithAccessionedSequence	190328	190328	Activated FGFR4 homodimer [plasma membrane]	Complex	POS	AND
+189959	189959	FGFR4-binding FGFs [extracellular region]	DefinedSet	190328	190328	Activated FGFR4 homodimer [plasma membrane]	Complex	POS	AND
+1963569	1963569	p-6Y-ERBB2 [plasma membrane]	EntityWithAccessionedSequence	1250329	1250329	NRGs/EGFLs:p-ERBB4cyt2:p-6Y-ERBB2 [plasma membrane]	Complex	POS	AND
+1250309	1250309	NRGs/EGF-like ligands:p-ERBB4cyt2 [plasma membrane]	Complex	1250329	1250329	NRGs/EGFLs:p-ERBB4cyt2:p-6Y-ERBB2 [plasma membrane]	Complex	POS	AND
+9610932	9610932	ACTN2 homodimer [cytosol]	Complex	9617309	9617309	GRIN1:GRIN2B NMDA receptors:DLG4:DLG1,DLG2,DLG3,DLG4:NEFL:ACTN2 [plasma membrane]	Complex	POS	AND
+9617308	9617308	GRIN1:GRIN2B NMDA receptors:DLG4:DLG1,DLG2,DLG3,DLG4:NEFL [plasma membrane]	Complex	9617309	9617309	GRIN1:GRIN2B NMDA receptors:DLG4:DLG1,DLG2,DLG3,DLG4:NEFL:ACTN2 [plasma membrane]	Complex	POS	AND
+190384	190384	p-6Y-FGFR3b [plasma membrane]	EntityWithAccessionedSequence	190380	190380	Activated FGFR3b homodimer [plasma membrane]	Complex	POS	AND
+189964	189964	FGFR3b-binding FGFs [extracellular region]	DefinedSet	190380	190380	Activated FGFR3b homodimer [plasma membrane]	Complex	POS	AND
+1251954	1251954	p-ERBB4jmBcyt1 [plasma membrane]	Complex	1250351	1250351	p-ERBB4cyt1 homodimers [plasma membrane]	DefinedSet	POS	OR
+1251953	1251953	p-ERBB4jmAcyt1 [plasma membrane]	Complex	1250351	1250351	p-ERBB4cyt1 homodimers [plasma membrane]	DefinedSet	POS	OR
+1248698	1248698	p-7Y-ERBB2 [plasma membrane]	EntityWithAccessionedSequence	1963567	1963567	NRGs/EGFLs:p-ERBB4cyt2:p-7Y-ERBB2 [plasma membrane]	Complex	POS	AND
+1250309	1250309	NRGs/EGF-like ligands:p-ERBB4cyt2 [plasma membrane]	Complex	1963567	1963567	NRGs/EGFLs:p-ERBB4cyt2:p-7Y-ERBB2 [plasma membrane]	Complex	POS	AND
+8855764	8855764	p-5Y-RET:GFRA4 [plasma membrane]	Complex	8855729	8855729	p-5Y-RET:GFRA4:PSPN [plasma membrane]	Complex	POS	AND
+434907	434907	PSPN [extracellular region]	EntityWithAccessionedSequence	8855729	8855729	p-5Y-RET:GFRA4:PSPN [plasma membrane]	Complex	POS	AND
+186803	186803	p-12Y-PDGFRB [plasma membrane]	EntityWithAccessionedSequence	186805	186805	Phospho-beta receptor homodimer [plasma membrane]	Complex	POS	AND
+189888	189888	FGF19 [extracellular region]	EntityWithAccessionedSequence	1307958	1307958	Activated FGFR4 bound to FGF19:BetaKlotho [plasma membrane]	Complex	POS	AND
+190330	190330	p-5Y-FGFR4 [plasma membrane]	EntityWithAccessionedSequence	1307958	1307958	Activated FGFR4 bound to FGF19:BetaKlotho [plasma membrane]	Complex	POS	AND
+1307932	1307932	KLB [plasma membrane]	EntityWithAccessionedSequence	1307958	1307958	Activated FGFR4 bound to FGF19:BetaKlotho [plasma membrane]	Complex	POS	AND
+1250305	1250305	NRGs/EGF-like ligands:p-ERBB4cyt1 [plasma membrane]	Complex	1963579	1963579	NRGs/EGFLs:p-ERBB4cyt1:p-7Y-ERBB2 [plasma membrane]	Complex	POS	AND
+1248698	1248698	p-7Y-ERBB2 [plasma membrane]	EntityWithAccessionedSequence	1963579	1963579	NRGs/EGFLs:p-ERBB4cyt1:p-7Y-ERBB2 [plasma membrane]	Complex	POS	AND
+1248703	1248703	EGF:p-6Y-EGFR:p-7Y,Y1112-ERBB2 [plasma membrane]	Complex	1963580	1963580	Autophosphorylated p-Y877-ERBB2 heterodimers [plasma membrane]	DefinedSet	POS	OR
+1248749	1248749	NRG1/2:p-10Y-ERBB3:p-Y,877-ERBB2 [plasma membrane]	Complex	1963580	1963580	Autophosphorylated p-Y877-ERBB2 heterodimers [plasma membrane]	DefinedSet	POS	OR
+1368190	1368190	NRGs/EGFLs:p-ERBB4:p-7Y-ERBB2 [plasma membrane]	DefinedSet	1963580	1963580	Autophosphorylated p-Y877-ERBB2 heterodimers [plasma membrane]	DefinedSet	POS	OR
+179863	179863	EGF [extracellular region]	EntityWithAccessionedSequence	1248702	1248702	EGF:p-6Y-EGFR [plasma membrane]	Complex	POS	AND
+179803	179803	p-6Y-EGFR [plasma membrane]	EntityWithAccessionedSequence	1248702	1248702	EGF:p-6Y-EGFR [plasma membrane]	Complex	POS	AND
+190988	190988	NCAM1 cis-homodimer [plasma membrane]	Complex	375103	375103	NCAM1:NCAM1 trans-homotetramer [plasma membrane]	Complex	POS	AND
+1963593	1963593	EGF:p-6Y-EGFR:p-6Y,Y1112-ERBB2 [plasma membrane]	Complex	1963585	1963585	p-6Y-ERBB2 heterodimers [plasma membrane]	DefinedSet	POS	OR
+1963583	1963583	NRG1/2:p-10Y-ERBB3:p-Y-ERBB2 [plasma membrane]	Complex	1963585	1963585	p-6Y-ERBB2 heterodimers [plasma membrane]	DefinedSet	POS	OR
+1963594	1963594	NRGs/EGFLs:p-ERBB4:p-6Y-ERBB2 [plasma membrane]	DefinedSet	1963585	1963585	p-6Y-ERBB2 heterodimers [plasma membrane]	DefinedSet	POS	OR
+186806	186806	p-11Y-PDGFRA [plasma membrane]	EntityWithAccessionedSequence	186816	186816	Phospho-alpha receptor homodimer [plasma membrane]	Complex	POS	AND
+56497	56497	HGF(32-494) [extracellular region]	EntityWithAccessionedSequence	141763	141763	HGF dimer [extracellular region]	Complex	POS	AND
+141767	141767	HGF(495-728) [extracellular region]	EntityWithAccessionedSequence	141763	141763	HGF dimer [extracellular region]	Complex	POS	AND
+189955	189955	FGFR3c-binding FGFs [extracellular region]	DefinedSet	190389	190389	Activated FGFR3c homodimer  [plasma membrane]	Complex	POS	AND
+190382	190382	p-6Y-FGFR3c [plasma membrane]	EntityWithAccessionedSequence	190389	190389	Activated FGFR3c homodimer  [plasma membrane]	Complex	POS	AND
+434903	434903	ARTN [extracellular region]	EntityWithAccessionedSequence	8855755	8855755	p-5Y-RET:GFRA1,GFRA3:ARTN [plasma membrane]	Complex	POS	AND
+8855731	8855731	p-5Y-RET:GFRA1,GFRA3 [plasma membrane]	Complex	8855755	8855755	p-5Y-RET:GFRA1,GFRA3:ARTN [plasma membrane]	Complex	POS	AND
+8855728	8855728	p-5Y-RET:GFRA1,GFRA2 [plasma membrane]	Complex	8855757	8855757	p-5Y-RET:GFRA1,GFRA2:GDNF,NRTN [plasma membrane]	Complex	POS	AND
+8853802	8853802	GDNF,NRTN [extracellular region]	DefinedSet	8855757	8855757	p-5Y-RET:GFRA1,GFRA2:GDNF,NRTN [plasma membrane]	Complex	POS	AND
+201601	201601	SPTAN1 [cytosol]	EntityWithAccessionedSequence	420046	420046	Spectrin alpha chain [cytosol]	DefinedSet	POS	OR
+391563	391563	SPTA1 [cytosol]	EntityWithAccessionedSequence	420046	420046	Spectrin alpha chain [cytosol]	DefinedSet	POS	OR
+420048	420048	SPTBN1 [cytosol]	EntityWithAccessionedSequence	420050	420050	Spectrin beta chain [cytosol]	DefinedSet	POS	OR
+420049	420049	SPTBN2 [cytosol]	EntityWithAccessionedSequence	420050	420050	Spectrin beta chain [cytosol]	DefinedSet	POS	OR
+391565	391565	SPTB [cytosol]	EntityWithAccessionedSequence	420050	420050	Spectrin beta chain [cytosol]	DefinedSet	POS	OR
+420047	420047	SPTBN5 [cytosol]	EntityWithAccessionedSequence	420050	420050	Spectrin beta chain [cytosol]	DefinedSet	POS	OR
+420044	420044	SPTBN4 [cytosol]	EntityWithAccessionedSequence	420050	420050	Spectrin beta chain [cytosol]	DefinedSet	POS	OR
+6786793	6786793	FLT3LG [extracellular region]	EntityWithAccessionedSequence	8854740	8854740	FLT3LG dimer [extracellular region]	Complex	POS	AND
+354176	354176	Talin:RIAM complex [plasma membrane]	Complex	354130	354130	Integrin alphaIIb beta3:p-Y530-SRC:CSK:Talin:RIAM complex [plasma membrane]	Complex	POS	AND
+377608	377608	Integrin alphaIIb beta3:p-Y530-SRC:CSK [plasma membrane]	Complex	354130	354130	Integrin alphaIIb beta3:p-Y530-SRC:CSK:Talin:RIAM complex [plasma membrane]	Complex	POS	AND
+380739	380739	PDGFA-2 [extracellular region]	EntityWithAccessionedSequence	380759	380759	PDGF A/B heterodimer [extracellular region]	Complex	POS	AND
+184201	184201	PDGFB (82-190) [extracellular region]	EntityWithAccessionedSequence	380759	380759	PDGF A/B heterodimer [extracellular region]	Complex	POS	AND
+381940	381940	Active platelet-derived growth factor A chain isoforms [extracellular region]	DefinedSet	380761	380761	active PDGF-AA dimer [extracellular region]	Complex	POS	AND
+912321	912321	p-Y349,Y350,Y427-SHC1 [cytosol]	EntityWithAccessionedSequence	913366	913366	High affinity IL-5 receptor complex dimer, inactive JAK2, phosphorylated Bc:p(Y427,349,350)-SHC1 [plasma membrane]	Complex	POS	AND
+913359	913359	High affinity IL-5 receptor complex dimer, inactive JAK2, p(Y593, 628)-Bc [plasma membrane]	Complex	913366	913366	High affinity IL-5 receptor complex dimer, inactive JAK2, phosphorylated Bc:p(Y427,349,350)-SHC1 [plasma membrane]	Complex	POS	AND
+9611359	9611359	CAMK2A,CAMK2B,(CAMK2D,CAMK2G) [cytosol]	CandidateSet	9611355	9611355	CaMKII dodecamer [cytosol]	Complex	POS	AND
+190434	190434	p-8Y-FGFR1c [plasma membrane]	EntityWithAccessionedSequence	190425	190425	Activated FGFR1c homodimer  [plasma membrane]	Complex	POS	AND
+189953	189953	FGFR1c-binding FGFs [extracellular region]	DefinedSet	190425	190425	Activated FGFR1c homodimer  [plasma membrane]	Complex	POS	AND
+192597	192597	Activated FGFR2b short homodimer bound to FGF [plasma membrane]	Complex	192606	192606	Activated FGFR2b homodimer bound to FGF [plasma membrane]	DefinedSet	POS	OR
+190411	190411	Activated FGFR2b long homodimer  [plasma membrane]	Complex	192606	192606	Activated FGFR2b homodimer bound to FGF [plasma membrane]	DefinedSet	POS	OR
+5656340	5656340	p-8Y-FGFR1b dimer [plasma membrane]	Complex	190430	190430	Activated FGFR1b homodimer [plasma membrane]	Complex	POS	AND
+189963	189963	FGFR1b-binding FGFs [extracellular region]	DefinedSet	190430	190430	Activated FGFR1b homodimer [plasma membrane]	Complex	POS	AND
+190418	190418	Activated FGFR2c long homodimer  [plasma membrane]	Complex	192616	192616	Activated FGFR2c homodimer bound to FGF [plasma membrane]	DefinedSet	POS	OR
+192592	192592	Activated FGFR2c short homodimer bound to FGF [plasma membrane]	Complex	192616	192616	Activated FGFR2c homodimer bound to FGF [plasma membrane]	DefinedSet	POS	OR
+190434	190434	p-8Y-FGFR1c [plasma membrane]	EntityWithAccessionedSequence	500333	500333	Activated FGFR1c bound to FGF23:Klotho [plasma membrane]	Complex	POS	AND
+190208	190208	Klotho bound to FGF23 [plasma membrane]	Complex	500333	500333	Activated FGFR1c bound to FGF23:Klotho [plasma membrane]	Complex	POS	AND
+1250309	1250309	NRGs/EGF-like ligands:p-ERBB4cyt2 [plasma membrane]	Complex	1250293	1250293	p-ERBB4jmAcyt2 homodimer [plasma membrane]	Complex	POS	AND
+189891	189891	FGF23(25-251) [extracellular region]	EntityWithAccessionedSequence	190208	190208	Klotho bound to FGF23 [plasma membrane]	Complex	POS	AND
+190309	190309	Klotho homodimer [plasma membrane]	Complex	190208	190208	Klotho bound to FGF23 [plasma membrane]	Complex	POS	AND
+1233236	1233236	NRGs/EGF-like ligands [extracellular region]	DefinedSet	1250305	1250305	NRGs/EGF-like ligands:p-ERBB4cyt1 [plasma membrane]	Complex	POS	AND
+1250325	1250325	p-ERBB4cyt1 [plasma membrane]	DefinedSet	1250305	1250305	NRGs/EGF-like ligands:p-ERBB4cyt1 [plasma membrane]	Complex	POS	AND
+189907	189907	FGF4 [extracellular region]	EntityWithAccessionedSequence	189953	189953	FGFR1c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189856	189856	FGF1 [extracellular region]	EntityWithAccessionedSequence	189953	189953	FGFR1c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189862	189862	FGF20 [extracellular region]	EntityWithAccessionedSequence	189953	189953	FGFR1c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189892	189892	FGF8-1 [extracellular region]	EntityWithAccessionedSequence	189953	189953	FGFR1c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+8851633	8851633	GalNAc-T178-FGF23(25-251) [extracellular region]	EntityWithAccessionedSequence	189953	189953	FGFR1c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189898	189898	FGF2(10-155) [extracellular region]	EntityWithAccessionedSequence	189953	189953	FGFR1c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189914	189914	FGF17-1 [extracellular region]	EntityWithAccessionedSequence	189953	189953	FGFR1c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189870	189870	FGF9 [extracellular region]	EntityWithAccessionedSequence	189953	189953	FGFR1c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189903	189903	FGF5-1 [extracellular region]	EntityWithAccessionedSequence	189953	189953	FGFR1c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189881	189881	FGF6 [extracellular region]	EntityWithAccessionedSequence	189953	189953	FGFR1c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189907	189907	FGF4 [extracellular region]	EntityWithAccessionedSequence	189955	189955	FGFR3c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189856	189856	FGF1 [extracellular region]	EntityWithAccessionedSequence	189955	189955	FGFR3c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189905	189905	FGF18 [extracellular region]	EntityWithAccessionedSequence	189955	189955	FGFR3c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189862	189862	FGF20 [extracellular region]	EntityWithAccessionedSequence	189955	189955	FGFR3c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189892	189892	FGF8-1 [extracellular region]	EntityWithAccessionedSequence	189955	189955	FGFR3c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+8851633	8851633	GalNAc-T178-FGF23(25-251) [extracellular region]	EntityWithAccessionedSequence	189955	189955	FGFR3c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189898	189898	FGF2(10-155) [extracellular region]	EntityWithAccessionedSequence	189955	189955	FGFR3c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189914	189914	FGF17-1 [extracellular region]	EntityWithAccessionedSequence	189955	189955	FGFR3c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189870	189870	FGF9 [extracellular region]	EntityWithAccessionedSequence	189955	189955	FGFR3c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189918	189918	FGF16 [extracellular region]	EntityWithAccessionedSequence	189955	189955	FGFR3c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189903	189903	FGF5-1 [extracellular region]	EntityWithAccessionedSequence	189955	189955	FGFR3c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+1233236	1233236	NRGs/EGF-like ligands [extracellular region]	DefinedSet	1250309	1250309	NRGs/EGF-like ligands:p-ERBB4cyt2 [plasma membrane]	Complex	POS	AND
+1250307	1250307	p-Y1172,Y1226-ERBB4 JM-A CYT-2 isoform [plasma membrane]	EntityWithAccessionedSequence	1250309	1250309	NRGs/EGF-like ligands:p-ERBB4cyt2 [plasma membrane]	Complex	POS	AND
+354110	354110	Rap1-GTP:PIP2:RIAM [plasma membrane]	Complex	354176	354176	Talin:RIAM complex [plasma membrane]	Complex	POS	AND
+350713	350713	TLN1 [cytosol]	EntityWithAccessionedSequence	354176	354176	Talin:RIAM complex [plasma membrane]	Complex	POS	AND
+189907	189907	FGF4 [extracellular region]	EntityWithAccessionedSequence	189959	189959	FGFR4-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189856	189856	FGF1 [extracellular region]	EntityWithAccessionedSequence	189959	189959	FGFR4-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189905	189905	FGF18 [extracellular region]	EntityWithAccessionedSequence	189959	189959	FGFR4-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189862	189862	FGF20 [extracellular region]	EntityWithAccessionedSequence	189959	189959	FGFR4-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189892	189892	FGF8-1 [extracellular region]	EntityWithAccessionedSequence	189959	189959	FGFR4-binding FGFs [extracellular region]	DefinedSet	POS	OR
+8851633	8851633	GalNAc-T178-FGF23(25-251) [extracellular region]	EntityWithAccessionedSequence	189959	189959	FGFR4-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189898	189898	FGF2(10-155) [extracellular region]	EntityWithAccessionedSequence	189959	189959	FGFR4-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189914	189914	FGF17-1 [extracellular region]	EntityWithAccessionedSequence	189959	189959	FGFR4-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189870	189870	FGF9 [extracellular region]	EntityWithAccessionedSequence	189959	189959	FGFR4-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189918	189918	FGF16 [extracellular region]	EntityWithAccessionedSequence	189959	189959	FGFR4-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189881	189881	FGF6 [extracellular region]	EntityWithAccessionedSequence	189959	189959	FGFR4-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189888	189888	FGF19 [extracellular region]	EntityWithAccessionedSequence	189959	189959	FGFR4-binding FGFs [extracellular region]	DefinedSet	POS	OR
+114514	114514	Integrin alpha2bbeta3 [plasma membrane]	Complex	377608	377608	Integrin alphaIIb beta3:p-Y530-SRC:CSK [plasma membrane]	Complex	POS	AND
+377606	377606	p-Y530-SRC:CSK [cytosol]	Complex	377608	377608	Integrin alphaIIb beta3:p-Y530-SRC:CSK [plasma membrane]	Complex	POS	AND
+189856	189856	FGF1 [extracellular region]	EntityWithAccessionedSequence	189963	189963	FGFR1b-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189898	189898	FGF2(10-155) [extracellular region]	EntityWithAccessionedSequence	189963	189963	FGFR1b-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189877	189877	FGF22 [extracellular region]	EntityWithAccessionedSequence	189963	189963	FGFR1b-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189886	189886	FGF3 [extracellular region]	EntityWithAccessionedSequence	189963	189963	FGFR1b-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189869	189869	FGF10 [extracellular region]	EntityWithAccessionedSequence	189963	189963	FGFR1b-binding FGFs [extracellular region]	DefinedSet	POS	OR
+190987	190987	NCAM1 [plasma membrane]	EntityWithAccessionedSequence	190988	190988	NCAM1 cis-homodimer [plasma membrane]	Complex	POS	AND
+189856	189856	FGF1 [extracellular region]	EntityWithAccessionedSequence	189964	189964	FGFR3b-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189905	189905	FGF18 [extracellular region]	EntityWithAccessionedSequence	189964	189964	FGFR3b-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189862	189862	FGF20 [extracellular region]	EntityWithAccessionedSequence	189964	189964	FGFR3b-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189892	189892	FGF8-1 [extracellular region]	EntityWithAccessionedSequence	189964	189964	FGFR3b-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189914	189914	FGF17-1 [extracellular region]	EntityWithAccessionedSequence	189964	189964	FGFR3b-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189870	189870	FGF9 [extracellular region]	EntityWithAccessionedSequence	189964	189964	FGFR3b-binding FGFs [extracellular region]	DefinedSet	POS	OR
+5656338	5656338	p-8Y-FGFR1b [plasma membrane]	EntityWithAccessionedSequence	5656340	5656340	p-8Y-FGFR1b dimer [plasma membrane]	Complex	POS	AND
+432284	432284	NEFL [cytosol]	EntityWithAccessionedSequence	9617308	9617308	GRIN1:GRIN2B NMDA receptors:DLG4:DLG1,DLG2,DLG3,DLG4:NEFL [plasma membrane]	Complex	POS	AND
+9617304	9617304	GRIN1:GRIN2B NMDA receptors:DLG4:DLG1,DLG2,DLG3,DLG4 [plasma membrane]	Complex	9617308	9617308	GRIN1:GRIN2B NMDA receptors:DLG4:DLG1,DLG2,DLG3,DLG4:NEFL [plasma membrane]	Complex	POS	AND
+375061	375061	GDNF [extracellular region]	EntityWithAccessionedSequence	8853802	8853802	GDNF,NRTN [extracellular region]	DefinedSet	POS	OR
+434904	434904	NRTN [extracellular region]	EntityWithAccessionedSequence	8853802	8853802	GDNF,NRTN [extracellular region]	DefinedSet	POS	OR
+140583	140583	FGA [extracellular region]	EntityWithAccessionedSequence	140586	140586	fibrin monomer [extracellular region]	Complex	POS	AND
+140584	140584	FGB [extracellular region]	EntityWithAccessionedSequence	140586	140586	fibrin monomer [extracellular region]	Complex	POS	AND
+140585	140585	FGG [extracellular region]	EntityWithAccessionedSequence	140586	140586	fibrin monomer [extracellular region]	Complex	POS	AND
+8854162	8854162	p-5Y-RET [plasma membrane]	EntityWithAccessionedSequence	8855728	8855728	p-5Y-RET:GFRA1,GFRA2 [plasma membrane]	Complex	POS	AND
+8853803	8853803	GFRA1, GFRA2 [plasma membrane]	DefinedSet	8855728	8855728	p-5Y-RET:GFRA1,GFRA2 [plasma membrane]	Complex	POS	AND
+8854162	8854162	p-5Y-RET [plasma membrane]	EntityWithAccessionedSequence	8855731	8855731	p-5Y-RET:GFRA1,GFRA3 [plasma membrane]	Complex	POS	AND
+8853799	8853799	GFRA1,GFRA3 [plasma membrane]	DefinedSet	8855731	8855731	p-5Y-RET:GFRA1,GFRA3 [plasma membrane]	Complex	POS	AND
+390562	390562	ACTN2 [cytosol]	EntityWithAccessionedSequence	9610932	9610932	ACTN2 homodimer [cytosol]	Complex	POS	AND
+912308	912308	IL3:IL3RA:p-Y593,Y628-IL3RB:JAK2 [plasma membrane]	Complex	912317	912317	IL3:IL3R active complex, JAK2:p-Y593,Y629-IL3RB [plasma membrane]	Complex	POS	AND
+1248743	1248743	NRG1/2:p-10Y-ERBB3 [plasma membrane]	Complex	1963583	1963583	NRG1/2:p-10Y-ERBB3:p-Y-ERBB2 [plasma membrane]	Complex	POS	AND
+1678589	1678589	p-Y-ERBB2 [plasma membrane]	EntityWithAccessionedSequence	1963583	1963583	NRG1/2:p-10Y-ERBB3:p-Y-ERBB2 [plasma membrane]	Complex	POS	AND
+451893	451893	JAK3 [cytosol]	EntityWithAccessionedSequence	451911	451911	IL2RG:JAK3 [plasma membrane]	Complex	POS	AND
+449139	449139	IL2RG [plasma membrane]	EntityWithAccessionedSequence	451911	451911	IL2RG:JAK3 [plasma membrane]	Complex	POS	AND
+1250316	1250316	NRGs/EGFLs:p-ERBB4cyt1:p-6Y-ERBB2 [plasma membrane]	Complex	1963594	1963594	NRGs/EGFLs:p-ERBB4:p-6Y-ERBB2 [plasma membrane]	DefinedSet	POS	OR
+1250329	1250329	NRGs/EGFLs:p-ERBB4cyt2:p-6Y-ERBB2 [plasma membrane]	Complex	1963594	1963594	NRGs/EGFLs:p-ERBB4:p-6Y-ERBB2 [plasma membrane]	DefinedSet	POS	OR
+189967	189967	FGFR2b-binding FGFs [extracellular region]	DefinedSet	190411	190411	Activated FGFR2b long homodimer  [plasma membrane]	Complex	POS	AND
+190412	190412	p-8Y-FGFR2-3 [plasma membrane]	EntityWithAccessionedSequence	190411	190411	Activated FGFR2b long homodimer  [plasma membrane]	Complex	POS	AND
+189957	189957	FGFR2c-binding FGFs [extracellular region]	DefinedSet	192592	192592	Activated FGFR2c short homodimer bound to FGF [plasma membrane]	Complex	POS	AND
+192600	192600	p-8Y-FGFR2-5 [plasma membrane]	EntityWithAccessionedSequence	192592	192592	Activated FGFR2c short homodimer bound to FGF [plasma membrane]	Complex	POS	AND
+434900	434900	GFRA4 [plasma membrane]	EntityWithAccessionedSequence	8855764	8855764	p-5Y-RET:GFRA4 [plasma membrane]	Complex	POS	AND
+8854162	8854162	p-5Y-RET [plasma membrane]	EntityWithAccessionedSequence	8855764	8855764	p-5Y-RET:GFRA4 [plasma membrane]	Complex	POS	AND
+192603	192603	Phosphorylated Fibroblast growth factor receptor 2b short [plasma membrane]	EntityWithAccessionedSequence	192597	192597	Activated FGFR2b short homodimer bound to FGF [plasma membrane]	Complex	POS	AND
+189967	189967	FGFR2b-binding FGFs [extracellular region]	DefinedSet	192597	192597	Activated FGFR2b short homodimer bound to FGF [plasma membrane]	Complex	POS	AND
+913357	913357	IL5 homodimer:IL5RA:p(Y593, 628)-Bc:JAK2 [plasma membrane]	Complex	913359	913359	High affinity IL-5 receptor complex dimer, inactive JAK2, p(Y593, 628)-Bc [plasma membrane]	Complex	POS	AND
+190416	190416	p-8Y-FGFR2c long [plasma membrane]	EntityWithAccessionedSequence	190418	190418	Activated FGFR2c long homodimer  [plasma membrane]	Complex	POS	AND
+189957	189957	FGFR2c-binding FGFs [extracellular region]	DefinedSet	190418	190418	Activated FGFR2c long homodimer  [plasma membrane]	Complex	POS	AND
+9611358	9611358	CAMK2G [cytosol]	EntityWithAccessionedSequence	9611359	9611359	CAMK2A,CAMK2B,(CAMK2D,CAMK2G) [cytosol]	CandidateSet	POS	OR
+9611357	9611357	CAMK2D [cytosol]	EntityWithAccessionedSequence	9611359	9611359	CAMK2A,CAMK2B,(CAMK2D,CAMK2G) [cytosol]	CandidateSet	POS	OR
+9611360	9611360	CAMK2B [cytosol]	EntityWithAccessionedSequence	9611359	9611359	CAMK2A,CAMK2B,(CAMK2D,CAMK2G) [cytosol]	CandidateSet	POS	OR
+4332329	4332329	CAMK2A [cytosol]	EntityWithAccessionedSequence	9611359	9611359	CAMK2A,CAMK2B,(CAMK2D,CAMK2G) [cytosol]	CandidateSet	POS	OR
+913355	913355	GM-CSF:GM-CSF receptor alpha subunit:p(Y593, 628)-Bc:JAK2 [plasma membrane]	Complex	913384	913384	High affinity GM-CSF receptor complex dimer, inactive JAK2, p(Y593, 628)- Bc [plasma membrane]	Complex	POS	AND
+1248743	1248743	NRG1/2:p-10Y-ERBB3 [plasma membrane]	Complex	1248749	1248749	NRG1/2:p-10Y-ERBB3:p-Y,877-ERBB2 [plasma membrane]	Complex	POS	AND
+1810446	1810446	p-Y,Y877-ERBB2 [plasma membrane]	EntityWithAccessionedSequence	1248749	1248749	NRG1/2:p-10Y-ERBB3:p-Y,877-ERBB2 [plasma membrane]	Complex	POS	AND
+184201	184201	PDGFB (82-190) [extracellular region]	EntityWithAccessionedSequence	381935	381935	Processed PDGF-B [extracellular region]	DefinedSet	POS	OR
+381904	381904	PDGFB(82-241) [extracellular region]	EntityWithAccessionedSequence	381935	381935	Processed PDGF-B [extracellular region]	DefinedSet	POS	OR
+1251957	1251957	NRGs/EGF-like ligands:P-ERBB4jmAcyt1 [plasma membrane]	Complex	1251953	1251953	p-ERBB4jmAcyt1 [plasma membrane]	Complex	POS	AND
+1251958	1251958	NRGs/EGF-like ligands:P-ERBB4jmBcyt1 [plasma membrane]	Complex	1251954	1251954	p-ERBB4jmBcyt1 [plasma membrane]	Complex	POS	AND
+380739	380739	PDGFA-2 [extracellular region]	EntityWithAccessionedSequence	381940	381940	Active platelet-derived growth factor A chain isoforms [extracellular region]	DefinedSet	POS	OR
+184199	184199	PDGFA-1 [extracellular region]	EntityWithAccessionedSequence	381940	381940	Active platelet-derived growth factor A chain isoforms [extracellular region]	DefinedSet	POS	OR
+1963579	1963579	NRGs/EGFLs:p-ERBB4cyt1:p-7Y-ERBB2 [plasma membrane]	Complex	1368190	1368190	NRGs/EGFLs:p-ERBB4:p-7Y-ERBB2 [plasma membrane]	DefinedSet	POS	OR
+1963567	1963567	NRGs/EGFLs:p-ERBB4cyt2:p-7Y-ERBB2 [plasma membrane]	Complex	1368190	1368190	NRGs/EGFLs:p-ERBB4:p-7Y-ERBB2 [plasma membrane]	DefinedSet	POS	OR
+189907	189907	FGF4 [extracellular region]	EntityWithAccessionedSequence	189957	189957	FGFR2c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189856	189856	FGF1 [extracellular region]	EntityWithAccessionedSequence	189957	189957	FGFR2c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189905	189905	FGF18 [extracellular region]	EntityWithAccessionedSequence	189957	189957	FGFR2c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189862	189862	FGF20 [extracellular region]	EntityWithAccessionedSequence	189957	189957	FGFR2c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189892	189892	FGF8-1 [extracellular region]	EntityWithAccessionedSequence	189957	189957	FGFR2c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+8851633	8851633	GalNAc-T178-FGF23(25-251) [extracellular region]	EntityWithAccessionedSequence	189957	189957	FGFR2c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189898	189898	FGF2(10-155) [extracellular region]	EntityWithAccessionedSequence	189957	189957	FGFR2c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189914	189914	FGF17-1 [extracellular region]	EntityWithAccessionedSequence	189957	189957	FGFR2c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189870	189870	FGF9 [extracellular region]	EntityWithAccessionedSequence	189957	189957	FGFR2c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189918	189918	FGF16 [extracellular region]	EntityWithAccessionedSequence	189957	189957	FGFR2c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189903	189903	FGF5-1 [extracellular region]	EntityWithAccessionedSequence	189957	189957	FGFR2c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189881	189881	FGF6 [extracellular region]	EntityWithAccessionedSequence	189957	189957	FGFR2c-binding FGFs [extracellular region]	DefinedSet	POS	OR
+203776	203776	CSK [cytosol]	EntityWithAccessionedSequence	377606	377606	p-Y530-SRC:CSK [cytosol]	Complex	POS	AND
+377598	377598	MyrG,p-Y530-SRC [plasma membrane]	EntityWithAccessionedSequence	377606	377606	p-Y530-SRC:CSK [cytosol]	Complex	POS	AND
+189856	189856	FGF1 [extracellular region]	EntityWithAccessionedSequence	189967	189967	FGFR2b-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189877	189877	FGF22 [extracellular region]	EntityWithAccessionedSequence	189967	189967	FGFR2b-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189886	189886	FGF3 [extracellular region]	EntityWithAccessionedSequence	189967	189967	FGFR2b-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189884	189884	FGF7 [extracellular region]	EntityWithAccessionedSequence	189967	189967	FGFR2b-binding FGFs [extracellular region]	DefinedSet	POS	OR
+189869	189869	FGF10 [extracellular region]	EntityWithAccessionedSequence	189967	189967	FGFR2b-binding FGFs [extracellular region]	DefinedSet	POS	OR
+1250313	1250313	p-Y1046,Y1178,Y1232-ERBB4 JM-B CYT-1 isoform [plasma membrane]	EntityWithAccessionedSequence	1250325	1250325	p-ERBB4cyt1 [plasma membrane]	DefinedSet	POS	OR
+1250319	1250319	p-Y1056,Y1188,Y1242-ERBB4 JM-A CYT-1 isoform [plasma membrane]	EntityWithAccessionedSequence	1250325	1250325	p-ERBB4cyt1 [plasma membrane]	DefinedSet	POS	OR
+202135	202135	DLG4 [plasma membrane]	EntityWithAccessionedSequence	9617304	9617304	GRIN1:GRIN2B NMDA receptors:DLG4:DLG1,DLG2,DLG3,DLG4 [plasma membrane]	Complex	POS	AND
+9617303	9617303	GRIN1:GRIN2B NMDA receptors [plasma membrane]	CandidateSet	9617304	9617304	GRIN1:GRIN2B NMDA receptors:DLG4:DLG1,DLG2,DLG3,DLG4 [plasma membrane]	Complex	POS	AND
+9610652	9610652	DLG1,DLG2,DLG3,DLG4 [plasma membrane]	DefinedSet	9617304	9617304	GRIN1:GRIN2B NMDA receptors:DLG4:DLG1,DLG2,DLG3,DLG4 [plasma membrane]	Complex	POS	AND
+375067	375067	GFRA1 [plasma membrane]	EntityWithAccessionedSequence	8853799	8853799	GFRA1,GFRA3 [plasma membrane]	DefinedSet	POS	OR
+8853796	8853796	GFRA3 [plasma membrane]	EntityWithAccessionedSequence	8853799	8853799	GFRA1,GFRA3 [plasma membrane]	DefinedSet	POS	OR
+434901	434901	GFRA2 [plasma membrane]	EntityWithAccessionedSequence	8853803	8853803	GFRA1, GFRA2 [plasma membrane]	DefinedSet	POS	OR
+375067	375067	GFRA1 [plasma membrane]	EntityWithAccessionedSequence	8853803	8853803	GFRA1, GFRA2 [plasma membrane]	DefinedSet	POS	OR
+912316	912316	pY593,Y628-IL3RB:JAK2 [plasma membrane]	Complex	912308	912308	IL3:IL3RA:p-Y593,Y628-IL3RB:JAK2 [plasma membrane]	Complex	POS	AND
+450048	450048	IL3:IL3RA [plasma membrane]	Complex	912308	912308	IL3:IL3RA:p-Y593,Y628-IL3RB:JAK2 [plasma membrane]	Complex	POS	AND
+354081	354081	APBB1IP [cytosol]	EntityWithAccessionedSequence	354110	354110	Rap1-GTP:PIP2:RIAM [plasma membrane]	Complex	POS	AND
+354126	354126	RAP1:GTP [plasma membrane]	Complex	354110	354110	Rap1-GTP:PIP2:RIAM [plasma membrane]	Complex	POS	AND
+912316	912316	pY593,Y628-IL3RB:JAK2 [plasma membrane]	Complex	913355	913355	GM-CSF:GM-CSF receptor alpha subunit:p(Y593, 628)-Bc:JAK2 [plasma membrane]	Complex	POS	AND
+913362	913362	GM-CSF:GM-CSF receptor alpha subunit [plasma membrane]	Complex	913355	913355	GM-CSF:GM-CSF receptor alpha subunit:p(Y593, 628)-Bc:JAK2 [plasma membrane]	Complex	POS	AND
+912316	912316	pY593,Y628-IL3RB:JAK2 [plasma membrane]	Complex	913357	913357	IL5 homodimer:IL5RA:p(Y593, 628)-Bc:JAK2 [plasma membrane]	Complex	POS	AND
+450056	450056	IL5 homodimer:IL5RA [plasma membrane]	Complex	913357	913357	IL5 homodimer:IL5RA:p(Y593, 628)-Bc:JAK2 [plasma membrane]	Complex	POS	AND
+57600	57600	ITGB3 [plasma membrane]	EntityWithAccessionedSequence	114514	114514	Integrin alpha2bbeta3 [plasma membrane]	Complex	POS	AND
+57578	57578	ITGA2B(32-1039) [plasma membrane]	EntityWithAccessionedSequence	114514	114514	Integrin alpha2bbeta3 [plasma membrane]	Complex	POS	AND
+1227957	1227957	Neuregulins [extracellular region]	CandidateSet	1233236	1233236	NRGs/EGF-like ligands [extracellular region]	DefinedSet	POS	OR
+1233230	1233230	EGF-like ligands [extracellular region]	DefinedSet	1233236	1233236	NRGs/EGF-like ligands [extracellular region]	DefinedSet	POS	OR
+190207	190207	Klotho [extracellular region]	DefinedSet	190309	190309	Klotho homodimer [plasma membrane]	Complex	POS	AND
+1248742	1248742	p-10Y-ERBB3-1 [plasma membrane]	EntityWithAccessionedSequence	1248743	1248743	NRG1/2:p-10Y-ERBB3 [plasma membrane]	Complex	POS	AND
+1227956	1227956	NRG1/2 [extracellular region]	DefinedSet	1248743	1248743	NRG1/2:p-10Y-ERBB3 [plasma membrane]	Complex	POS	AND
+1233236	1233236	NRGs/EGF-like ligands [extracellular region]	DefinedSet	1251957	1251957	NRGs/EGF-like ligands:P-ERBB4jmAcyt1 [plasma membrane]	Complex	POS	AND
+1250319	1250319	p-Y1056,Y1188,Y1242-ERBB4 JM-A CYT-1 isoform [plasma membrane]	EntityWithAccessionedSequence	1251957	1251957	NRGs/EGF-like ligands:P-ERBB4jmAcyt1 [plasma membrane]	Complex	POS	AND
+1233236	1233236	NRGs/EGF-like ligands [extracellular region]	DefinedSet	1251958	1251958	NRGs/EGF-like ligands:P-ERBB4jmBcyt1 [plasma membrane]	Complex	POS	AND
+1250313	1250313	p-Y1046,Y1178,Y1232-ERBB4 JM-B CYT-1 isoform [plasma membrane]	EntityWithAccessionedSequence	1251958	1251958	NRGs/EGF-like ligands:P-ERBB4jmBcyt1 [plasma membrane]	Complex	POS	AND
+450059	450059	IL3 [extracellular region]	EntityWithAccessionedSequence	450048	450048	IL3:IL3RA [plasma membrane]	Complex	POS	AND
+879938	879938	IL3RA [plasma membrane]	EntityWithAccessionedSequence	450048	450048	IL3:IL3RA [plasma membrane]	Complex	POS	AND
+913383	913383	IL5 homodimer [extracellular region]	Complex	450056	450056	IL5 homodimer:IL5RA [plasma membrane]	Complex	POS	AND
+450072	450072	IL5RA [plasma membrane]	EntityWithAccessionedSequence	450056	450056	IL5 homodimer:IL5RA [plasma membrane]	Complex	POS	AND
+9610705	9610705	GRIN1:GRIN2B:GRIN2D tri-heterotetramer [plasma membrane]	Complex	9617303	9617303	GRIN1:GRIN2B NMDA receptors [plasma membrane]	CandidateSet	POS	OR
+3928507	3928507	GRIN1:GRIN2B di-heterotetramer [plasma membrane]	Complex	9617303	9617303	GRIN1:GRIN2B NMDA receptors [plasma membrane]	CandidateSet	POS	OR
+202135	202135	DLG4 [plasma membrane]	EntityWithAccessionedSequence	9610652	9610652	DLG1,DLG2,DLG3,DLG4 [plasma membrane]	DefinedSet	POS	OR
+9610630	9610630	DLG1 homotetramer [plasma membrane]	Complex	9610652	9610652	DLG1,DLG2,DLG3,DLG4 [plasma membrane]	DefinedSet	POS	OR
+9610662	9610662	DLG2 [plasma membrane]	EntityWithAccessionedSequence	9610652	9610652	DLG1,DLG2,DLG3,DLG4 [plasma membrane]	DefinedSet	POS	OR
+443609	443609	DLG3 [plasma membrane]	EntityWithAccessionedSequence	9610652	9610652	DLG1,DLG2,DLG3,DLG4 [plasma membrane]	DefinedSet	POS	OR
+1227953	1227953	NRG2 [extracellular region]	EntityWithAccessionedSequence	1227956	1227956	NRG1/2 [extracellular region]	DefinedSet	POS	OR
+1233225	1233225	NRG1 [extracellular region]	DefinedSet	1227956	1227956	NRG1/2 [extracellular region]	DefinedSet	POS	OR
+1227953	1227953	NRG2 [extracellular region]	EntityWithAccessionedSequence	1227957	1227957	Neuregulins [extracellular region]	CandidateSet	POS	OR
+1227943	1227943	NRG3 [extracellular region]	EntityWithAccessionedSequence	1227957	1227957	Neuregulins [extracellular region]	CandidateSet	POS	OR
+1227945	1227945	NRG4 [extracellular region]	EntityWithAccessionedSequence	1227957	1227957	Neuregulins [extracellular region]	CandidateSet	POS	OR
+1227951	1227951	NRG1 [extracellular region]	EntityWithAccessionedSequence	1227957	1227957	Neuregulins [extracellular region]	CandidateSet	POS	OR
+210620	210620	JAK2 [cytosol]	EntityWithAccessionedSequence	912316	912316	pY593,Y628-IL3RB:JAK2 [plasma membrane]	Complex	POS	AND
+912312	912312	p-Y593,Y628-CSF2RB [plasma membrane]	EntityWithAccessionedSequence	912316	912316	pY593,Y628-IL3RB:JAK2 [plasma membrane]	Complex	POS	AND
+1233234	1233234	HBEGF(63-148) [extracellular region]	EntityWithAccessionedSequence	1233230	1233230	EGF-like ligands [extracellular region]	DefinedSet	POS	OR
+1233233	1233233	EREG(60-108) [extracellular region]	EntityWithAccessionedSequence	1233230	1233230	EGF-like ligands [extracellular region]	DefinedSet	POS	OR
+1233224	1233224	BTC(32-111) [extracellular region]	EntityWithAccessionedSequence	1233230	1233230	EGF-like ligands [extracellular region]	DefinedSet	POS	OR
+377600	377600	RAP1 [plasma membrane]	DefinedSet	354126	354126	RAP1:GTP [plasma membrane]	Complex	POS	AND
+913361	913361	CSF2RA [plasma membrane]	EntityWithAccessionedSequence	913362	913362	GM-CSF:GM-CSF receptor alpha subunit [plasma membrane]	Complex	POS	AND
+517562	517562	CSF2 [extracellular region]	EntityWithAccessionedSequence	913362	913362	GM-CSF:GM-CSF receptor alpha subunit [plasma membrane]	Complex	POS	AND
+190203	190203	Secreted Klotho homodimer [extracellular region]	Complex	190207	190207	Klotho [extracellular region]	DefinedSet	POS	OR
+190204	190204	Membrane-bound Klotho homodimer [plasma membrane]	Complex	190207	190207	Klotho [extracellular region]	DefinedSet	POS	OR
+354118	354118	RAP1A [plasma membrane]	EntityWithAccessionedSequence	377600	377600	RAP1 [plasma membrane]	DefinedSet	POS	OR
+377590	377590	RAP1B [plasma membrane]	EntityWithAccessionedSequence	377600	377600	RAP1 [plasma membrane]	DefinedSet	POS	OR
+375977	375977	DLG1 [plasma membrane]	EntityWithAccessionedSequence	9610630	9610630	DLG1 homotetramer [plasma membrane]	Complex	POS	AND
+419558	419558	GRIN2B [plasma membrane]	EntityWithAccessionedSequence	3928507	3928507	GRIN1:GRIN2B di-heterotetramer [plasma membrane]	Complex	POS	AND
+419564	419564	GRIN1 [plasma membrane]	EntityWithAccessionedSequence	3928507	3928507	GRIN1:GRIN2B di-heterotetramer [plasma membrane]	Complex	POS	AND
+1227951	1227951	NRG1 [extracellular region]	EntityWithAccessionedSequence	1233225	1233225	NRG1 [extracellular region]	DefinedSet	POS	OR
+197919	197919	NRG1-10 [extracellular region]	EntityWithAccessionedSequence	1233225	1233225	NRG1 [extracellular region]	DefinedSet	POS	OR
+419558	419558	GRIN2B [plasma membrane]	EntityWithAccessionedSequence	9610705	9610705	GRIN1:GRIN2B:GRIN2D tri-heterotetramer [plasma membrane]	Complex	POS	AND
+419564	419564	GRIN1 [plasma membrane]	EntityWithAccessionedSequence	9610705	9610705	GRIN1:GRIN2B:GRIN2D tri-heterotetramer [plasma membrane]	Complex	POS	AND
+419561	419561	GRIN2D [plasma membrane]	EntityWithAccessionedSequence	9610705	9610705	GRIN1:GRIN2B:GRIN2D tri-heterotetramer [plasma membrane]	Complex	POS	AND
+447159	447159	IL5 [extracellular region]	EntityWithAccessionedSequence	913383	913383	IL5 homodimer [extracellular region]	Complex	POS	AND
+190201	190201	KL-2 [extracellular region]	EntityWithAccessionedSequence	190203	190203	Secreted Klotho homodimer [extracellular region]	Complex	POS	AND
+190198	190198	KL-1 [plasma membrane]	EntityWithAccessionedSequence	190204	190204	Membrane-bound Klotho homodimer [plasma membrane]	Complex	POS	AND
+109796_output	109796	p21 RAS:GDP [plasma membrane]	Complex	9649715_output	9649715	mature p21 RAS [plasma membrane]	DefinedSet	POS	OR
+5672718_output	5672718	p21 RAS:GTP:activated RAF homo/heterodimer complexes [plasma membrane]	Complex	5672715_output	5672715	p21 RAS:GTP:'activator' RAFs:YWHAB dimer [plasma membrane]	Complex	POS	OR
+5672718_output	5672718	p21 RAS:GTP:activated RAF homo/heterodimer complexes [plasma membrane]	Complex	5672713_output	5672713	activated RAF/KSR1 [plasma membrane]	CandidateSet	POS	OR
+5675363_output	5675363	MAPK monomers and dimers [nucleoplasm]	DefinedSet	5675359_output	5675359	MAPK3 dimer [nucleoplasm]	Complex	POS	OR
+5675363_output	5675363	MAPK monomers and dimers [nucleoplasm]	DefinedSet	73724_output	73724	MAPK3 [nucleoplasm]	EntityWithAccessionedSequence	POS	OR
+5675363_output	5675363	MAPK monomers and dimers [nucleoplasm]	DefinedSet	5675356_output	5675356	MAPK1 dimer [nucleoplasm]	Complex	POS	OR
+5675363_output	5675363	MAPK monomers and dimers [nucleoplasm]	DefinedSet	199960_output	199960	MAPK1 [nucleoplasm]	EntityWithAccessionedSequence	POS	OR
+9635774_output	9635774	PTPN7:p-T-MAPK dimers [cytosol]	Complex	9635737_output	9635737	PTPN7 [cytosol]	EntityWithAccessionedSequence	POS	OR
+9635774_output	9635774	PTPN7:p-T-MAPK dimers [cytosol]	Complex	9635772_output	9635772	p-T-MAPK dimers [cytosol]	DefinedSet	POS	OR
+9647959_output	9647959	S-Farn-RAS [endoplasmic reticulum membrane]	DefinedSet	9649698_output	9649698	S-Farn KRAS4B [endoplasmic reticulum membrane]	EntityWithAccessionedSequence	POS	OR
+9647959_output	9647959	S-Farn-RAS [endoplasmic reticulum membrane]	DefinedSet	9647782_output	9647782	S-Farn NRAS [endoplasmic reticulum membrane]	EntityWithAccessionedSequence	POS	OR
+9647959_output	9647959	S-Farn-RAS [endoplasmic reticulum membrane]	DefinedSet	9649702_output	9649702	S-Farn KRAS4A [endoplasmic reticulum membrane]	EntityWithAccessionedSequence	POS	OR
+9647959_output	9647959	S-Farn-RAS [endoplasmic reticulum membrane]	DefinedSet	9647790_output	9647790	S-Farn-KRAS [endoplasmic reticulum membrane]	EntityWithAccessionedSequence	POS	OR
+9647959_output	9647959	S-Farn-RAS [endoplasmic reticulum membrane]	DefinedSet	9647788_output	9647788	S-Farn-HRAS [endoplasmic reticulum membrane]	EntityWithAccessionedSequence	POS	OR
+9647970_output	9647970	S-Farn-Me KRAS4A, HRAS, NRAS [plasma membrane]	DefinedSet	9647811_output	9647811	S-Farn-Me KRAS4A [plasma membrane]	EntityWithAccessionedSequence	POS	OR
+9647970_output	9647970	S-Farn-Me KRAS4A, HRAS, NRAS [plasma membrane]	DefinedSet	9647893_output	9647893	S-Farn-Me NRAS [plasma membrane]	EntityWithAccessionedSequence	POS	OR
+9647970_output	9647970	S-Farn-Me KRAS4A, HRAS, NRAS [plasma membrane]	DefinedSet	9665052_output	9665052	S-Farn-Me HRAS [plasma membrane]	EntityWithAccessionedSequence	POS	OR
+5674138_output	5674138	WDR83:LAMTOR2:LAMTOR3:activated RAF:MAP2K:MAPK complex [endosome membrane]	Complex	169291_output	169291	MAPKs [cytosol]	DefinedSet	POS	OR
+5674138_output	5674138	WDR83:LAMTOR2:LAMTOR3:activated RAF:MAP2K:MAPK complex [endosome membrane]	Complex	5672716_output	5672716	MAP2K homo/heterodimers [cytosol]	DefinedSet	POS	OR
+5674138_output	5674138	WDR83:LAMTOR2:LAMTOR3:activated RAF:MAP2K:MAPK complex [endosome membrane]	Complex	5674133_output	5674133	WDR83:LAMTOR2:LAMTOR3 [endosome membrane]	Complex	POS	OR
+5674138_output	5674138	WDR83:LAMTOR2:LAMTOR3:activated RAF:MAP2K:MAPK complex [endosome membrane]	Complex	5674136_output	5674136	activated RAF homo/heterodimer [cytosol]	Complex	POS	OR
+5674139_output	5674139	PAQR3:inactive RAFs [Golgi membrane]	Complex	5672708_output	5672708	inactive RAFs [cytosol]	DefinedSet	POS	OR
+5674139_output	5674139	PAQR3:inactive RAFs [Golgi membrane]	Complex	5674103_output	5674103	PAQR3 [Golgi membrane]	EntityWithAccessionedSequence	POS	OR
+5689096_output	5689096	PolyUb [cytosol]	DefinedSet	450152_output	450152	K63polyUb [cytosol]	Polymer	POS	OR
+5689096_output	5689096	PolyUb [cytosol]	DefinedSet	3095921_output	3095921	K11polyUb [cytosol]	Polymer	POS	OR
+5689096_output	5689096	PolyUb [cytosol]	DefinedSet	912740_output	912740	K48polyUb [cytosol]	Polymer	POS	OR
+5689096_output	5689096	PolyUb [cytosol]	DefinedSet	5689212_output	5689212	K27polyUb [cytosol]	Polymer	POS	OR
+5689096_output	5689096	PolyUb [cytosol]	DefinedSet	5689142_output	5689142	K33polyUb [cytosol]	Polymer	POS	OR
+5689096_output	5689096	PolyUb [cytosol]	DefinedSet	5689106_output	5689106	K6polyUb [cytosol]	Polymer	POS	OR
+5689096_output	5689096	PolyUb [cytosol]	DefinedSet	5689192_output	5689192	K29polyUb [cytosol]	Polymer	POS	OR
+5672726_output	5672726	dephosphorylated inactive RAFs [cytosol]	DefinedSet	5672673_output	5672673	p-S445,S729-BRAF [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672726_output	5672726	dephosphorylated inactive RAFs [cytosol]	DefinedSet	5672681_output	5672681	p-S576 ARAF [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672726_output	5672726	dephosphorylated inactive RAFs [cytosol]	DefinedSet	206028_output	206028	p-S621-RAF1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+2028645_output	2028645	YWHAB dimer [cytosol]	Complex	48888_output	48888	YWHAB [cytosol]	EntityWithAccessionedSequence	POS	OR
+5658232_output	5658232	SPRED dimer:NF1 [plasma membrane]	Complex	947770_output	947770	NF1(2-2839) [cytosol]	EntityWithAccessionedSequence	POS	OR
+5658232_output	5658232	SPRED dimer:NF1 [plasma membrane]	Complex	5658219_output	5658219	SPRED dimer [plasma membrane]	CandidateSet	POS	OR
+5675205_output	5675205	p-T,Y MAPK monomers and dimers:PEA15 [cytosol]	Complex	5674340_output	5674340	p-T,Y MAPK monomers and dimers [cytosol]	DefinedSet	POS	OR
+5675205_output	5675205	p-T,Y MAPK monomers and dimers:PEA15 [cytosol]	Complex	5675204_output	5675204	PEA15 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5674489_output	5674489	p-2S,T MAP2K1:p-2S MAPK2K2 heterodimer [cytosol]	Complex	169292_output	169292	p-S222,S226-MAP2K2 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5674489_output	5674489	p-2S,T MAP2K1:p-2S MAPK2K2 heterodimer [cytosol]	Complex	5674490_output	5674490	p-S,218, S222,T292 MAP2K1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+9653583_output	9653583	S-Farn-Me KRAS4B:CALM1:4xCa2+ [plasma membrane]	Complex	9647815_output	9647815	S-Farn-Me KRAS4B [plasma membrane]	EntityWithAccessionedSequence	POS	OR
+9653583_output	9653583	S-Farn-Me KRAS4B:CALM1:4xCa2+ [plasma membrane]	Complex	74294_output	74294	CALM1:4xCa2+ [cytosol]	Complex	POS	OR
+5672721_output	5672721	p-2S MAP2K homo/heterodimers [cytosol]	DefinedSet	5672705_output	5672705	p-2S MAP2K1:p-2S MAPK2K2 heterodimer [cytosol]	Complex	POS	OR
+5672721_output	5672721	p-2S MAP2K homo/heterodimers [cytosol]	DefinedSet	5672703_output	5672703	p-S218,S222 MAP2K1 dimer [cytosol]	Complex	POS	OR
+5672721_output	5672721	p-2S MAP2K homo/heterodimers [cytosol]	DefinedSet	5672701_output	5672701	p-S222,S226 MAP2K2 dimer [cytosol]	Complex	POS	OR
+9660554_output	9660554	S-Farn-Me_2xPalmS HRAS:GTP:RAL GDS proteins [plasma membrane]	Complex	9660551_output	9660551	S-Farn-Me-2xPalmS HRAS:GTP [plasma membrane]	Complex	POS	OR
+9660554_output	9660554	S-Farn-Me_2xPalmS HRAS:GTP:RAL GDS proteins [plasma membrane]	Complex	9660479_output	9660479	RAL GDS proteins [cytosol]	DefinedSet	POS	OR
+9654518_output	9654518	S-Farn-Me KRAS4B:CALM1:4xCa2+:PDE6D:ARL2:GTP [cytosol]	Complex	9654515_output	9654515	S-Farn-Me KRAS4B:CALM1:4xCa2+:PDE6D [cytosol]	Complex	POS	OR
+9654518_output	9654518	S-Farn-Me KRAS4B:CALM1:4xCa2+:PDE6D:ARL2:GTP [cytosol]	Complex	5250197_output	5250197	ARL2:GTP [cytosol]	Complex	POS	OR
+5674005_output	5674005	p21 RAS:GTP:ub-BRAP [plasma membrane]	Complex	109783_output	109783	p21 RAS:GTP [plasma membrane]	Complex	POS	OR
+5674005_output	5674005	p21 RAS:GTP:ub-BRAP [plasma membrane]	Complex	5674001_output	5674001	ub-BRAP [cytosol]	EntityWithAccessionedSequence	POS	OR
+5674362_output	5674362	IL17RD:p-2S MAP2Ks:p-T,Y MAPKs [Golgi membrane]	Complex	169289_output	169289	p-T,Y MAPKs [cytosol]	DefinedSet	POS	OR
+5674362_output	5674362	IL17RD:p-2S MAP2Ks:p-T,Y MAPKs [Golgi membrane]	Complex	5672721_output	5672721	p-2S MAP2K homo/heterodimers [cytosol]	DefinedSet	POS	OR
+5674362_output	5674362	IL17RD:p-2S MAP2Ks:p-T,Y MAPKs [Golgi membrane]	Complex	5674277_output	5674277	IL17RD [Golgi membrane]	EntityWithAccessionedSequence	POS	OR
+5672717_output	5672717	RAF/MAPK scaffolds [cytosol]	CandidateSet	264470_output	264470	ARRB1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672717_output	5672717	RAF/MAPK scaffolds [cytosol]	CandidateSet	5672629_output	5672629	CNKSR1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672717_output	5672717	RAF/MAPK scaffolds [cytosol]	CandidateSet	5626371_output	5626371	IQGAP1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672717_output	5672717	RAF/MAPK scaffolds [cytosol]	CandidateSet	416464_output	416464	ARRB2 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672717_output	5672717	RAF/MAPK scaffolds [cytosol]	CandidateSet	354079_output	354079	Focal Adhesion/Focal contacts [plasma membrane]	Complex	POS	OR
+5672717_output	5672717	RAF/MAPK scaffolds [cytosol]	CandidateSet	5672589_output	5672589	KSR2 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672717_output	5672717	RAF/MAPK scaffolds [cytosol]	CandidateSet	5672632_output	5672632	CNKSR2 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672717_output	5672717	RAF/MAPK scaffolds [cytosol]	CandidateSet	5672691_output	5672691	p-S311 KSR1:MARK3 [cytosol]	Complex	POS	OR
+5672692_output	5672692	p-S311 KSR1:MARK3:YWHAB dimer [plasma membrane]	Complex	2028645_output	2028645	YWHAB dimer [cytosol]	Complex	POS	OR
+5672692_output	5672692	p-S311 KSR1:MARK3:YWHAB dimer [plasma membrane]	Complex	5672691_output	5672691	p-S311 KSR1:MARK3 [cytosol]	Complex	POS	OR
+9653576_output	9653576	p-S181-S-Farn-Me KRAS4B:BCL2L1 [mitochondrial outer membrane]	Complex	114236_output	114236	BCL2L1 [mitochondrial outer membrane]	EntityWithAccessionedSequence	POS	OR
+9653576_output	9653576	p-S181-S-Farn-Me KRAS4B:BCL2L1 [mitochondrial outer membrane]	Complex	9653578_output	9653578	pS181-S-Farn-Me KRAS4B [mitochondrial outer membrane]	EntityWithAccessionedSequence	POS	OR
+5675430_output	5675430	p21RAS:GTP:dephosphorylated RAF1 homo/heterodimer [plasma membrane]	Complex	5672709_output	5672709	'activator' RAFs [cytosol]	CandidateSet	POS	OR
+5675430_output	5675430	p21RAS:GTP:dephosphorylated RAF1 homo/heterodimer [plasma membrane]	Complex	109783_output	109783	p21 RAS:GTP [plasma membrane]	Complex	POS	OR
+5675430_output	5675430	p21RAS:GTP:dephosphorylated RAF1 homo/heterodimer [plasma membrane]	Complex	2028645_output	2028645	YWHAB dimer [cytosol]	Complex	POS	OR
+5675430_output	5675430	p21RAS:GTP:dephosphorylated RAF1 homo/heterodimer [plasma membrane]	Complex	5675420_output	5675420	p-Y341,T491,S494,S621 RAF1 [plasma membrane]	EntityWithAccessionedSequence	POS	OR
+9657592_output	9657592	activated RAF:scaffold:p-2S MAP2K:p-2T MAPK:single mechanism MAPK inhibitors [plasma membrane]	Complex	5672724_output	5672724	activated RAF:scaffold:p-2S MAP2K:p-2T MAPK complex [plasma membrane]	Complex	POS	OR
+9657592_output	9657592	activated RAF:scaffold:p-2S MAP2K:p-2T MAPK:single mechanism MAPK inhibitors [plasma membrane]	Complex	9657577_output	9657577	single mechanism MAPK inhibitors [cytosol]	CandidateSet	POS	OR
+5672729_output	5672729	p21 RAS:GTP:'activator' RAF:YWHAB dimer [plasma membrane]	Complex	109783_output	109783	p21 RAS:GTP [plasma membrane]	Complex	POS	OR
+5672729_output	5672729	p21 RAS:GTP:'activator' RAF:YWHAB dimer [plasma membrane]	Complex	5672710_output	5672710	'activator' RAF:YWHAB dimer [cytosol]	Complex	POS	OR
+5658420_output	5658420	SPRED dimer:ub-NF1 [plasma membrane]	Complex	5658219_output	5658219	SPRED dimer [plasma membrane]	CandidateSet	POS	OR
+5658420_output	5658420	SPRED dimer:ub-NF1 [plasma membrane]	Complex	5658418_output	5658418	ub-NF1(2-2839) [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672696_output	5672696	p-S311,S406 KSR1:MARK3:YWHAB dimer [cytosol]	Complex	2028645_output	2028645	YWHAB dimer [cytosol]	Complex	POS	OR
+5672696_output	5672696	p-S311,S406 KSR1:MARK3:YWHAB dimer [cytosol]	Complex	5672695_output	5672695	p-S311,S406 KSR1:MARK3 [cytosol]	Complex	POS	OR
+9654515_output	9654515	S-Farn-Me KRAS4B:CALM1:4xCa2+:PDE6D [cytosol]	Complex	9654512_output	9654512	S-Farn-Me KRAS4B:CALM1:4xCa2+ [cytosol]	Complex	POS	OR
+9654515_output	9654515	S-Farn-Me KRAS4B:CALM1:4xCa2+:PDE6D [cytosol]	Complex	2565921_output	2565921	PDE6D [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672724_output	5672724	activated RAF:scaffold:p-2S MAP2K:p-2T MAPK complex [plasma membrane]	Complex	169289_output	169289	p-T,Y MAPKs [cytosol]	DefinedSet	POS	OR
+5672724_output	5672724	activated RAF:scaffold:p-2S MAP2K:p-2T MAPK complex [plasma membrane]	Complex	5672721_output	5672721	p-2S MAP2K homo/heterodimers [cytosol]	DefinedSet	POS	OR
+5672724_output	5672724	activated RAF:scaffold:p-2S MAP2K:p-2T MAPK complex [plasma membrane]	Complex	5672718_output	5672718	p21 RAS:GTP:activated RAF homo/heterodimer complexes [plasma membrane]	Complex	POS	OR
+5672724_output	5672724	activated RAF:scaffold:p-2S MAP2K:p-2T MAPK complex [plasma membrane]	Complex	5672717_output	5672717	RAF/MAPK scaffolds [cytosol]	CandidateSet	POS	OR
+169289_output	169289	p-T,Y MAPKs [cytosol]	DefinedSet	109842_output	109842	p-T202,Y204-MAPK3 [cytosol]	EntityWithAccessionedSequence	POS	OR
+169289_output	169289	p-T,Y MAPKs [cytosol]	DefinedSet	109853_output	109853	p-T185,Y187-MAPK1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+9647967_output	9647967	S-Farn-Me PalmS KRAS4A,HRAS, NRAS [Golgi membrane]	DefinedSet	9647906_output	9647906	S-Farn-Me PalmS NRAS [Golgi membrane]	EntityWithAccessionedSequence	POS	OR
+9647967_output	9647967	S-Farn-Me PalmS KRAS4A,HRAS, NRAS [Golgi membrane]	DefinedSet	9647896_output	9647896	S-Farn-Me PalmS HRAS [Golgi membrane]	EntityWithAccessionedSequence	POS	OR
+9647967_output	9647967	S-Farn-Me PalmS KRAS4A,HRAS, NRAS [Golgi membrane]	DefinedSet	9647903_output	9647903	S-Farn-Me PalmS KRAS4A [Golgi membrane]	EntityWithAccessionedSequence	POS	OR
+9647956_output	9647956	S-Farn-proRAS [endoplasmic reticulum membrane]	DefinedSet	9647925_output	9647925	S-Farn-proKRAS [endoplasmic reticulum membrane]	EntityWithAccessionedSequence	POS	OR
+9647956_output	9647956	S-Farn-proRAS [endoplasmic reticulum membrane]	DefinedSet	9647928_output	9647928	S-Farn-proNRAS [endoplasmic reticulum membrane]	EntityWithAccessionedSequence	POS	OR
+9647956_output	9647956	S-Farn-proRAS [endoplasmic reticulum membrane]	DefinedSet	9649695_output	9649695	S-Farn proKRAS4A [endoplasmic reticulum membrane]	EntityWithAccessionedSequence	POS	OR
+9647956_output	9647956	S-Farn-proRAS [endoplasmic reticulum membrane]	DefinedSet	9647918_output	9647918	S-Farn-proHRAS [endoplasmic reticulum membrane]	EntityWithAccessionedSequence	POS	OR
+9647956_output	9647956	S-Farn-proRAS [endoplasmic reticulum membrane]	DefinedSet	9649693_output	9649693	S-Farn proKRAS4B [endoplasmic reticulum membrane]	EntityWithAccessionedSequence	POS	OR
+8868113_output	8868113	p-S459 PTPN3:p-T183,Y185-MAPK12 [cytosol]	Complex	171021_output	171021	p-T183,Y185-MAPK12 [cytosol]	EntityWithAccessionedSequence	POS	OR
+8868113_output	8868113	p-S459 PTPN3:p-T183,Y185-MAPK12 [cytosol]	Complex	8868111_output	8868111	p-S459 PTPN3 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672695_output	5672695	p-S311,S406 KSR1:MARK3 [cytosol]	Complex	5672591_output	5672591	MARK3 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672695_output	5672695	p-S311,S406 KSR1:MARK3 [cytosol]	Complex	5672654_output	5672654	p-S311,S406 KSR1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672707_output	5672707	inactive RAFs:YWHAB dimer [cytosol]	Complex	2028645_output	2028645	YWHAB dimer [cytosol]	Complex	POS	OR
+5672707_output	5672707	inactive RAFs:YWHAB dimer [cytosol]	Complex	5672708_output	5672708	inactive RAFs [cytosol]	DefinedSet	POS	OR
+5672728_output	5672728	dephosphorylated inactive RAFS:YWHAB dimer [cytosol]	Complex	2028645_output	2028645	YWHAB dimer [cytosol]	Complex	POS	OR
+5672728_output	5672728	dephosphorylated inactive RAFS:YWHAB dimer [cytosol]	Complex	5672726_output	5672726	dephosphorylated inactive RAFs [cytosol]	DefinedSet	POS	OR
+5672733_output	5672733	p21 RAS:GTP:homo/heterodimerized RAF complex [plasma membrane]	Complex	5672731_output	5672731	"dephosphorylated ""receiver"" RAF/KSR1 [cytosol]"	DefinedSet	POS	OR
+5672733_output	5672733	p21 RAS:GTP:homo/heterodimerized RAF complex [plasma membrane]	Complex	5672729_output	5672729	p21 RAS:GTP:'activator' RAF:YWHAB dimer [plasma membrane]	Complex	POS	OR
+5675412_output	5675412	p21RAS:GTP:p-S621 RAF1 homo/heterodimer [plasma membrane]	Complex	5672709_output	5672709	'activator' RAFs [cytosol]	CandidateSet	POS	OR
+5675412_output	5675412	p21RAS:GTP:p-S621 RAF1 homo/heterodimer [plasma membrane]	Complex	109783_output	109783	p21 RAS:GTP [plasma membrane]	Complex	POS	OR
+5675412_output	5675412	p21RAS:GTP:p-S621 RAF1 homo/heterodimer [plasma membrane]	Complex	2028645_output	2028645	YWHAB dimer [cytosol]	Complex	POS	OR
+5675412_output	5675412	p21RAS:GTP:p-S621 RAF1 homo/heterodimer [plasma membrane]	Complex	206222_output	206222	p-S621-RAF1 [plasma membrane]	EntityWithAccessionedSequence	POS	OR
+5672712_output	5672712	p21RAS:GTP:activated RAF homo/heterodimers [plasma membrane]	Complex	5672709_output	5672709	'activator' RAFs [cytosol]	CandidateSet	POS	OR
+5672712_output	5672712	p21RAS:GTP:activated RAF homo/heterodimers [plasma membrane]	Complex	109783_output	109783	p21 RAS:GTP [plasma membrane]	Complex	POS	OR
+5672712_output	5672712	p21RAS:GTP:activated RAF homo/heterodimers [plasma membrane]	Complex	2028645_output	2028645	YWHAB dimer [cytosol]	Complex	POS	OR
+5672712_output	5672712	p21RAS:GTP:activated RAF homo/heterodimers [plasma membrane]	Complex	5672713_output	5672713	activated RAF/KSR1 [plasma membrane]	CandidateSet	POS	OR
+5675361_output	5675361	MAPK monomers and dimers [cytosol]	DefinedSet	169291_output	169291	MAPKs [cytosol]	DefinedSet	POS	OR
+5675361_output	5675361	MAPK monomers and dimers [cytosol]	DefinedSet	5675357_output	5675357	MAPK3 dimer [cytosol]	Complex	POS	OR
+5675361_output	5675361	MAPK monomers and dimers [cytosol]	DefinedSet	5675354_output	5675354	MAPK1 dimer [cytosol]	Complex	POS	OR
+9658249_output	9658249	p21 RAS:GTP:PI3K [plasma membrane]	Complex	74693_output	74693	PI3K [cytosol]	Complex	POS	OR
+9658249_output	9658249	p21 RAS:GTP:PI3K [plasma membrane]	Complex	109783_output	109783	p21 RAS:GTP [plasma membrane]	Complex	POS	OR
+5658216_output	5658216	RAS GAPs [cytosol]	DefinedSet	186833_output	186833	RASA1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5658216_output	5658216	RAS GAPs [cytosol]	DefinedSet	5658232_output	5658232	SPRED dimer:NF1 [plasma membrane]	Complex	POS	OR
+5658216_output	5658216	RAS GAPs [cytosol]	DefinedSet	5658228_output	5658228	RASA4 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5658216_output	5658216	RAS GAPs [cytosol]	DefinedSet	5658226_output	5658226	RASAL3 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5658216_output	5658216	RAS GAPs [cytosol]	DefinedSet	5658224_output	5658224	RASAL2 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5658216_output	5658216	RAS GAPs [cytosol]	DefinedSet	5658238_output	5658238	DAB2IP [cytosol]	EntityWithAccessionedSequence	POS	OR
+5658216_output	5658216	RAS GAPs [cytosol]	DefinedSet	5658222_output	5658222	RASA3 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5658216_output	5658216	RAS GAPs [cytosol]	DefinedSet	5658221_output	5658221	RASA2 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5658216_output	5658216	RAS GAPs [cytosol]	DefinedSet	5658233_output	5658233	RASAL1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5658216_output	5658216	RAS GAPs [cytosol]	DefinedSet	5658217_output	5658217	SYNGAP1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+9647965_output	9647965	S-Farn-Me RAS [endoplasmic reticulum membrane]	DefinedSet	9647891_output	9647891	S-Farn-Me NRAS [endoplasmic reticulum membrane]	EntityWithAccessionedSequence	POS	OR
+9647965_output	9647965	S-Farn-Me RAS [endoplasmic reticulum membrane]	DefinedSet	9647796_output	9647796	S-Farn-Me HRAS [endoplasmic reticulum membrane]	EntityWithAccessionedSequence	POS	OR
+9647965_output	9647965	S-Farn-Me RAS [endoplasmic reticulum membrane]	DefinedSet	9649690_output	9649690	S-Farn-Me KRAS4B [endoplasmic reticulum membrane]	EntityWithAccessionedSequence	POS	OR
+9647965_output	9647965	S-Farn-Me RAS [endoplasmic reticulum membrane]	DefinedSet	9647801_output	9647801	S-Farn-Me KRAS [endoplasmic reticulum membrane]	EntityWithAccessionedSequence	POS	OR
+9647965_output	9647965	S-Farn-Me RAS [endoplasmic reticulum membrane]	DefinedSet	9647806_output	9647806	S-Farn-Me KRAS4A [endoplasmic reticulum membrane]	EntityWithAccessionedSequence	POS	OR
+9657577_output	9657577	single mechanism MAPK inhibitors [cytosol]	CandidateSet	9657506_output	9657506	ulixertinib [cytosol]	Drug	POS	OR
+9657577_output	9657577	single mechanism MAPK inhibitors [cytosol]	CandidateSet	9657520_output	9657520	ravoxertinib [cytosol]	Drug	POS	OR
+9657577_output	9657577	single mechanism MAPK inhibitors [cytosol]	CandidateSet	9657533_output	9657533	VTX-11e [cytosol]	Drug	POS	OR
+5675356_output	5675356	MAPK1 dimer [nucleoplasm]	Complex	199960_output	199960	MAPK1 [nucleoplasm]	EntityWithAccessionedSequence	POS	OR
+109783_output	109783	p21 RAS:GTP [plasma membrane]	Complex	9649715_output	9649715	mature p21 RAS [plasma membrane]	DefinedSet	POS	OR
+9654512_output	9654512	S-Farn-Me KRAS4B:CALM1:4xCa2+ [cytosol]	Complex	74294_output	74294	CALM1:4xCa2+ [cytosol]	Complex	POS	OR
+9654512_output	9654512	S-Farn-Me KRAS4B:CALM1:4xCa2+ [cytosol]	Complex	9654510_output	9654510	S-Farn-Me KRAS4B [cytosol]	EntityWithAccessionedSequence	POS	OR
+5674136_output	5674136	activated RAF homo/heterodimer [cytosol]	Complex	5674134_output	5674134	activated RAF monomer [cytosol]	CandidateSet	POS	OR
+5672705_output	5672705	p-2S MAP2K1:p-2S MAPK2K2 heterodimer [cytosol]	Complex	109837_output	109837	p-S218,S222-MAP2K1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672705_output	5672705	p-2S MAP2K1:p-2S MAPK2K2 heterodimer [cytosol]	Complex	169292_output	169292	p-S222,S226-MAP2K2 [cytosol]	EntityWithAccessionedSequence	POS	OR
+9660479_output	9660479	RAL GDS proteins [cytosol]	DefinedSet	561160_output	561160	RGL1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+9660479_output	9660479	RAL GDS proteins [cytosol]	DefinedSet	9660475_output	9660475	RGL3 [cytosol]	EntityWithAccessionedSequence	POS	OR
+9660479_output	9660479	RAL GDS proteins [cytosol]	DefinedSet	171001_output	171001	RALGDS [cytosol]	EntityWithAccessionedSequence	POS	OR
+9660479_output	9660479	RAL GDS proteins [cytosol]	DefinedSet	9660472_output	9660472	RGL2 [cytosol]	EntityWithAccessionedSequence	POS	OR
+74693_output	74693	PI3K [cytosol]	Complex	74689_output	74689	PI3K-catalytic subunit [cytosol]	DefinedSet	POS	OR
+74693_output	74693	PI3K [cytosol]	Complex	74688_output	74688	PI3K-regulatory subunit [cytosol]	DefinedSet	POS	OR
+5672709_output	5672709	'activator' RAFs [cytosol]	CandidateSet	5672646_output	5672646	p-S299,S302,T452,T455,S576 ARAF [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672709_output	5672709	'activator' RAFs [cytosol]	CandidateSet	5672676_output	5672676	p-S445,T599,S602,S729 BRAF [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672709_output	5672709	'activator' RAFs [cytosol]	CandidateSet	5672656_output	5672656	p-S311,Y552 KSR1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672709_output	5672709	'activator' RAFs [cytosol]	CandidateSet	5672664_output	5672664	p-S338,Y341,T491,S494,S621 RAF1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672709_output	5672709	'activator' RAFs [cytosol]	CandidateSet	5672673_output	5672673	p-S445,S729-BRAF [cytosol]	EntityWithAccessionedSequence	POS	OR
+5675359_output	5675359	MAPK3 dimer [nucleoplasm]	Complex	73724_output	73724	MAPK3 [nucleoplasm]	EntityWithAccessionedSequence	POS	OR
+5674340_output	5674340	p-T,Y MAPK monomers and dimers [cytosol]	DefinedSet	1268261_output	1268261	p-T,Y MAPK dimers [cytosol]	DefinedSet	POS	OR
+5674340_output	5674340	p-T,Y MAPK monomers and dimers [cytosol]	DefinedSet	169289_output	169289	p-T,Y MAPKs [cytosol]	DefinedSet	POS	OR
+9660551_output	9660551	S-Farn-Me-2xPalmS HRAS:GTP [plasma membrane]	Complex	9647912_output	9647912	S-Farn-Me-2xPalmS HRAS [plasma membrane]	EntityWithAccessionedSequence	POS	OR
+5672701_output	5672701	p-S222,S226 MAP2K2 dimer [cytosol]	Complex	169292_output	169292	p-S222,S226-MAP2K2 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672715_output	5672715	p21 RAS:GTP:'activator' RAFs:YWHAB dimer [plasma membrane]	Complex	5672709_output	5672709	'activator' RAFs [cytosol]	CandidateSet	POS	OR
+5672715_output	5672715	p21 RAS:GTP:'activator' RAFs:YWHAB dimer [plasma membrane]	Complex	109783_output	109783	p21 RAS:GTP [plasma membrane]	Complex	POS	OR
+5672715_output	5672715	p21 RAS:GTP:'activator' RAFs:YWHAB dimer [plasma membrane]	Complex	2028645_output	2028645	YWHAB dimer [cytosol]	Complex	POS	OR
+9649715_output	9649715	mature p21 RAS [plasma membrane]	DefinedSet	9647815_output	9647815	S-Farn-Me KRAS4B [plasma membrane]	EntityWithAccessionedSequence	POS	OR
+9649715_output	9649715	mature p21 RAS [plasma membrane]	DefinedSet	9647910_output	9647910	S-Farn-Me PalmS NRAS [plasma membrane]	EntityWithAccessionedSequence	POS	OR
+9649715_output	9649715	mature p21 RAS [plasma membrane]	DefinedSet	9647915_output	9647915	S-Farn-Me-PalmS KRAS4A [plasma membrane]	EntityWithAccessionedSequence	POS	OR
+9649715_output	9649715	mature p21 RAS [plasma membrane]	DefinedSet	9647912_output	9647912	S-Farn-Me-2xPalmS HRAS [plasma membrane]	EntityWithAccessionedSequence	POS	OR
+5672731_output	5672731	"dephosphorylated ""receiver"" RAF/KSR1 [cytosol]"	DefinedSet	5672673_output	5672673	p-S445,S729-BRAF [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672731_output	5672731	"dephosphorylated ""receiver"" RAF/KSR1 [cytosol]"	DefinedSet	5672691_output	5672691	p-S311 KSR1:MARK3 [cytosol]	Complex	POS	OR
+5672731_output	5672731	"dephosphorylated ""receiver"" RAF/KSR1 [cytosol]"	DefinedSet	5672681_output	5672681	p-S576 ARAF [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672731_output	5672731	"dephosphorylated ""receiver"" RAF/KSR1 [cytosol]"	DefinedSet	206028_output	206028	p-S621-RAF1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+169291_output	169291	MAPKs [cytosol]	DefinedSet	59282_output	59282	MAPK1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+169291_output	169291	MAPKs [cytosol]	DefinedSet	59284_output	59284	MAPK3 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672710_output	5672710	'activator' RAF:YWHAB dimer [cytosol]	Complex	5672709_output	5672709	'activator' RAFs [cytosol]	CandidateSet	POS	OR
+5672710_output	5672710	'activator' RAF:YWHAB dimer [cytosol]	Complex	2028645_output	2028645	YWHAB dimer [cytosol]	Complex	POS	OR
+5658219_output	5658219	SPRED dimer [plasma membrane]	CandidateSet	5658236_output	5658236	SPRED3 dimer [plasma membrane]	Complex	POS	OR
+5658219_output	5658219	SPRED dimer [plasma membrane]	CandidateSet	5658235_output	5658235	SPRED2 dimer [plasma membrane]	Complex	POS	OR
+5658219_output	5658219	SPRED dimer [plasma membrane]	CandidateSet	5658215_output	5658215	SPRED1 dimer [plasma membrane]	Complex	POS	OR
+5250197_output	5250197	ARL2:GTP [cytosol]	Complex	5216230_output	5216230	ARL2 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5675354_output	5675354	MAPK1 dimer [cytosol]	Complex	59282_output	59282	MAPK1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672703_output	5672703	p-S218,S222 MAP2K1 dimer [cytosol]	Complex	109837_output	109837	p-S218,S222-MAP2K1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672716_output	5672716	MAP2K homo/heterodimers [cytosol]	DefinedSet	5672686_output	5672686	MAP2K1:MAPK2K2 heterodimer [cytosol]	Complex	POS	OR
+5672716_output	5672716	MAP2K homo/heterodimers [cytosol]	DefinedSet	5672685_output	5672685	MAP2K2 dimer [cytosol]	Complex	POS	OR
+5672716_output	5672716	MAP2K homo/heterodimers [cytosol]	DefinedSet	5672683_output	5672683	MAP2K1 dimer [cytosol]	Complex	POS	OR
+9635772_output	9635772	p-T-MAPK dimers [cytosol]	DefinedSet	9635777_output	9635777	p-T185-MAPK1 dimer [cytosol]	Complex	POS	OR
+9635772_output	9635772	p-T-MAPK dimers [cytosol]	DefinedSet	9635770_output	9635770	p-T203 MAPK3 dimer [cytosol]	Complex	POS	OR
+5672691_output	5672691	p-S311 KSR1:MARK3 [cytosol]	Complex	5672591_output	5672591	MARK3 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672691_output	5672691	p-S311 KSR1:MARK3 [cytosol]	Complex	5672652_output	5672652	p-S311 KSR1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+354079_output	354079	Focal Adhesion/Focal contacts [plasma membrane]	Complex	354157_output	354157	Vinculin bound to alphaIIbbeta3 [plasma membrane]	Complex	POS	OR
+354079_output	354079	Focal Adhesion/Focal contacts [plasma membrane]	Complex	196015_output	196015	F-actin [plasma membrane]	Polymer	POS	OR
+5672713_output	5672713	activated RAF/KSR1 [plasma membrane]	CandidateSet	5672679_output	5672679	p-S445,T599,S602,S729 BRAF [plasma membrane]	EntityWithAccessionedSequence	POS	OR
+5672713_output	5672713	activated RAF/KSR1 [plasma membrane]	CandidateSet	5672699_output	5672699	p-S311,T552 KSR1:MARK3 [plasma membrane]	Complex	POS	OR
+5672713_output	5672713	activated RAF/KSR1 [plasma membrane]	CandidateSet	5672648_output	5672648	p-S299,S302,T452,T455,S576 ARAF [plasma membrane]	EntityWithAccessionedSequence	POS	OR
+5672713_output	5672713	activated RAF/KSR1 [plasma membrane]	CandidateSet	5672665_output	5672665	p-S338,Y341,T491,S494,S621 RAF1 [plasma membrane]	EntityWithAccessionedSequence	POS	OR
+5672708_output	5672708	inactive RAFs [cytosol]	DefinedSet	5672639_output	5672639	p-S214,S576 ARAF [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672708_output	5672708	inactive RAFs [cytosol]	DefinedSet	109786_output	109786	p-S259,S621-RAF1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672708_output	5672708	inactive RAFs [cytosol]	DefinedSet	5672667_output	5672667	p-S365,S445,S729 BRAF [cytosol]	EntityWithAccessionedSequence	POS	OR
+5674133_output	5674133	WDR83:LAMTOR2:LAMTOR3 [endosome membrane]	Complex	5672942_output	5672942	WDR83 [endosome membrane]	EntityWithAccessionedSequence	POS	OR
+5674133_output	5674133	WDR83:LAMTOR2:LAMTOR3 [endosome membrane]	Complex	5693294_output	5693294	LAMTOR3 [endosome membrane]	EntityWithAccessionedSequence	POS	OR
+5674133_output	5674133	WDR83:LAMTOR2:LAMTOR3 [endosome membrane]	Complex	5693293_output	5693293	LAMTOR2 [endosome membrane]	EntityWithAccessionedSequence	POS	OR
+5675357_output	5675357	MAPK3 dimer [cytosol]	Complex	59284_output	59284	MAPK3 [cytosol]	EntityWithAccessionedSequence	POS	OR
+74294_output	74294	CALM1:4xCa2+ [cytosol]	Complex	9016707_output	9016707	CALM1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+9635770_output	9635770	p-T203 MAPK3 dimer [cytosol]	Complex	9635775_output	9635775	p-T202-MAPK3 [cytosol]	EntityWithAccessionedSequence	POS	OR
+9635777_output	9635777	p-T185-MAPK1 dimer [cytosol]	Complex	9635773_output	9635773	p-T185-MAPK1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+1268261_output	1268261	p-T,Y MAPK dimers [cytosol]	DefinedSet	109844_output	109844	p-T202, Y204 MAPK3 dimer [cytosol]	Complex	POS	OR
+1268261_output	1268261	p-T,Y MAPK dimers [cytosol]	DefinedSet	109855_output	109855	p-T185,Y187 MAPK1 dimer [cytosol]	Complex	POS	OR
+354157_output	354157	Vinculin bound to alphaIIbbeta3 [plasma membrane]	Complex	354132_output	354132	Vinculin bound to PIP2 [plasma membrane]	Complex	POS	OR
+354157_output	354157	Vinculin bound to alphaIIbbeta3 [plasma membrane]	Complex	354137_output	354137	Focal complex [plasma membrane]	Complex	POS	OR
+5672699_output	5672699	p-S311,T552 KSR1:MARK3 [plasma membrane]	Complex	5672659_output	5672659	p-S311,Y552 KSR1 [plasma membrane]	EntityWithAccessionedSequence	POS	OR
+5672699_output	5672699	p-S311,T552 KSR1:MARK3 [plasma membrane]	Complex	5672591_output	5672591	MARK3 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672685_output	5672685	MAP2K2 dimer [cytosol]	Complex	59504_output	59504	MAP2K2 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672683_output	5672683	MAP2K1 dimer [cytosol]	Complex	59502_output	59502	MAP2K1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+74689_output	74689	PI3K-catalytic subunit [cytosol]	DefinedSet	74787_output	74787	PIK3CA [cytosol]	EntityWithAccessionedSequence	POS	OR
+74689_output	74689	PI3K-catalytic subunit [cytosol]	DefinedSet	74788_output	74788	PIK3CB [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672686_output	5672686	MAP2K1:MAPK2K2 heterodimer [cytosol]	Complex	59504_output	59504	MAP2K2 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5672686_output	5672686	MAP2K1:MAPK2K2 heterodimer [cytosol]	Complex	59502_output	59502	MAP2K1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5658215_output	5658215	SPRED1 dimer [plasma membrane]	Complex	5658225_output	5658225	SPRED1 [plasma membrane]	EntityWithAccessionedSequence	POS	OR
+5674134_output	5674134	activated RAF monomer [cytosol]	CandidateSet	5672646_output	5672646	p-S299,S302,T452,T455,S576 ARAF [cytosol]	EntityWithAccessionedSequence	POS	OR
+5674134_output	5674134	activated RAF monomer [cytosol]	CandidateSet	5672676_output	5672676	p-S445,T599,S602,S729 BRAF [cytosol]	EntityWithAccessionedSequence	POS	OR
+5674134_output	5674134	activated RAF monomer [cytosol]	CandidateSet	5672664_output	5672664	p-S338,Y341,T491,S494,S621 RAF1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+74688_output	74688	PI3K-regulatory subunit [cytosol]	DefinedSet	74789_output	74789	PIK3R1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+74688_output	74688	PI3K-regulatory subunit [cytosol]	DefinedSet	74791_output	74791	PIK3R2 [cytosol]	EntityWithAccessionedSequence	POS	OR
+5658235_output	5658235	SPRED2 dimer [plasma membrane]	Complex	5658229_output	5658229	SPRED2 [plasma membrane]	EntityWithAccessionedSequence	POS	OR
+5658236_output	5658236	SPRED3 dimer [plasma membrane]	Complex	5658223_output	5658223	SPRED3 [plasma membrane]	EntityWithAccessionedSequence	POS	OR
+109855_output	109855	p-T185,Y187 MAPK1 dimer [cytosol]	Complex	109853_output	109853	p-T185,Y187-MAPK1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+109844_output	109844	p-T202, Y204 MAPK3 dimer [cytosol]	Complex	109842_output	109842	p-T202,Y204-MAPK3 [cytosol]	EntityWithAccessionedSequence	POS	OR
+354132_output	354132	Vinculin bound to PIP2 [plasma membrane]	Complex	350753_output	350753	VCL [cytosol]	EntityWithAccessionedSequence	POS	OR
+354137_output	354137	Focal complex [plasma membrane]	Complex	377604_output	377604	Integrin binding divalent cations [extracellular region]	CandidateSet	POS	OR
+354137_output	354137	Focal complex [plasma membrane]	Complex	377603_output	377603	Integrin alphaIIb beta3 ECM ligands [extracellular region]	DefinedSet	POS	OR
+354137_output	354137	Focal complex [plasma membrane]	Complex	354130_output	354130	Integrin alphaIIb beta3:p-Y530-SRC:CSK:Talin:RIAM complex [plasma membrane]	Complex	POS	OR
+377603_output	377603	Integrin alphaIIb beta3 ECM ligands [extracellular region]	DefinedSet	54851_output	54851	FN1(32-2386) [extracellular region]	EntityWithAccessionedSequence	POS	OR
+377603_output	377603	Integrin alphaIIb beta3 ECM ligands [extracellular region]	DefinedSet	67271_output	67271	VWF(23-763) [extracellular region]	EntityWithAccessionedSequence	POS	OR
+377603_output	377603	Integrin alphaIIb beta3 ECM ligands [extracellular region]	DefinedSet	140586_output	140586	fibrin monomer [extracellular region]	Complex	POS	OR
+354130_output	354130	Integrin alphaIIb beta3:p-Y530-SRC:CSK:Talin:RIAM complex [plasma membrane]	Complex	354176_output	354176	Talin:RIAM complex [plasma membrane]	Complex	POS	OR
+354130_output	354130	Integrin alphaIIb beta3:p-Y530-SRC:CSK:Talin:RIAM complex [plasma membrane]	Complex	377608_output	377608	Integrin alphaIIb beta3:p-Y530-SRC:CSK [plasma membrane]	Complex	POS	OR
+377608_output	377608	Integrin alphaIIb beta3:p-Y530-SRC:CSK [plasma membrane]	Complex	114514_output	114514	Integrin alpha2bbeta3 [plasma membrane]	Complex	POS	OR
+377608_output	377608	Integrin alphaIIb beta3:p-Y530-SRC:CSK [plasma membrane]	Complex	377606_output	377606	p-Y530-SRC:CSK [cytosol]	Complex	POS	OR
+354176_output	354176	Talin:RIAM complex [plasma membrane]	Complex	354110_output	354110	Rap1-GTP:PIP2:RIAM [plasma membrane]	Complex	POS	OR
+354176_output	354176	Talin:RIAM complex [plasma membrane]	Complex	350713_output	350713	TLN1 [cytosol]	EntityWithAccessionedSequence	POS	OR
+140586_output	140586	fibrin monomer [extracellular region]	Complex	140583_output	140583	FGA [extracellular region]	EntityWithAccessionedSequence	POS	OR
+140586_output	140586	fibrin monomer [extracellular region]	Complex	140584_output	140584	FGB [extracellular region]	EntityWithAccessionedSequence	POS	OR
+140586_output	140586	fibrin monomer [extracellular region]	Complex	140585_output	140585	FGG [extracellular region]	EntityWithAccessionedSequence	POS	OR
+114514_output	114514	Integrin alpha2bbeta3 [plasma membrane]	Complex	57600_output	57600	ITGB3 [plasma membrane]	EntityWithAccessionedSequence	POS	OR
+114514_output	114514	Integrin alpha2bbeta3 [plasma membrane]	Complex	57578_output	57578	ITGA2B(32-1039) [plasma membrane]	EntityWithAccessionedSequence	POS	OR
+354110_output	354110	Rap1-GTP:PIP2:RIAM [plasma membrane]	Complex	354081_output	354081	APBB1IP [cytosol]	EntityWithAccessionedSequence	POS	OR
+354110_output	354110	Rap1-GTP:PIP2:RIAM [plasma membrane]	Complex	354126_output	354126	RAP1:GTP [plasma membrane]	Complex	POS	OR
+377606_output	377606	p-Y530-SRC:CSK [cytosol]	Complex	203776_output	203776	CSK [cytosol]	EntityWithAccessionedSequence	POS	OR
+377606_output	377606	p-Y530-SRC:CSK [cytosol]	Complex	377598_output	377598	MyrG,p-Y530-SRC [plasma membrane]	EntityWithAccessionedSequence	POS	OR
+354126_output	354126	RAP1:GTP [plasma membrane]	Complex	377600_output	377600	RAP1 [plasma membrane]	DefinedSet	POS	OR
+377600_output	377600	RAP1 [plasma membrane]	DefinedSet	354118_output	354118	RAP1A [plasma membrane]	EntityWithAccessionedSequence	POS	OR
+377600_output	377600	RAP1 [plasma membrane]	DefinedSet	377590_output	377590	RAP1B [plasma membrane]	EntityWithAccessionedSequence	POS	OR
