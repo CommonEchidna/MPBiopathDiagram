@@ -31,11 +31,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
   }
   render(dotSrc,title){
-    console.log(this.selectedTab)
-    console.log(dotSrc);
       if(dotSrc.length>0){
-      console.log(dotSrc);
-      console.log("^^^^^");
       var dot = dotSrc.join('');
       d3.select("#graph").graphviz().attributer(attributer).zoomScaleExtent([.0001,1000]).renderDot(dot).on("end", interactive);
 
@@ -50,25 +46,19 @@ export class DashboardComponent implements OnInit {
   }
 
   setselectedTab(data){
-    console.log("SELECTEDTAB");
-    console.log(data);
 
     this.selectedTab=data;
   }
   setDotSrcLines(data){
     this.dotSrcLines = data;
-    console.log("RENDERED");
   }
   setDiagramTabData(data:Object[]){
-    console.log(data);
-    console.log("4");
+
     this.pathwayDiagramData = data;
-    console.log(this.pathwayDiagramData);
-    console.log("5");
+
 
     this.DiagramTabData = this.pathwayDiagramData;
-    console.log("6");
-    console.log(this.pathwayDiagramData[this.selectedTab]['label'])
+
     this.render(this.pathwayDiagramData[this.selectedTab]['src'],this.pathwayDiagramData[this.selectedTab]['label']);
 
 
@@ -81,7 +71,6 @@ function interactive(dotSrc){
   } else if(mode=="snackbar"){
     interactiveSnackBar(dotSrc);
   } else {
-  console.log("NONE2")
   }
 
 }
@@ -89,7 +78,6 @@ function interactive(dotSrc){
 function interactiveSnackBar(dotSrc){
 
   var nodes = d3.selectAll('.node,.edge');
-  console.log(nodes);
   nodes
       .on("click", function () {
           var title = d3.select(this).selectAll('title').text().trim();
@@ -98,8 +86,7 @@ function interactiveSnackBar(dotSrc){
           var class1 = d3.select(this).attr('class');
           var dotElement = title.replace('->',' -> ');
           var x = document.getElementById("snackbar");
-          console.log(id);
-          console.log(id.split("?")[1])
+
           x.textContent = id.split("?").join(" ");
           x.setAttribute('href',"https://reactome.org/content/query?q="+String(id.split("?")[1]).slice(14))
           x.className = "show";
@@ -112,7 +99,6 @@ function interactiveSnackBar(dotSrc){
 
 function interactiveDelete(dotSrc) {
   var nodes = d3.selectAll('.node,.edge');
-  console.log(nodes);
   nodes
       .on("click", function () {
           var title = d3.select(this).selectAll('title').text().trim();

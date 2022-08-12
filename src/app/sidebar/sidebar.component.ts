@@ -55,20 +55,17 @@ export class SidebarComponent implements OnInit {
     
     makeRequest1("GET", 'https://s3.amazonaws.com/download.reactome.org/81/mpbiopath/pathway_list.tsv',0).then(function(response){ 
     let splitted = String(response).split("\n");
-      console.log("INIT????");
       for(let i=1;i<splitted.length-1;i++){
         var split2 = splitted[i].split("\t");
         titledbidLocal.push({ id: split2[0], name:  split2[1]});    
    
       }
-      console.log(titledbidLocal);
     }
     )
     this.titledbidInput=titledbidLocal;
     this.titledbidLocal2=titledbidLocal;
     this.titledbidLocalMaster=titledbidLocal;
-    console.log("TWO");
-    console.log(this.titledbidInput);
+
   }
   
 
@@ -81,7 +78,6 @@ ngAfterViewInit() {
 }
   setDiagramTabData(data:Object[]){
     this.pathwayDiagramData =data;
-    console.log("???");
 
   }
 
@@ -91,14 +87,10 @@ ngAfterViewInit() {
     var title=item.name;
     const myPromise = new Promise((resolve,reject) => {
       var finaldotnosep = [];
-      console.log("1");
-      console.log(this.pathwayDiagramData)
       makeRequest1("GET", 'https://s3.amazonaws.com/download.reactome.org/81/mpbiopath/pathway_list.tsv',idx).then(function(response){    
               let splitted = String(response).split("\n");
               
-              console.log("START");
-              console.log(splitted);
-              console.log("\n\n")
+
               var line = -1
               for(let i=1;i<splitted.length-1;i++){
 
@@ -110,11 +102,8 @@ ngAfterViewInit() {
               }
               var split2 = splitted[line].split("\t");
 
-              console.log(split2[3]);
             makeRequest1('GET', split2[3], idx).then(function(response2){
-              console.log("RESPONSE")
-              console.log(response2);
-              console.log("\n\n")
+
   
             
               let dotLines = String(response2).split("\n");
@@ -175,9 +164,7 @@ ngAfterViewInit() {
                       finaldot.push('    ' +  "\""+String(parts[4])+"\"" + ' [label=' + strpartf + ' id='+tool2+ ' color=\"black\" tooltip='+tool2+ ']');
                   }
                   if(i==10){
-                    console.log("\n\n")
-                    console.log(finaldot[i]);
-                    console.log("\n\n")
+
 
                   }
                 }
@@ -230,10 +217,8 @@ ngAfterViewInit() {
 
 
                   var line = " "+  "\""+String(parts[0])+"\"" + "->" +  "\""+String(parts[4])+"\"" +"  ";
-                  console.log(parts[8]);
 
                   if(parts[8]=="NEG"){
-                    console.log(line);
                     line = line + "[arrowhead=tee tooltip="+tool+"]"
                   } 
                   else{
@@ -242,9 +227,7 @@ ngAfterViewInit() {
   
                   finaldot.push(line);
                   if(i==10){
-                    console.log("\n\n")
-                    console.log(line);
-                    console.log("\n\n")
+
 
                   }
                 }
@@ -263,9 +246,7 @@ ngAfterViewInit() {
                 }
                 dotSrcLines = finaldotnosep;
                 dot = dotSrcLines.join("");
-                console.log(dot);
-                console.log("DONE2");
-                resolve("DONE");
+
               })
             }
       )
@@ -274,25 +255,18 @@ ngAfterViewInit() {
         }
 
           getText2(text,title){
-            console.log(text);
-            console.log(this.pathwayDiagramData);
-            console.log(dotSrcLines);
-            console.log(title);
-            console.log("^^");
+
             this.selectedTab=this.selectedTabInput1;
             this.pathwayDiagramData[this.selectedTab]['label']=title;
             this.pathwayDiagramData[this.selectedTab]['src']=[];
             for(let i=0;i<dotSrcLines.length;i++){
               this.pathwayDiagramData[this.selectedTab]['src'].push(dotSrcLines[i]);
             }
-            console.log(this.pathwayDiagramData);
-            console.log("INDICATOR");
+
 
             this.DiagramTabData.emit(this.pathwayDiagramData);
-            console.log(dotSrcLines)
             this.emitDotSrcLines.emit(dotSrcLines);
             this.titledbid.emit(titledbidLocal);
-            console.log(this.selectedTab)
             this.selectedTabOutput1.emit(this.selectedTab);
           }
 
@@ -313,7 +287,6 @@ ngAfterViewInit() {
   }
 
   interactiveSearch2(data){
-    console.log(this.search);
     var searchterm2 = this.search;
     var pathways = d3.selectAll('pathwaylist');
     var options = document.getElementById("dbidchecked");
@@ -334,7 +307,6 @@ ngAfterViewInit() {
       }
     }
     else {
-      console.log("??");
     }
     this.titledbidLocal2=newlist;
 
