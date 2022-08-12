@@ -32,6 +32,7 @@ export class DashboardComponent implements OnInit {
   }
   render(dotSrc,title){
     console.log(this.selectedTab)
+    console.log(dotSrc);
       if(dotSrc.length>0){
       console.log(dotSrc);
       console.log("^^^^^");
