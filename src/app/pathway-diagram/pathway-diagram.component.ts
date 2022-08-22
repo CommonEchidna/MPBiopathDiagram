@@ -1,8 +1,12 @@
 import {AfterViewInit, Component, EventEmitter, Injectable, Input, OnInit, Output} from '@angular/core';
 import * as d3 from 'd3';
 import * as d3Graphviz from 'd3-graphviz' 
+import cytoscape from 'cytoscape';
+
 var mode="delete2";
 var dotSrcLines;
+var localCytoGraph: Object[] =[{label:"Untitled",src:[],cytoSrc:[]},{label:"Untitled",src:[] ,cytoSrc:[]}];
+
 
 @Component({
   selector: 'app-pathway-diagram',
@@ -12,6 +16,8 @@ var dotSrcLines;
 
 @Injectable()
 export class PathwayDiagramComponent implements OnInit {
+  @Input() cytoMode:string="cytoscape";
+  @Output() cytoscapeModeOutput = new EventEmitter<string>();
   @Input() dotSrcLinesInput: string[];
   @Output() dotSrcLinesOutput = new EventEmitter<Object[]> ();
   @Output() DiagramTabData = new EventEmitter<Object[]> ();
@@ -20,12 +26,15 @@ export class PathwayDiagramComponent implements OnInit {
   @Output() selectedTabOutput = new EventEmitter<number>();
   @Output() titledbid = new EventEmitter<Object[]>();
   @Input() titledbidInput=[];
+
+  @Input() cytoscapeGraph: Object[] =[{label:"Untitled",src:[],cytoSrc:[]},{label:"Untitled",src:[],cytoSrc:[] }];
+  @Output() cytoscapeOutput = new EventEmitter<Object[]>();
   titledbidLocal=[];
   search;
 
 
 
-
+  selectedGraph=this.cytoscapeGraph;
   selectedButton = 1;
   _ = d3Graphviz.graphviz;
   scale = 0.8; 
@@ -33,7 +42,6 @@ export class PathwayDiagramComponent implements OnInit {
   selectedTab=0;
 
   constructor() {
-    
 
    }
 
@@ -44,26 +52,11 @@ export class PathwayDiagramComponent implements OnInit {
     this.DiagramTabData.emit(this.pathwayDiagramData);
   }
 
-  
-
-  resetGraph(index): void {
-    if (this.selectedTab === index) {
-      return;
-    }
-
-    this.selectedTab = index;
-    console.log(this.pathwayDiagramData[this.selectedTab]['src'])
-	if (this.pathwayDiagramData[this.selectedTab]['src'].length>0) {
-		d3.select("#graph").graphviz().renderDot(this.pathwayDiagramData[this.selectedTab]);
-	} else {
-		d3.select("#graph").graphviz().renderDot('digraph {}');
-	}
-  this.sendTabData();
+  resetGraph(): void {
+    document.getElementById("graph").innerHTML="";
   }
 
   changeGraph(number): void {
-
-    console.log("HI");
 
     if (this.selectedTab === number) {
       return
@@ -71,74 +64,150 @@ export class PathwayDiagramComponent implements OnInit {
 
     this.selectedTab=number;
 
-    console.log("\n\n");
-    console.log(this.pathwayDiagramData[this.selectedTab]["src"]>0)
-    if(this.pathwayDiagramData[this.selectedTab]["src"].length>0){
-      console.log("1");
-      d3.select("#graph").graphviz().attributer(attributer).renderDot(this.pathwayDiagramData[this.selectedTab]["src"]);
-    } else {
-      console.log("2");
-
-      d3.select("#graph").graphviz().attributer(attributer).renderDot("digraph {}");
-
-    }
-    console.log(this.pathwayDiagramData)
     this.selectedTabOutput.emit(this.selectedTab);
 
-    this.sendTabData();
-    console.log("DONENENENENE");
 
-     }
+  }
      deletePathway(index): void {
 
 
-      this.pathwayDiagramData.splice(index, 1);
-    d3.select("#graph").graphviz().renderDot('digraph {}');
+      this.cytoscapeGraph.splice(index, 1);
 
-    this.sendTabData();
+      this.resetGraph();
+      this.sendTabData();
+      this.cytoscapeOutput.emit(this.cytoscapeGraph);
 
     }
     
   
     addPathway(): void {
-      console.log(this.pathwayDiagramData)
 
 
-      const index = this.pathwayDiagramData.length + 1
-      this.pathwayDiagramData.push({label:"Untitled", src:""});
+      const index = this.cytoscapeGraph.length + 1
+      this.cytoscapeGraph.push({label:"Untitled", src:[],cytoSrc:[]});
       this.sendTabData();
+      this.cytoscapeOutput.emit(this.cytoscapeGraph);
+
 
     }
     interactiveSearch(){
-      console.log("FIRST");
-      console.log(this.selectedTab);
-      console.log(this.pathwayDiagramData[this.selectedTab])
-      this.dotSrcLinesInput = this.pathwayDiagramData[this.selectedTab]['src'];
+
+      if(this.cytoMode=="graphviz"){
+      this.dotSrcLinesInput = this.cytoscapeGraph[this.selectedTab]['src'];
       var searchterm = this.search;
       var nodes = d3.selectAll('.node,.edge');
       var dotSrcLines2 = [];
-      console.log(this.dotSrcLinesInput);
-      console.log("Starting");
+
 
       for (let i = 0; i < this.dotSrcLinesInput.length;i++) {
         if (this.dotSrcLinesInput[i].indexOf(searchterm) >= 0) {
-          console.log(searchterm)
-          console.log("{{");
+
             var newLine = this.dotSrcLinesInput[i].replace('color=\"black\"', 'color=\"red\"')
             dotSrcLines2.push(newLine)
         } else {
             dotSrcLines2.push(this.dotSrcLinesInput[i])
           }
       }
-      console.log(dotSrcLines2);
-      console.log("FINISHED");
+
      
-      this.pathwayDiagramData[this.selectedTab]['src']=  dotSrcLines2;
-      this.DiagramTabData.emit(this.pathwayDiagramData);
-      console.log(this.selectedTab);
+      this.cytoscapeGraph[this.selectedTab]['src']=  dotSrcLines2;
+      this.cytoscapeOutput.emit(this.cytoscapeGraph);
     
-    
-    
+      } else {
+        var searchterm = this.search;
+        var defaults = {
+          animate: true, // whether to show the layout as it's running
+          refresh: 1, // number of ticks per frame; higher is faster but more jerky
+          maxSimulationTime: 4000, // max length in ms to run the layout
+          ungrabifyWhileSimulating: false, // so you can't drag nodes during layout
+          fit: true, // on every layout reposition of nodes, fit the viewport
+          padding: 30, // padding around the simulation
+          boundingBox: undefined, // constrain layout bounds; { x1, y1, x2, y2 } or { x1, y1, w, h }
+          nodeDimensionsIncludeLabels: false, // whether labels should be included in determining the space used by a node
+        
+          // layout event callbacks
+          ready: function(){}, // on layoutready
+          stop: function(){}, // on layoutstop
+        
+          // positioning options
+          randomize: false, // use random node positions at beginning of layout
+          avoidOverlap: true, // if true, prevents overlap of node bounding boxes
+          handleDisconnected: true, // if true, avoids disconnected components from overlapping
+          convergenceThreshold: 0.01, // when the alpha value (system energy) falls below this value, the layout stops
+          nodeSpacing: function( node ){ return 10; }, // extra spacing around nodes
+          flow: undefined, // use DAG/tree flow layout if specified, e.g. { axis: 'y', minSeparation: 30 }
+          alignment: undefined, // relative alignment constraints on nodes, e.g. {vertical: [[{node: node1, offset: 0}, {node: node2, offset: 5}]], horizontal: [[{node: node3}, {node: node4}], [{node: node5}, {node: node6}]]}
+          gapInequalities: undefined, // list of inequality constraints for the gap between the nodes, e.g. [{"axis":"y", "left":node1, "right":node2, "gap":25}]
+          centerGraph: true, // adjusts the node positions initially to center the graph (pass false if you want to start the layout from the current position)
+        
+          // different methods of specifying edge length
+          // each can be a constant numerical value or a function like `function( edge ){ return 2; }`
+          edgeLength: undefined, // sets edge length directly in simulation
+          edgeSymDiffLength: undefined, // symmetric diff edge length in simulation
+          edgeJaccardLength: undefined, // jaccard edge length in simulation
+        
+          // iterations of cola algorithm; uses default values on undefined
+          unconstrIter: undefined, // unconstrained initial layout iterations
+          userConstIter: undefined, // initial layout iterations with user-specified constraints
+          allConstIter: undefined, // initial layout iterations with all constraints including non-overlap
+        };
+        var cy = cytoscape({
+
+          container: document.getElementById('graph'), // container to render in
+        
+          elements: this.cytoscapeGraph[this.selectedTab]['cytoSrc'],
+
+          layout: {name:'klay'},
+        
+          style: [ // the stylesheet for the graph
+            {
+              selector: 'node',
+              style: {
+                'background-color': '#ADD8E6',
+                'width':'200',
+                'height':'100',
+                'label': 'data(id2)',
+                'shape': 'data(reaction)',
+                'text-halign':'center',
+                'text-valign':'center',
+                'border-width': 4,
+                'border-color':(ele) => {
+                  if(ele.data('id2').indexOf(searchterm)!=-1){
+                    console.log("GREAT");
+                    return 'red';
+
+                  }
+                  else{
+                    return 'black'
+                  }
+                }
+              }
+            },
+        
+            {
+              selector: 'edge',
+              style: {
+                'width': '3',
+                'line-color': '#ccc',
+                'target-arrow-color': '#ccc',
+                'target-arrow-shape': 'data(neg)',
+                'curve-style': 'bezier'
+              }
+            }
+          ],
+        
+        
+        })
+      }
+      console.log("DONE");
+
+    }
+
+    onModeChange(mode:string){
+      this.resetGraph();
+      this.cytoMode=mode;
+      console.log(mode);
+      this.cytoscapeModeOutput.emit(this.cytoMode);
     }
 
 

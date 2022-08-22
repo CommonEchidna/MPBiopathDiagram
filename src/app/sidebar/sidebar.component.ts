@@ -10,12 +10,15 @@ import { MatOptionModule } from '@angular/material/core';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms'; 
-
+var localAlldots=[];
 var titledbidLocal=[];
 var dot;
 var dotSrcLines;
 var mode="delete2";
 var snackbar:MatSnackBar;
+var localCyto: Object;
+var localCytoGraph =[{label:"Untitled",src:[],cytoSrc:[]},{label:"Untitled",src:[] ,cytoSrc:[]}];
+
 
 @Component({
   selector: 'app-sidebar',
@@ -34,10 +37,15 @@ export class SidebarComponent implements OnInit {
   @Input() titledbidInput=[];
   @Input() selectedTabInput1:number ;
   @Output() selectedTabOutput1 = new EventEmitter<number>();
+  @Input() cytoscapeGraph:Object[] =[{label:"Untitled",src:[],cytoSrc:[]},{label:"Untitled",src:[] ,cytoSrc:[]}];
+  @Output() cytoscapeOutput = new EventEmitter<Object[]>();
+  @Input() cytoMode:string;
+  @Output() cytoscapeModeOutput = new EventEmitter<string>();
+
 
  titledbidLocal2=[];
  titledbidLocalMaster=[];
- selectedVal;
+ selectedVal="dbid";
  search;
 
   src1:String[];
@@ -81,16 +89,14 @@ ngAfterViewInit() {
 
   }
 
-
-  async getText(item): Promise<any>{
+  getTextCytoscape(item){
+    
     var idx = item.id;
     var title=item.name;
     const myPromise = new Promise((resolve,reject) => {
       var finaldotnosep = [];
       makeRequest1("GET", 'https://s3.amazonaws.com/download.reactome.org/81/mpbiopath/pathway_list.tsv',idx).then(function(response){    
               let splitted = String(response).split("\n");
-              
-
               var line = -1
               for(let i=1;i<splitted.length-1;i++){
 
@@ -103,184 +109,38 @@ ngAfterViewInit() {
               var split2 = splitted[line].split("\t");
 
             makeRequest1('GET', split2[3], idx).then(function(response2){
-
+                var result = getTextBoth(response2,idx);
   
-            
-              let dotLines = String(response2).split("\n");
-                var finaldot = ["digraph {"];
-                for(let i=1;i<dotLines.length-1;i++){
-                  var parts = dotLines[i].split("\t");
-                  var strpartz = String(parts[2]);
-                  var temp = ""
-                  for(let i=0;i<strpartz.length;i++){
-                    if(strpartz[i]=='"'){
-                      temp+= "'";
-                    }
-                    else{
-                      temp+=strpartz[i];
-                    }
-                  }
-                  strpartz = temp;
-                  var strpartf = String(parts[6]); 
-                  var temp = ""
-                  for(let i=0;i<strpartf.length;i++){
-                    if(strpartf[i]=='"'){
-                      temp+= "'";
-                    }
-                    else{
-                      temp+=strpartf[i];
-                    }
-                  }
-                  strpartf = temp;
-
-
-                  if(strpartz.length>30){
-                    strpartz = strpartz.slice(0,30)+"...";
-                  }
-                  if(strpartf.length>30){
-                    strpartf = strpartf.slice(0,30)+"...";
-                  }
-                  var tool1 = "\""+"name = "+strpartz+ "\n reactome id = " + String(parts[0]) + "\n entity type = "+String(parts[3])+"\"";
-                var tool2 = "\""+"name = "+strpartf+ "\n reactome id = " + String(parts[4]) + "\n entity type = "+String(parts[7])+"\"";
-                var tool1 = "\""+"name = "+strpartz+ "? reactome id = " + String(parts[0]) + "? entity type = "+String(parts[3])+"\"";
-                var tool2 = "\""+"name = "+strpartf+ "? reactome id = " + String(parts[4]) + "? entity type = "+String(parts[7])+"\"";
-                  strpartz = "\""+strpartz + "\"";
-                  strpartf  = "\""+strpartf + "\"";
-  
-                  
-                
-  
-                  var string = "";
-                  if(parts[3]=="Reaction"){
-                      finaldot.push('    ' +  "\""+String(parts[0])+"\"" + ' [label=' + strpartz + ' id='+tool1+ ' tooltip='+tool1+' color=\"black\" shape= diamond '+ ']');
-                  }
-                  else{
-                      finaldot.push('    ' +  "\""+String(parts[0])+"\"" + ' [label=' + strpartz + ' id='+tool1+ ' color=\"black\" tooltip='+tool1+ ']');
-                  }
-                  if(parts[7]=="Reaction"){
-                      finaldot.push('    ' +  "\""+String(parts[4])+"\"" + ' [label=' + strpartf + ' id='+tool2+ ' tooltip='+tool2+' color=\"black\" shape= diamond ' + ']');
-  
-                  } else {
-                      finaldot.push('    ' +  "\""+String(parts[4])+"\"" + ' [label=' + strpartf + ' id='+tool2+ ' color=\"black\" tooltip='+tool2+ ']');
-                  }
-                  if(i==10){
-
-
-                  }
-                }
-            
-                for(let i=1;i<dotLines.length-1;i++){
-                  var parts = dotLines[i].split("\t");
-                  var strpartz = String(parts[2]);
-                  var temp = ""
-                  for(let i=0;i<strpartz.length;i++){
-                    if(strpartz[i]=="\""){
-                      temp+= "'";
-                    }
-                    else{
-                      temp+=strpartz[i];
-                    }
-                  }
-                  strpartz = temp;
-                  var strpartf = String(parts[6]);   
-                  var temp = ""
-                  for(let i=0;i<strpartf.length;i++){
-                    if(strpartf[i]=="\""){
-                      temp+= "'";
-                    }
-                    else{
-                      temp+=strpartf[i];
-                    }
-                  }
-                  strpartf = temp;
-                  temp="";
-                  for(let i=0;i<strpartz.length;i++){
-                    if(strpartz[i]=="\""){
-                      temp+= "'";
-                    }
-                    else{
-                      temp+=strpartz[i];
-                    }
-                  }
-                  strpartz = temp;
-                  if(strpartz.length>30){
-                    strpartz = strpartz.slice(0,30)+"...";
-                  }
-                  if(strpartf.length>30){
-                    strpartf = strpartf.slice(0,30)+"...";
-                  }   
-                  var tool= "\""+"Incoming = "+strpartz+ " Outgoing = " + strpartf + " "+String(parts[8])+ " "+String(parts[9])+"\"";
-  
-                  strpartz = "\""+strpartz + "\"";
-                  strpartf  = "\""+strpartf + "\"";
-
-
-
-                  var line = " "+  "\""+String(parts[0])+"\"" + "->" +  "\""+String(parts[4])+"\"" +"  ";
-
-                  if(parts[8]=="NEG"){
-                    line = line + "[arrowhead=tee tooltip="+tool+"]"
-                  } 
-                  else{
-                    line = line + "[tooltip="+tool+"]";
-                  }
-  
-                  finaldot.push(line);
-                  if(i==10){
-
-
-                  }
-                }
-                finaldot.push("}");
-          
-                for(let i=0;i<finaldot.length;i++){
-                  var string = "";
-                  for(let j=0;j<finaldot[i].length;j++){
-                    if(finaldot[i][j]!="_"){
-                    string+=finaldot[i][j];
-                    }
-                  }
-          
-                  finaldotnosep.push(string);
-  
-                }
-                dotSrcLines = finaldotnosep;
-                dot = dotSrcLines.join("");
+                resolve(result);
 
               })
             }
       )
           })
-          myPromise.then((text)=>this.getText2(text,title));
+          myPromise.then((result)=>this.getText2Cyto(result[0],result[1],title));
         }
 
-          getText2(text,title){
-
-            this.selectedTab=this.selectedTabInput1;
-            this.pathwayDiagramData[this.selectedTab]['label']=title;
-            this.pathwayDiagramData[this.selectedTab]['src']=[];
-            for(let i=0;i<dotSrcLines.length;i++){
-              this.pathwayDiagramData[this.selectedTab]['src'].push(dotSrcLines[i]);
-            }
-
-
-            this.DiagramTabData.emit(this.pathwayDiagramData);
-            this.emitDotSrcLines.emit(dotSrcLines);
-            this.titledbid.emit(titledbidLocal);
-            this.selectedTabOutput1.emit(this.selectedTab);
-          }
-
-  
+      getText2Cyto(localCyto,dotSrcLines,name){
+        localCytoGraph[this.selectedTabInput1]={label:name,src:dotSrcLines,cytoSrc:localCyto};
+        this.cytoscapeGraph=localCytoGraph;
+        console.log(this.cytoscapeGraph)
+        this.cytoscapeOutput.emit(this.cytoscapeGraph);
+      }
           interactiveSnackBar(val){
 
 
             var x = document.getElementById("snackbar");
             x.textContent = "dbid: "+String(val.id);
-            x.className = "show";
-  
-  
-            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 10000);
-  
+            var x2=document.getElementById("edittext");
+            x2.textContent =String(val.name);
+            x.className = "show";  
+            x2.className="show";
+  }
+  setNewTitle(){
+    var x2=document.getElementById("edittext").textContent;
+    var x1 = document.getElementById("snackbar").textContent.slice(5);
+    console.log(x1);
+    console.log("HI");
   }
   onValChange(val: string) {
     this.selectedVal = val;
@@ -321,85 +181,27 @@ ngAfterViewInit() {
   
 
   onFileUpload(event): void {
-    
+    var name = (<String>(<HTMLInputElement>document.getElementById("file1")).files[0].name);
+
+    const myPromise = new Promise((resolve,reject) => {
+    var finaldotnosep = [];
+
+
     const fileReader = new FileReader();
     fileReader.onload = (e) => {
-      var dotLines = fileReader.result.toString().split("\n");
-      var finaldot = ["digraph {"];
-      for(let i=1;i<dotLines.length-1;i++){
-        var parts = dotLines[i].split("\t");
-        var strpartz = String(parts[0]);
-        var strpartf = String(parts[4]); 
-        if(strpartz.slice(-7,-1)=="_outpu"){
-          strpartz = strpartz.slice(0,-7)+"000000";
-        }
-        if(strpartf.slice(-7,-1)=="_outpu"){
-          strpartf = strpartf.slice(0,-7)+"000000";
-        }
-        var tool1 = String(parts[2]);
-        var tool2 = String(parts[6]);
-        var string = "";
-        var regEx = /^[0-9a-zA-Z]+$/;
-
-        for(let j=0;j<tool1.length;j++){
-          if(tool1[j].match(regEx)||tool1[j]==" "){
-          string+=tool1[j];
-          }
-        }
-        tool1=string;
-        for(let j=0;j<tool2.length;j++){
-          if(tool2[j].match(regEx)||tool1[j]==" "){
-          string+=tool2[j];
-          }
-        }
-        tool2=string;
-        if(parts[3]=="Reaction"){
-          finaldot.push('    ' +  strpartz + ' [label="' + strpartz + '" tooltip="'+tool1+'" shape="' + "diamond" + '"]');
-        }
-        else{
-          finaldot.push('    ' +  strpartz + ' [label="' + strpartz + '" tooltip="'+tool1+ '"]');
-
-        }
-        if(parts[7]=="Reaction"){
-          finaldot.push('    ' +  strpartf + ' [label="' + strpartf +  '" tooltip="'+tool1+ '"]');
-        }
+      var result= getTextBoth(fileReader.result.toString().split("\n"),this.selectedTabInput1)
+      localCyto=result[0]
+      finaldotnosep =result[1]
+      resolve([localCyto,finaldotnosep])
       }
-      for(let i=1;i<dotLines.length-1;i++){
-        var parts = dotLines[i].split("\t");
-        var strpartz = String(parts[0]);
-        var strpartf = String(parts[4]);
-        if(strpartz.slice(-7,-1)=="_outpu"){
-          strpartz = strpartz.slice(0,-7)+"000000";
-        }
-        if(strpartf.slice(-7,-1)=="_outpu"){
-          strpartf = strpartf.slice(0,-7)+"000000";
-        }
-
-        var line = " "+strpartz + "->" + strpartf+"  ";
-        finaldot.push(line);
-      }
-      finaldot.push("}");
-
-      var finaldotnosep = []
-      for(let i=0;i<finaldot.length;i++){
-        var string = "";
-        for(let j=0;j<finaldot[i].length;j++){
-          if(finaldot[i][j]!="_"){
-          string+=finaldot[i][j];
-          }
-        }
-
-        finaldotnosep.push(string);
-
-      }
-      dotSrcLines = finaldotnosep;
-
-      }
-    fileReader.readAsText(event.target.files[0]);
+      fileReader.readAsText(event.target.files[0]);
+    });
+    myPromise.then((result)=>this.getText2Cyto(result[0],result[1],name));
   }
 
-  
-}
+    }
+
+
 
 
 function makeRequest1(method, url,idx) {
@@ -423,4 +225,159 @@ function makeRequest1(method, url,idx) {
       request.send();
 
   });
+}
+function getTextBoth(response2,idx){
+  var finaldotnosep=[];
+
+  var nodes=[];
+  var edges=[];
+  var nodeList=[];
+  let dotLines = String(response2).split("\n");
+  var finaldot = ["digraph {"];
+    for(let i=1;i<dotLines.length-1;i++){
+      var parts = dotLines[i].split("\t");
+      var strpartz = String(parts[2]);
+      var strpartf = String(parts[6]); 
+      var temp = ""
+      for(let i=0;i<strpartz.length;i++){
+        if(strpartz[i]=="\""){
+          temp+= "'";
+        }
+        else{
+          temp+=strpartz[i];
+        }
+      }
+      strpartz = temp;
+      var strpartf = String(parts[6]);   
+      var temp = ""
+      for(let i=0;i<strpartf.length;i++){
+        if(strpartf[i]=="\""){
+          temp+= "'";
+        }
+        else{
+          temp+=strpartf[i];
+        }
+      }
+      strpartf = temp;
+      temp="";
+      for(let i=0;i<strpartz.length;i++){
+        if(strpartz[i]=="\""){
+          temp+= "'";
+        }
+        else{
+          temp+=strpartz[i];
+        }
+      }
+      strpartz = temp;
+      if(strpartz.length>20){
+        strpartz = strpartz.slice(0,18)+"...";
+      }
+      if(strpartf.length>20){
+        strpartf = strpartf.slice(0,18)+"...";
+      }
+      var tool1 = "\""+"name = "+strpartz+ " reactome id = " + String(parts[0]) + " entity type = "+String(parts[3])+"\"";
+      var tool2 = "\""+"name = "+strpartf+ " reactome id = " + String(parts[4]) + " entity type = "+String(parts[7])+"\"";
+      strpartz = "\""+strpartz + "\"";
+      strpartf  = "\""+strpartf + "\"";
+      
+      if(nodeList.includes(String(parts[0]))==false){
+        nodeList.push(String(parts[0]))
+        console.log(String(parts[0]));                  if(parts[3]=="Reaction"){
+          nodes.push({data:{id: String(parts[0]),id2:strpartz,reaction:"diamond"}})
+          finaldot.push('    ' +  "\""+String(parts[0])+"\"" + ' [label=' + strpartz + ' id='+"\""+String(parts[0])+"\""+ ' tooltip='+tool1+' color=\"black\" shape= diamond '+ ']');
+      }
+      else{
+        nodes.push({data:{id: String(parts[0]),id2:strpartz,reaction:"ellipse"}});
+        finaldot.push('    ' +  "\""+String(parts[0])+"\"" + ' [label=' + strpartz + ' id='+"\""+String(parts[4])+"\""+ ' color=\"black\" tooltip='+tool1+ ']');
+
+
+      }
+    }
+    if(nodeList.includes(String(parts[4]))==false){
+      nodeList.push(String(parts[4]))
+
+      console.log(String(parts[4]));
+
+      if(parts[7]=="Reaction"){
+        nodes.push({data:{id: String(parts[4]),id2:strpartf,reaction:"diamond"}});
+        finaldot.push('    ' +  "\""+String(parts[4])+"\"" + ' [label=' + strpartf + ' id='+tool2+ ' tooltip='+tool2+' color=\"black\" shape= diamond ' + ']');
+
+
+      } else {
+        nodes.push({data:{id: String(parts[4]),id2:strpartf,reaction:"ellipse"}});
+        finaldot.push('    ' +  "\""+String(parts[4])+"\"" + ' [label=' + strpartf + ' id='+tool2+ ' color=\"black\" tooltip='+tool2+ ']');
+      }
+    }
+  }
+    for(let i=1;i<dotLines.length-1;i++){
+      var parts = dotLines[i].split("\t");
+      var strpartz = String(parts[2]);
+      var strpartf = String(parts[6]);   
+      var temp = ""
+      for(let i=0;i<strpartz.length;i++){
+        if(strpartz[i]=="\""){
+          temp+= "'";
+        }
+        else{
+          temp+=strpartz[i];
+        }
+      }
+      strpartz = temp;
+      var strpartf = String(parts[6]);   
+      var temp = ""
+      for(let i=0;i<strpartf.length;i++){
+        if(strpartf[i]=="\""){
+          temp+= "'";
+        }
+        else{
+          temp+=strpartf[i];
+        }
+      }
+      strpartf = temp;
+      temp="";
+      for(let i=0;i<strpartz.length;i++){
+        if(strpartz[i]=="\""){
+          temp+= "'";
+        }
+        else{
+          temp+=strpartz[i];
+        }
+      }
+      strpartz = temp;
+      var tool= "\""+"Incoming = "+strpartz+ " Outgoing = " + strpartf + " "+String(parts[8])+ " "+String(parts[9])+"\"";
+      var tempNeg;
+      var line = " "+  "\""+String(parts[0])+"\"" + "->" +  "\""+String(parts[4])+"\"" +"  ";
+
+      if(parts[8]=="NEG"){
+        tempNeg='tee';
+        console.log("NEGGGGG")
+        line = line + "[arrowhead=tee tooltip="+tool+"]"
+
+      }
+      else{
+        tempNeg='triangle';
+        line = line + "[tooltip="+tool+"]";
+
+      }
+      finaldot.push(line);
+      var edge = {data:{id:String(parts[0])+String(parts[4]),source:String(parts[0]),target:String(parts[4]),neg:tempNeg}}  
+      edges.push(edge);
+    }
+    
+    finaldot.push("}");
+    for(let i=0;i<finaldot.length;i++){
+      var string = "";
+      for(let j=0;j<finaldot[i].length;j++){
+        if(finaldot[i][j]!="_"){
+        string+=finaldot[i][j];
+        }
+      }
+
+      finaldotnosep.push(string);
+
+    }
+    localCyto = {nodes:nodes,edges:edges};
+    dotSrcLines = finaldotnosep;
+
+    return [localCyto, dotSrcLines];
 }

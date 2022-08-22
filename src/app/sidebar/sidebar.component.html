@@ -6,13 +6,16 @@
     <a href = "https://reactome.org"> <img src="https://reactome.org/templates/favourite/images/logo/logo.png" height="50" width="200"></a>
 
   </div>
-
+  
+  
   <a id="snackbar"></a>
+  <br>
+  <a id="edittext" contenteditable="true" (edit)="setNewTitle()" > </a>
 
 
   <ul class="justify-content-center" style="display: grid;" >
     <ng-container *ngFor="let item of titledbidLocal2 ">
-    <li ><span class="pathwaylist" (click)="getText(item)">{{item?.name}}</span> <span (click)="interactiveSnackBar(item)" class="material-symbols-outlined">
+    <li ><span class="pathwaylist" spellcheck="false"  (click)="getTextCytoscape(item)">{{item?.name}}</span> <span (click)="interactiveSnackBar(item)" class="material-symbols-outlined">
       info
       </span></li>
   </ng-container>
@@ -23,7 +26,7 @@
   <div class="row">
     <div class="col-lg-12 col-md-12">
       <div class="upload-file-container">
-        <input type="file" #imageUploadInput hidden="true" (change)="onFileUpload($event); imageUploadInput.value = null">
+        <input type="file" #imageUploadInput hidden="true" id="file1" (change)="onFileUpload($event); imageUploadInput.value = null">
         <div class="upload-images-container" (click)="imageUploadInput.click()">
           <i class="bi-upload"></i>
           <p>Upload File</p>
