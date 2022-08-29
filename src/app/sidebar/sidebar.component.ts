@@ -125,6 +125,7 @@ ngAfterViewInit() {
         this.cytoscapeGraph=localCytoGraph;
         console.log(this.cytoscapeGraph)
         this.cytoscapeOutput.emit(this.cytoscapeGraph);
+        console.log("HERE?")
       }
           interactiveSnackBar(val){
 
@@ -179,7 +180,10 @@ ngAfterViewInit() {
     
 
   
-
+myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+  console.log("DONE");
+}
   onFileUpload(event): void {
     var name = (<String>(<HTMLInputElement>document.getElementById("file1")).files[0].name);
 
@@ -189,7 +193,7 @@ ngAfterViewInit() {
 
     const fileReader = new FileReader();
     fileReader.onload = (e) => {
-      var result= getTextBoth(fileReader.result.toString().split("\n"),this.selectedTabInput1)
+      var result= getTextBoth(fileReader.result.toString(),this.selectedTabInput1)
       localCyto=result[0]
       finaldotnosep =result[1]
       resolve([localCyto,finaldotnosep])
@@ -197,6 +201,8 @@ ngAfterViewInit() {
       fileReader.readAsText(event.target.files[0]);
     });
     myPromise.then((result)=>this.getText2Cyto(result[0],result[1],name));
+    titledbidLocal.push({ id: 1000000000+(titledbidLocal.length), name:  name});    
+
   }
 
     }
@@ -282,13 +288,14 @@ function getTextBoth(response2,idx){
       
       if(nodeList.includes(String(parts[0]))==false){
         nodeList.push(String(parts[0]))
-        console.log(String(parts[0]));                  if(parts[3]=="Reaction"){
-          nodes.push({data:{id: String(parts[0]),id2:strpartz,reaction:"diamond"}})
-          finaldot.push('    ' +  "\""+String(parts[0])+"\"" + ' [label=' + strpartz + ' id='+"\""+String(parts[0])+"\""+ ' tooltip='+tool1+' color=\"black\" shape= diamond '+ ']');
+        console.log(String(parts[0]));                  
+        if(parts[3]=="Reaction"){
+          nodes.push({data:{id: String(parts[0]),id2:strpartz.slice(1,strpartz.length-1),reaction:"diamond"}})
+          finaldot.push('    ' +  "\""+String(parts[0])+"\"" + ' [label=' + strpartz + " style=filled fillcolor=lightblue "+ ' id='+"\""+String(parts[0])+"\""+ ' tooltip='+tool1+' color=\"black\" shape= diamond '+ ']');
       }
       else{
-        nodes.push({data:{id: String(parts[0]),id2:strpartz,reaction:"ellipse"}});
-        finaldot.push('    ' +  "\""+String(parts[0])+"\"" + ' [label=' + strpartz + ' id='+"\""+String(parts[4])+"\""+ ' color=\"black\" tooltip='+tool1+ ']');
+        nodes.push({data:{id: String(parts[0]),id2:strpartz.slice(1,strpartz.length-1),reaction:"ellipse"}});
+        finaldot.push('    ' +  "\""+String(parts[0])+"\"" + ' [label=' + strpartz + " style=filled fillcolor=lightblue "+' id='+"\""+String(parts[4])+"\""+ ' color=\"black\" tooltip='+tool1+ ']');
 
 
       }
@@ -299,13 +306,13 @@ function getTextBoth(response2,idx){
       console.log(String(parts[4]));
 
       if(parts[7]=="Reaction"){
-        nodes.push({data:{id: String(parts[4]),id2:strpartf,reaction:"diamond"}});
-        finaldot.push('    ' +  "\""+String(parts[4])+"\"" + ' [label=' + strpartf + ' id='+tool2+ ' tooltip='+tool2+' color=\"black\" shape= diamond ' + ']');
+        nodes.push({data:{id: String(parts[4]),id2:strpartf.slice(1,strpartf.length-1),reaction:"diamond"}});
+        finaldot.push('    ' +  "\""+String(parts[4])+"\"" + ' [label=' + strpartf + " style=filled fillcolor=lightblue "+' id='+tool2+ ' tooltip='+tool2+' color=\"black\" shape= diamond ' + ']');
 
 
       } else {
-        nodes.push({data:{id: String(parts[4]),id2:strpartf,reaction:"ellipse"}});
-        finaldot.push('    ' +  "\""+String(parts[4])+"\"" + ' [label=' + strpartf + ' id='+tool2+ ' color=\"black\" tooltip='+tool2+ ']');
+        nodes.push({data:{id: String(parts[4]),id2:strpartf.slice(1,strpartf.length-1),reaction:"ellipse"}});
+        finaldot.push('    ' +  "\""+String(parts[4])+"\"" + ' [label=' + strpartf + " style=filled fillcolor=lightblue" +' id='+tool2+ ' color=\"black\" tooltip='+tool2+ ']');
       }
     }
   }
@@ -380,4 +387,19 @@ function getTextBoth(response2,idx){
     dotSrcLines = finaldotnosep;
 
     return [localCyto, dotSrcLines];
+}
+
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
 }

@@ -11,6 +11,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { FormsModule } from '@angular/forms';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatFormFieldModule} from '@angular/material/form-field'
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import {MatFormFieldModule} from '@angular/material/form-field'
     AppRoutingModule,
     FormsModule,
     MatButtonToggleModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatSelectModule
+
 
   ],
   providers: [],

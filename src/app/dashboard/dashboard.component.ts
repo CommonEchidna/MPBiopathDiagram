@@ -6,10 +6,10 @@ import {tabstore} from '../tabstore'
 import {MatSnackBar} from '@angular/material/snack-bar';
 import { PathwayDiagramComponent } from '../pathway-diagram/pathway-diagram.component';
 import cytoscape from 'cytoscape';
-import klay from 'cytoscape-klay';
+import dagre from 'cytoscape-dagre';
 
 
-cytoscape.use(klay);
+cytoscape.use(dagre);
 var mode="snackbar";
 var dotSrcLines;
 @Component({
@@ -38,7 +38,7 @@ export class DashboardComponent implements OnInit {
       var dot = this.cytoscapeGraphMain[this.selectedTab]['src'].join("");
       console.log(dot);
       if(dot.length>0){
-        d3.select("#graph").graphviz().attributer(attributer).zoomScaleExtent([.0001,1000]).renderDot(dot);
+        d3.select("#graph").graphviz().attributer(attributer).zoomScaleExtent([.0001,1000]).renderDot(dot).on("end",interactive);
 
       }
       else{
@@ -46,6 +46,7 @@ export class DashboardComponent implements OnInit {
 
       }
       console.log("CONSIDEERED");
+      interactiveSnackBar();
 
     } else {
         console.log("DONE1234");
@@ -92,7 +93,7 @@ export class DashboardComponent implements OnInit {
         
           elements: this.cytoscapeGraphMain[this.selectedTab]['cytoSrc'],
 
-          layout: {name:'klay'},
+          layout: {name:'dagre'},
         
           style: [ // the stylesheet for the graph
             {
@@ -113,16 +114,22 @@ export class DashboardComponent implements OnInit {
             {
               selector: 'edge',
               style: {
-                'width': '3',
+                'width': '20',
                 'line-color': '#ccc',
                 'target-arrow-color': '#ccc',
                 'target-arrow-shape': 'data(neg)',
                 'curve-style': 'bezier'
               }
-            }
-          ],
-        
-        
+              },
+              {   
+                selector: 'edge.highlighted',
+                style: {
+                  'line-color': '#2a6cd6',
+                  'target-arrow-color': '#2a6cd6',
+                  'opacity': 0.7,
+                } 
+              },  
+          ]
         });
         cy.unbind('click');
 cy.bind('click', 'node', function(node) {
@@ -135,8 +142,14 @@ cy.bind('click', 'node', function(node) {
   }
   document.getElementById("edittext").textContent="id: " + node.target.data().id + " label: " + node.target.data().id2+" reaction type: " + react;
 });
-  }
+cy.on('mouseover', function(e){
+  console.log(e.target.data())
+  cy.edges("[source = '" + e.target.data().source+"']"+"[target = '" + e.target.data().target+"']").addClass('highlighted');
+  cy.edges("[source !='" + e.target.data().source+"']"+",[target != '" + e.target.data().target+"']").removeClass('highlighted');
+     console.log("WRONG")
 
+});
+}
   }
   setCytoscapeMode(data){
     console.log("SETTING MODE");
@@ -164,13 +177,14 @@ function interactive(dotSrc){
   if(mode=="delete"){
     interactiveDelete(dotSrc);
   } else if(mode=="snackbar"){
-    interactiveSnackBar(dotSrc);
+    interactiveSnackBar();
   } else {
   }
 
 }
 
-function interactiveSnackBar(dotSrc){
+function interactiveSnackBar(){
+  console.log("HIIII");
 
   var nodes = d3.selectAll('.node,.edge');
   nodes

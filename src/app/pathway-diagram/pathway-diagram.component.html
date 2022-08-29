@@ -1,13 +1,17 @@
 <body>
   <div class="row">
     <div class="col-lg-12 col-sm-12 d-flex flex-wrap justify-content-between mb-3">
-      <ng-container *ngFor="let item of cytoscapeGraph; let index=index">
-        <div class="button-container">
-          <button class="button-primary" [class.selected-button]="selectedButtonIndex === index" (click)="changeGraph(index)">{{item?.label}}</button>
-          <i class="bi-x-circle" (click)="deletePathway(index)"></i>
-        </div>
+      <div class="dropdown">
+        <button (click)="myFunction()" class="dropbtn">Pathway List</button>
+        <div id="myDropdown2" class="dropdown-content">
+      <ng-container id="pathways" *ngFor="let item of cytoscapeGraph; let index=index">
+          <a (click)="changeGraph(index)">{{item?.label}} <span (click)="deletePathway(index)" class="hover disabled material-symbols-outlined">
+            x
+            </span></a>
       </ng-container>
-      <button class="button-primary" style="margin-bottom: 20px" (click)="addPathway()">Add Pathway</button>
+      <a (click)="addPathway()">Add Pathway</a>
+    </div>
+      </div>
     </div>
   </div>
 
@@ -16,9 +20,18 @@
     <mat-button-toggle id = "graphviz" value="graphviz">graphviz</mat-button-toggle>
   </mat-button-toggle-group>
 
+  <img id="image" src="" />
 
+<div class="searchbar">
   <input id="searchbar" type="search" [(ngModel)]= "search">  
   <button (click)="interactiveSearch()" class="searchbutton">Search</button>
+</div>
+  <div class="dropdown">
+  <div  *ngFor="let show of searchResult">
+    <a (click)="zoomonNode(show)">{{show.id2}}</a> 
+  </div>
+  <p>{{searchlen}}</p>
+</div>
 
   <div class="row">
     <div class="col-lg-12 col-md-12 mb-3">

@@ -12,6 +12,16 @@
   <br>
   <a id="edittext" contenteditable="true" (edit)="setNewTitle()" > </a>
 
+
+  <mat-button-toggle-group #group="matButtonToggleGroup" [value]="selectedVal" (change)="onValChange(group.value)" id="searchdbidortitle" name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle id = "dbidchecked" value="dbid">dbid</mat-button-toggle>
+    <mat-button-toggle id = "titlechecked" value="title">title</mat-button-toggle>
+  </mat-button-toggle-group>
+
+  
+ 
+<input id="searchbar2" type="search" placeholder="Search Pathways" [(ngModel)]= "search">   
+ <button (click)="interactiveSearch2($event)" class="searchbutton">Search</button>
   <div class="row">
     <div class="col-lg-12 col-md-12">
       <div class="upload-file-container">
@@ -23,25 +33,22 @@
       </div>
     </div>
   </div>
-  <ul class="justify-content-center" style="display: grid;" >
-    <ng-container *ngFor="let item of titledbidLocal2 ">
-    <li ><span class="pathwaylist" spellcheck="false"  (click)="getTextCytoscape(item)">{{item?.name}}</span> <span (click)="interactiveSnackBar(item)" class="material-symbols-outlined">
-      info
-      </span></li>
-  </ng-container>
-  </ul>
+  <div class="dropdown">
+    <button (click)="myFunction()" class="dropbtn">Pathway List</button>
+    <div id="myDropdown" class="dropdown-content">
+      <ng-container *ngFor="let item of titledbidLocal2 ">
+        <a ><span class="pathwaylist" spellcheck="false"  (click)="getTextCytoscape(item)">{{item?.name}}</span> <span (click)="interactiveSnackBar(item)" class="material-symbols-outlined">
+          info
+          </span></a>
+      </ng-container>
+    </div>
+  </div>
 
 
 
 
-  <mat-button-toggle-group #group="matButtonToggleGroup" [value]="selectedVal" (change)="onValChange(group.value)" id="searchdbidortitle" name="fontStyle" aria-label="Font Style">
-    <mat-button-toggle id = "dbidchecked" value="dbid">dbid</mat-button-toggle>
-    <mat-button-toggle id = "titlechecked" value="title">title</mat-button-toggle>
-  </mat-button-toggle-group>
-  
- 
-  <input id="searchbar2" type="search" placeholder="enter your text here" [(ngModel)]= "search">   
-  <button (click)="interactiveSearch2($event)" class="searchbutton">Search</button>
+
+
 </div>
 
 
