@@ -1,30 +1,32 @@
-# PathwayNetworkDiagramFrontend
+Work done for Google Summer of Code 2022 with OICR (Ontario Institute for Cancer Research). All of the code in this repository was created by myself. Basic view below:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.
 
-## Development server
+<img width="1792" alt="Screen Shot 2022-09-10 at 12 49 32 PM" src="https://user-images.githubusercontent.com/92749562/189495701-70dc67c6-7c8a-4841-91a7-dd012a0af174.png">
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Package Installation
 
-Simply run npm install to install the required packages for this build 
-## Code scaffolding
+This summer, I:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Created and implemented wireframe of MP Biopath web app
 
-## Build
+Implemented graphing feture for pathways using both graphviz and cytoscapejs
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Added upload file feature, and dropdown for pathway list and tab lsit to ensure they don't take up too much space
 
-## Running unit tests
+Implemented search bar for pathway and nodes based on text input and selected type (such as searching for dbid or title in the pathway list)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Created various features for graphed object (highlight edge on hover, click on node for more information, tooltip, dragging node )
 
-## Running end-to-end tests
+Added various UI improvements on initial draft (adding logo, coloring nodes)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Added ability to add/delete/change pathways and tab selected
 
-## Further help
+To do:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Improve UI further
+
+Add Pathway Analysis section
+
+Some features were only implemented for cytoscape, such as dragging nodes and highlighting edges, so implement them in graphviz
+
+For more information on how to recreate this code, see RUNME.md
