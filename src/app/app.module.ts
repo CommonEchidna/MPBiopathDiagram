@@ -19,7 +19,7 @@ import {MatSelectModule} from '@angular/material/select';
     SidebarComponent,
     PathwayDiagramComponent,
     DashboardComponent
-  ],
+    ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

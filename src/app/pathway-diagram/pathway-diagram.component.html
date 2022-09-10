@@ -1,8 +1,9 @@
 <body>
+  <!-- Create Pathway Tab List and store the result in a dropdown -->
   <div class="row">
     <div class="col-lg-12 col-sm-12 d-flex flex-wrap justify-content-between mb-3">
       <div class="dropdown">
-        <button (click)="myFunction()" class="dropbtn">Pathway List</button>
+        <button (click)="tablist()" class="dropbtn">Tab List</button>
         <div id="myDropdown2" class="dropdown-content">
       <ng-container id="pathways" *ngFor="let item of cytoscapeGraph; let index=index">
           <a (click)="changeGraph(index)">{{item?.label}} <span (click)="deletePathway(index)" class="hover disabled material-symbols-outlined">
@@ -15,13 +16,14 @@
     </div>
   </div>
 
+<!-- Give user the option to change between cytoscape and graphviz versions of the graph -->
   <mat-button-toggle-group #group="matButtonToggleGroup" [value]="cytoMode" (change)="onModeChange(group.value)" id="chooseMode" name="fontStyle" aria-label="Font Style">
     <mat-button-toggle id = "cytoscape" value="cytoscape">cytoscape</mat-button-toggle>
     <mat-button-toggle id = "graphviz" value="graphviz">graphviz</mat-button-toggle>
   </mat-button-toggle-group>
 
   <img id="image" src="" />
-
+<!-- Search nodes, zoom in on selected result, show number of results-->
 <div class="searchbar">
   <input id="searchbar" type="search" [(ngModel)]= "search">  
   <button (click)="interactiveSearch()" class="searchbutton">Search</button>
@@ -40,20 +42,6 @@
       </div>
     </div>
   </div>
-
-
-
-
-
-<div class="row">
-  <div class="col-lg-12 col-md-12">
-    <div class="pathway analysis">
-      <h3 style="text-align:center"> Add Pathway Analysis here</h3>
-
-    </div>
-  </div>
-</div>
-
 
 
 </body>

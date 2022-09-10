@@ -1,8 +1,7 @@
 import { Component, EventEmitter, Injectable, Input, OnInit, Output, AfterViewInit } from '@angular/core';
 import * as d3 from 'd3';
 import * as d3Graphviz from 'd3-graphviz'
-import { contactStore } from '../contact-store';
-import {tabstore} from '../tabstore'
+
 import {MatSnackBar} from '@angular/material/snack-bar';
 import {MatIconRegistry,MatIconModule} from '@angular/material/icon';
 import {DomSanitizer} from '@angular/platform-browser';
@@ -60,7 +59,7 @@ export class SidebarComponent implements OnInit {
 
 
   constructor() {
-    
+    //get pathway list and transform into readable data
     makeRequest1("GET", 'https://s3.amazonaws.com/download.reactome.org/81/mpbiopath/pathway_list.tsv',0).then(function(response){ 
     let splitted = String(response).split("\n");
       for(let i=1;i<splitted.length-1;i++){
@@ -88,7 +87,7 @@ ngAfterViewInit() {
     this.pathwayDiagramData =data;
 
   }
-
+  //get the result of a pathway clicked on and transform to graphable object
   getTextCytoscape(item){
     
     var idx = item.id;
@@ -120,13 +119,14 @@ ngAfterViewInit() {
           myPromise.then((result)=>this.getText2Cyto(result[0],result[1],title));
         }
 
+        //part two of original getTextCytoscape, sets and outputs the graphable object to dashboard
+
       getText2Cyto(localCyto,dotSrcLines,name){
         localCytoGraph[this.selectedTabInput1]={label:name,src:dotSrcLines,cytoSrc:localCyto};
         this.cytoscapeGraph=localCytoGraph;
-        console.log(this.cytoscapeGraph)
         this.cytoscapeOutput.emit(this.cytoscapeGraph);
-        console.log("HERE?")
       }
+      //shows information about pathways if you click on info icon
           interactiveSnackBar(val){
 
 
@@ -137,16 +137,16 @@ ngAfterViewInit() {
             x.className = "show";  
             x2.className="show";
   }
+  //set title of pathway based on changes to snackbar, not complete
   setNewTitle(){
     var x2=document.getElementById("edittext").textContent;
     var x1 = document.getElementById("snackbar").textContent.slice(5);
-    console.log(x1);
-    console.log("HI");
   }
   onValChange(val: string) {
     this.selectedVal = val;
   }
 
+  //serach pathway list given criteria of dbid and title
   interactiveSearch2(data){
     var searchterm2 = this.search;
     var pathways = d3.selectAll('pathwaylist');
@@ -182,7 +182,6 @@ ngAfterViewInit() {
   
 myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
-  console.log("DONE");
 }
   onFileUpload(event): void {
     var name = (<String>(<HTMLInputElement>document.getElementById("file1")).files[0].name);
@@ -218,14 +217,11 @@ function makeRequest1(method, url,idx) {
 
     request.onload = function(){
       if(request.status>=200 && request.status<300){
-        console.log("WORKED");
         resolve(request.response);
       }
     }
       request.onerror=function(){
-        console.log(
-          "REJECTED"
-        );
+
         reject(request);
       };
       request.send();
@@ -288,7 +284,6 @@ function getTextBoth(response2,idx){
       
       if(nodeList.includes(String(parts[0]))==false){
         nodeList.push(String(parts[0]))
-        console.log(String(parts[0]));                  
         if(parts[3]=="Reaction"){
           nodes.push({data:{id: String(parts[0]),id2:strpartz.slice(1,strpartz.length-1),reaction:"diamond"}})
           finaldot.push('    ' +  "\""+String(parts[0])+"\"" + ' [label=' + strpartz + " style=filled fillcolor=lightblue "+ ' id='+"\""+String(parts[0])+"\""+ ' tooltip='+tool1+' color=\"black\" shape= diamond '+ ']');
@@ -303,7 +298,6 @@ function getTextBoth(response2,idx){
     if(nodeList.includes(String(parts[4]))==false){
       nodeList.push(String(parts[4]))
 
-      console.log(String(parts[4]));
 
       if(parts[7]=="Reaction"){
         nodes.push({data:{id: String(parts[4]),id2:strpartf.slice(1,strpartf.length-1),reaction:"diamond"}});
@@ -357,7 +351,6 @@ function getTextBoth(response2,idx){
 
       if(parts[8]=="NEG"){
         tempNeg='tee';
-        console.log("NEGGGGG")
         line = line + "[arrowhead=tee tooltip="+tool+"]"
 
       }

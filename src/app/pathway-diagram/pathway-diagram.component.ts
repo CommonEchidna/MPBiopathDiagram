@@ -50,14 +50,15 @@ export class PathwayDiagramComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //send tabdata to dashboard component
   sendTabData(){
     this.DiagramTabData.emit(this.pathwayDiagramData);
   }
-
+  //reset graph and title
   resetGraph(): void {
     document.getElementById("graph").innerHTML="";
   }
-
+  //change graph based on clicked on element
   changeGraph(number): void {
 
     if (this.selectedTab === number) {
@@ -70,6 +71,7 @@ export class PathwayDiagramComponent implements OnInit {
 
 
   }
+  //delete specific pathway from the list of graphed pathways
      deletePathway(index): void {
 
 
@@ -81,7 +83,7 @@ export class PathwayDiagramComponent implements OnInit {
 
     }
     
-  
+  //add pathway to the list
     addPathway(): void {
 
 
@@ -92,11 +94,15 @@ export class PathwayDiagramComponent implements OnInit {
 
 
     }
-    myFunction() {
+
+    //show dropdown of tabs
+    tablist() {
       document.getElementById("myDropdown2").classList.toggle("show");
       console.log(document.getElementById("myDropdown2"));
       console.log("DONE");
     }
+
+    //zoom into node on click, based on criteria of show
     zoomonNode(show){
       var defaults = {
         animate: true, // whether to show the layout as it's running
@@ -191,6 +197,8 @@ export class PathwayDiagramComponent implements OnInit {
       }))
 
     }
+
+    //search for nodes in graph, change their background color if found
     interactiveSearch(){
       this.searchResult=[];
       this.searchlen=0;
@@ -314,7 +322,7 @@ export class PathwayDiagramComponent implements OnInit {
       console.log("DONE");
 
     }
-
+    //output mode on change of mode from graphviz to cytoscape or vice versa
     onModeChange(mode:string){
       this.resetGraph();
       this.cytoMode=mode;
@@ -325,16 +333,7 @@ export class PathwayDiagramComponent implements OnInit {
 
 }
 
-function interactive(dotSrc){
-  if(mode=="delete"){
-    interactiveDelete(dotSrc);
-  } else if(mode=="snackbar"){
-    interactiveSnackBar(dotSrc);
-  } else {
-  }
-
-}
-
+//debugging for snackbar and deleting nodes
 function interactiveSnackBar(dotSrc){
   console.log("HIIII");
 

@@ -1,10 +1,7 @@
 import { Component, Injectable, OnInit, Output } from '@angular/core';
 import * as d3 from 'd3';
 import * as d3Graphviz from 'd3-graphviz'
-import { contactStore } from '../contact-store';
-import {tabstore} from '../tabstore'
-import {MatSnackBar} from '@angular/material/snack-bar';
-import { PathwayDiagramComponent } from '../pathway-diagram/pathway-diagram.component';
+
 import cytoscape from 'cytoscape';
 import dagre from 'cytoscape-dagre';
 
@@ -23,9 +20,8 @@ export class DashboardComponent implements OnInit {
   selectedButton = 1;
   _ = d3Graphviz.graphviz;
   scale = 0.8; 
-  store = contactStore;
-  store2 = tabstore;
-  selectedTab = tabstore.tabnum;
+
+  selectedTab = 0;
   titledbid:Object[];
   cytoMode:string="cytoscape";
 
@@ -33,10 +29,11 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  //Render the graph based on if it is graphviz or cytoscape
   render(){
     if(this.cytoMode=="graphviz"){
       var dot = this.cytoscapeGraphMain[this.selectedTab]['src'].join("");
-      console.log(dot);
       if(dot.length>0){
         d3.select("#graph").graphviz().attributer(attributer).zoomScaleExtent([.0001,1000]).renderDot(dot).on("end",interactive);
 
@@ -45,11 +42,11 @@ export class DashboardComponent implements OnInit {
         d3.select("#graph").graphviz().attributer(attributer).zoomScaleExtent([.0001,1000]).renderDot("digraph {}");
 
       }
-      console.log("CONSIDEERED");
       interactiveSnackBar();
 
     } else {
-        console.log("DONE1234");
+
+      //is cytoscape
         var defaults = {
           animate: true, // whether to show the layout as it's running
           refresh: 1, // number of ticks per frame; higher is faster but more jerky
@@ -74,19 +71,8 @@ export class DashboardComponent implements OnInit {
           alignment: undefined, // relative alignment constraints on nodes, e.g. {vertical: [[{node: node1, offset: 0}, {node: node2, offset: 5}]], horizontal: [[{node: node3}, {node: node4}], [{node: node5}, {node: node6}]]}
           gapInequalities: undefined, // list of inequality constraints for the gap between the nodes, e.g. [{"axis":"y", "left":node1, "right":node2, "gap":25}]
           centerGraph: true, // adjusts the node positions initially to center the graph (pass false if you want to start the layout from the current position)
-        
-          // different methods of specifying edge length
-          // each can be a constant numerical value or a function like `function( edge ){ return 2; }`
-          edgeLength: undefined, // sets edge length directly in simulation
-          edgeSymDiffLength: undefined, // symmetric diff edge length in simulation
-          edgeJaccardLength: undefined, // jaccard edge length in simulation
-        
-          // iterations of cola algorithm; uses default values on undefined
-          unconstrIter: undefined, // unconstrained initial layout iterations
-          userConstIter: undefined, // initial layout iterations with user-specified constraints
-          allConstIter: undefined, // initial layout iterations with all constraints including non-overlap
+
         };
-        console.log("STARTING");
         var cy = cytoscape({
 
           container: document.getElementById('graph'), // container to render in
@@ -132,8 +118,9 @@ export class DashboardComponent implements OnInit {
           ]
         });
         cy.unbind('click');
+
+        //change shape of output based on if it is a reaction
 cy.bind('click', 'node', function(node) {
-  console.log(node.target.data());
   var react;
   if(node.target.data().reaction=="ellipse"){
     react = "not-reaction"
@@ -142,30 +129,33 @@ cy.bind('click', 'node', function(node) {
   }
   document.getElementById("edittext").textContent="id: " + node.target.data().id + " label: " + node.target.data().id2+" reaction type: " + react;
 });
+
+//highlight on mouseover (cytoscape only)
 cy.on('mouseover', function(e){
-  console.log(e.target.data())
   cy.edges("[source = '" + e.target.data().source+"']"+"[target = '" + e.target.data().target+"']").addClass('highlighted');
   cy.edges("[source !='" + e.target.data().source+"']"+",[target != '" + e.target.data().target+"']").removeClass('highlighted');
-     console.log("WRONG")
 
 });
 }
   }
+  //change modes from graphviz to cytoscape
   setCytoscapeMode(data){
-    console.log("SETTING MODE");
     this.cytoMode=data;
     this.render()
   }
+  //set title or dbid for pathway search
 
   settitledbid(data){
     this.titledbid = data;
   }
+    //set the cytoscape graph data
+
   setCytoscape(data:Object[]){
-    console.log(data)
 
     this.cytoscapeGraphMain = data;
     this.render();
   }
+  //change modes from graphviz to cytoscape
   setselectedTab(data){
 
     this.selectedTab=data;
@@ -173,6 +163,7 @@ cy.on('mouseover', function(e){
   }
 }
 
+//debugging code for deleting and snackbar code, delete is not finished
 function interactive(dotSrc){
   if(mode=="delete"){
     interactiveDelete(dotSrc);
@@ -182,9 +173,8 @@ function interactive(dotSrc){
   }
 
 }
-
+//snackbar for clicking on node
 function interactiveSnackBar(){
-  console.log("HIIII");
 
   var nodes = d3.selectAll('.node,.edge');
   nodes
@@ -206,6 +196,8 @@ function interactiveSnackBar(){
         });
 }
 
+
+//incomplete function for deleting node on click
 function interactiveDelete(dotSrc) {
   var nodes = d3.selectAll('.node,.edge');
   nodes
@@ -215,11 +207,9 @@ function interactiveDelete(dotSrc) {
           var id = d3.select(this).attr('id');
           var class1 = d3.select(this).attr('class');
           var dotElement = title.replace('->',' -> ');
-          console.log('Element id="%s" class="%s" title="%s" text="%s" dotElement="%s"', id, class1, title, text, dotElement);
-          console.log('Finding and deleting references to %s "%s" from the DOT source', class1, dotElement);
+
           for (let i = 0; i < dotSrcLines.length;) {
               if (dotSrcLines[i].indexOf(dotElement) >= 0) {
-                  console.log('Deleting line %d: %s', i, dotSrcLines[i]);
                   dotSrcLines.splice(i, 1);
               } else {
                   i++;
@@ -229,6 +219,8 @@ function interactiveDelete(dotSrc) {
           this.render(dotSrc);
       });
 }
+
+//resize graphviz to fit the whole section
 function attributer(datum, index, nodes) {
   var selection = d3.select(this);
   if (datum.tag == "svg") {
