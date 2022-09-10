@@ -98,8 +98,7 @@ export class PathwayDiagramComponent implements OnInit {
     //show dropdown of tabs
     tablist() {
       document.getElementById("myDropdown2").classList.toggle("show");
-      console.log(document.getElementById("myDropdown2"));
-      console.log("DONE");
+
     }
 
     //zoom into node on click, based on criteria of show
@@ -154,7 +153,6 @@ export class PathwayDiagramComponent implements OnInit {
             style: {
               'background-color': (ele) => {
               if(ele.data('id2').indexOf(show)!=-1){
-                  console.log("GREAT");
                   return 'red';
 
                 }
@@ -187,7 +185,6 @@ export class PathwayDiagramComponent implements OnInit {
       
       
       })
-      console.log(show);
       cy.fit(cy.filter((ele)=>{
         if(show.id==(ele.data('id'))){
           return true
@@ -285,7 +282,6 @@ export class PathwayDiagramComponent implements OnInit {
                       this.searchResult.push({id2:ele.data('id2'),id:ele.data('id')})
 
                     }
-                    console.log("GREAT");
                     return 'red';
 
                   }
@@ -319,14 +315,12 @@ export class PathwayDiagramComponent implements OnInit {
         
         })
       }
-      console.log("DONE");
 
     }
     //output mode on change of mode from graphviz to cytoscape or vice versa
     onModeChange(mode:string){
       this.resetGraph();
       this.cytoMode=mode;
-      console.log(mode);
       this.cytoscapeModeOutput.emit(this.cytoMode);
     }
 
@@ -335,7 +329,6 @@ export class PathwayDiagramComponent implements OnInit {
 
 //debugging for snackbar and deleting nodes
 function interactiveSnackBar(dotSrc){
-  console.log("HIIII");
 
   var nodes = d3.selectAll('.node,.edge');
   nodes
@@ -366,11 +359,9 @@ function interactiveDelete(dotSrc) {
           var id = d3.select(this).attr('id');
           var class1 = d3.select(this).attr('class');
           var dotElement = title.replace('->',' -> ');
-          console.log('Element id="%s" class="%s" title="%s" text="%s" dotElement="%s"', id, class1, title, text, dotElement);
-          console.log('Finding and deleting references to %s "%s" from the DOT source', class1, dotElement);
+
           for (let i = 0; i < dotSrcLines.length;) {
               if (dotSrcLines[i].indexOf(dotElement) >= 0) {
-                  console.log('Deleting line %d: %s', i, dotSrcLines[i]);
                   dotSrcLines.splice(i, 1);
               } else {
                   i++;

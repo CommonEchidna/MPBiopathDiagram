@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <div class="sidebar-container">
+<!-- Added logos -->
 
   <div class="mb-5 text-center">
     <img src="https://raw.githubusercontent.com/OICR/mp-biopath/main/mp-biopath-logo.png" height="50" width="200">
@@ -7,11 +8,13 @@
 
   </div>
   
-  
+  <!-- Snackbar for various information on nodes which are clicked on/pathways that are clicked on -->
+
   <a id="snackbar"></a>
   <br>
   <a id="edittext" contenteditable="true" (edit)="setNewTitle()" > </a>
 
+<!-- Give user the ability to search pathways based on dbid or title of pathway-->
 
   <mat-button-toggle-group #group="matButtonToggleGroup" [value]="selectedVal" (change)="onValChange(group.value)" id="searchdbidortitle" name="fontStyle" aria-label="Font Style">
     <mat-button-toggle id = "dbidchecked" value="dbid">dbid</mat-button-toggle>
@@ -19,7 +22,8 @@
   </mat-button-toggle-group>
 
   
- 
+ <!-- Actual search functionality and ability to upload files-->
+
 <input id="searchbar2" type="search" placeholder="Search Pathways" [(ngModel)]= "search">   
  <button (click)="interactiveSearch2($event)" class="searchbutton">Search</button>
   <div class="row">
@@ -33,6 +37,9 @@
       </div>
     </div>
   </div>
+
+  <!-- Dropdown for pathway list -->
+
   <div class="dropdown">
     <button (click)="myFunction()" class="dropbtn">Pathway List</button>
     <div id="myDropdown" class="dropdown-content">
